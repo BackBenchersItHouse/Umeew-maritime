@@ -2,7 +2,7 @@
 const Home = () => {
     return (
         <div>
-            this is umeew maritime website
+            this is umeew maritime website .
             
         </div>
     );
