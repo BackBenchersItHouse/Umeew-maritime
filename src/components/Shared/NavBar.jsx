@@ -8,11 +8,13 @@ const NavBar = () => {
   return (
     <nav className="bg-primary py-2.5 text-white">
       <section className="max-w-[1170px] mx-auto flex justify-between items-center">
+        {/* ***** Umeew Logo ***** */}
         <div>
           <img src={logo} alt="Umeew logo" />
         </div>
-        <ul className="flex justify-center gap-5 font-light">
-          <li className="hover:font-normal hover:text-secondary">
+        {/* ***** Navigation Routes ***** */}
+        <ul className="flex justify-center gap-5 font-light text-xl">
+          <li className="hover:font-medium hover:text-secondary">
             <Link to="/">Home</Link>
           </li>
           <li className="hover:font-normal hover:text-secondary">
@@ -39,6 +41,7 @@ const NavBar = () => {
             </ul>
           </li>
         </ul>
+        {/* ***** Contact Us Routes ***** */}
         <div>
           <Link to='/contact-us'><Button>Contact Us</Button></Link>
         </div>
