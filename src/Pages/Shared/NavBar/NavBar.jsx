@@ -1,8 +1,8 @@
 import React from "react";
 import logo from "../../../assets/umeew-logo.svg";
 import dropDownIcon from "../../../assets/icons/drop-down-icon.svg";
-import Button from "../../../components/Button/Button";
 import { Link } from "react-router-dom";
+import Button from './../../../Components/Button/Button';
 
 const NavBar = () => {
   return (

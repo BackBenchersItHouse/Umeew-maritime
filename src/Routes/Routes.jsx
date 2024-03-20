@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from '../Layout/Main';
-import DisplayError from '../components/DisplayError/DisplayError';
 import Home from "../Pages/Home/Home";
+import DisplayError from './../Components/DisplayError/DisplayError';
 
 const router = createBrowserRouter([
   {
