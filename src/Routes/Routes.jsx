@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from '../Layout/Main';
-import DisplayError from '../components/DisplayError/DisplayError';
+import DisplayError from '../components/DisplayError';
 import Home from "../Pages/Home/Home";
 
 const router = createBrowserRouter([
@@ -11,20 +11,20 @@ const router = createBrowserRouter([
       children: [
           {
               path: '/',
-              element: <Home></Home>
+              element: <Home />
           },
-        //   {
-        //       path: '/login',
-        //       element: <Login></Login>
-        //   },
-        //   {
-        //       path: '/about-us',
-        //       element: <AboutUs></AboutUs>
-        //   },
-        //   {
-        //       path: '/appointment',
-        //       element: <Service></Service>
-        //   }
+          // {
+          //     path: '/about-us',
+          //     element: <AboutUs />
+          // },
+          // {
+          //     path: '/service',
+          //     element: <Service />
+          // },
+          // {
+          //     path: '/blog',
+          //     element: <Blog />
+          // }
       ]
   },
 ]);

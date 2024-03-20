@@ -11,4 +11,5 @@ import './index.css';
 // );
 
 const container = document.getElementById('root');
+// const bodyContainer = document.getElementsByTagName('body');
 hydrateRoot(container, <App />,);

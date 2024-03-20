@@ -1,7 +1,7 @@
 import React from "react";
-// import logo from "../../../assets/umeew-logo.svg";
-import dropDownIcon from "../../../assets/icons/drop-down-icon.svg";
-import Button from "../../../components/Buttons/Button";
+import logo from "../../assets/umeew-logo.svg";
+import dropDownIcon from "../../assets/icons/drop-down-icon.svg";
+import Button from "../Buttons/Button";
 import { Link } from "react-router-dom";
 
 const NavBar = () => {
@@ -9,21 +9,21 @@ const NavBar = () => {
     <nav className="bg-primary py-2.5 text-white">
       <section className="max-w-[1170px] mx-auto flex justify-between items-center">
         <div>
-          <img src='' alt="Umeew logo" />
+          <img src={logo} alt="Umeew logo" />
         </div>
         <ul className="flex justify-center gap-5 font-light">
           <li className="hover:font-normal hover:text-secondary">
             <Link to="/">Home</Link>
           </li>
           <li className="hover:font-normal hover:text-secondary">
-            <Link to="/">About Us</Link>
+            <Link to="/about-us">About Us</Link>
           </li>
           <li className="hover:font-normal hover:text-secondary">
-            <Link to="/">Service</Link>
+            <Link to="/service">Service</Link>
           </li>
           <li className="group relative">
             <span className="flex items-center gap-2 hover:font-normal hover:text-secondary">
-              <Link to="/">Blog </Link>
+              <Link to="/blog">Blog </Link>
               <img
                 className="hover:font-normal hover:text-secondary"
                 src={dropDownIcon}
@@ -40,7 +40,7 @@ const NavBar = () => {
           </li>
         </ul>
         <div>
-          <Button>Contact Us</Button>
+          <Link to='/contact-us'><Button>Contact Us</Button></Link>
         </div>
       </section>
     </nav>
