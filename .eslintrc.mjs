@@ -2,7 +2,7 @@ module.exports = {
   root: true,
   env: { browser: true, es2020: true },
   extends: [
-    'eslint:recommended',
+    'eslint:recommended', // comment form require error
     'plugin:react/recommended',
     'plugin:react/jsx-runtime',
     'plugin:react-hooks/recommended',
