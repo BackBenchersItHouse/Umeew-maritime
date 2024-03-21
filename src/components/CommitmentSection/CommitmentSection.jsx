@@ -31,18 +31,23 @@ const CommitmentSection = () => {
     ]
     console.log(commitments)
     return (
-        <div className="text-center">
-            <h1 className="text-4xl font-bold">Our Commitment <br /> to Your Success</h1>
-            <div>
-                {commitments.map(commitment => console.log(commitment))}
+        <div className="text-center w-3/4 mx-auto my-10">
+            <h1 className="text-4xl font-bold mb-10">Our Commitment <br /> to Your Success</h1>
+            <div className="grid grid-cols-4 gap-10 ">
+                {commitments.map(commitment =><div className="text-left space-y-5">
+            <img src={CommitmentIcon} alt="" />
+            <h2 className="text-xl font-bold"> {commitment.title}</h2>
+            <p>{commitment.subTitle}</p>
+
+            </div> )}
             </div>
 
-            <div className="text-left">
+            {/* <div className="text-left">
             <img src={CommitmentIcon} alt="" />
             <h2 className="text-xl font-bold"> Competitive Rates</h2>
             <p>Our team of highly skilled and certified professionals possesses years of experience in all aspects of ship maintenance and repair</p>
 
-            </div>
+            </div> */}
             
         </div>
     );
