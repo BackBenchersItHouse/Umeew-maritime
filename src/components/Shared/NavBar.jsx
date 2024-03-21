@@ -6,14 +6,15 @@ import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
-    <nav className="bg-primary py-2.5 text-white">
+    <nav className="bg-primary py-5 text-white border-b-2 border-white/50">
       <section className="max-w-[1170px] mx-auto flex justify-between items-center">
         {/* ***** Umeew Logo ***** */}
-        <div>
+        <Link to="/">
           <img src={logo} alt="Umeew logo" />
-        </div>
+        </Link>
+
         {/* ***** Navigation Routes ***** */}
-        <ul className="flex justify-center gap-5 font-light text-xl">
+        <ul className="flex justify-center gap-5 font-light text-xl z-10">
           <li className="hover:font-medium hover:text-secondary">
             <Link to="/">Home</Link>
           </li>
@@ -26,25 +27,34 @@ const NavBar = () => {
           <li className="group relative">
             <span className="flex items-center gap-2 hover:font-normal hover:text-secondary">
               <Link to="/blog">Blog </Link>
-              <img
-                className="hover:font-normal hover:text-secondary"
-                src={dropDownIcon}
-                alt="menu drop down icon"
-              />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-6 h-6 group-hover:rotate-180"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                />
+              </svg>
             </span>
 
-            <ul
-              className="transition transform -translate-y-[72px] ease-in-out duration-1000 invisible absolute group-hover:visible group-hover:translate-y-5 border bg-primary w-32 divide-y divide-dashed -z-10">
-              <li className="px-5 py-2.5">Blog 1</li>
-              <li className="px-5 py-2.5">Blog 2</li>
-              <li className="px-5 py-2.5">Blog 3</li>
+            <ul className="blog-lists hover:visible -z-10">
+              <li className="cursor-pointer px-5 py-2.5"><Link to='blog1'>Blog 1</Link></li>
+              <li className="cursor-pointer px-5 py-2.5"><Link to='blog2'>Blog 2</Link></li>
+              <li className="cursor-pointer px-5 py-2.5"><Link to='blog2'>Blog 3</Link></li>
             </ul>
           </li>
         </ul>
+
         {/* ***** Contact Us Routes ***** */}
-        <div>
-          <Link to='/contact-us'><Button>Contact Us</Button></Link>
-        </div>
+        <Link to="/contact-us">
+          <Button>Contact Us</Button>
+        </Link>
       </section>
     </nav>
   );

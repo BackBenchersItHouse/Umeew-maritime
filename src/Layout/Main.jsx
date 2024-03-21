@@ -6,11 +6,9 @@ import Footer from '../components/Shared/Footer';
 const Main = () => {
     return (
         <>
-            {/* <NavBar></NavBar>
-             */}
             <NavBar />
-            <Outlet></Outlet>
-            <Footer></Footer>
+            <Outlet />
+            <Footer />
         </>
     );
 };
