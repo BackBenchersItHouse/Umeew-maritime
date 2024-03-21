@@ -2,7 +2,6 @@
 
 <div align="center">
   <img src="./src/assets/umeew-logo.svg" width="120px">
-  <h2>UMEEW</h2>
 </div>
 
 ## UMEEW
@@ -22,19 +21,22 @@ This app is developed by BackBenchers IT House!!
 - use : import React from 'react';
 - After build : node server/index.js (command terminal)
 
+[![Server Side Rendering vs Client Side Rendering | Create a React Project using SSR](https://www.youtube.com/watch?v=ZyeZnBEXn2o)](https://www.youtube.com/watch?v=ZyeZnBEXn2o)
+
 ### Colors - text/backgraound
 - 🖌  primary   : '#001B21'
 - 🖌  secondary : '#FF8C00'
 - 🖌  gray      : '#444444' 
 - 🖌  silver    : '#B9B9B9'
+- 🖌  Add new color => tailwind.config.js>theme>extend>colors && please add new color above ⤴
 
 ### Sizing
 - container    : 1440px
 - section wide : 1170px
 
 ### INSTRUCTIONS
-- assets for : img/icons
+- assets     : img/icons
 - components : small items, Like error page, dynamic items etc.
-- Layout for : react-router-dom layout
-- pages      : All pages create here
-- routes     : SPA routes setup
+- Layout     : react-router-dom layout
+- Pages      : All pages create here
+- Routes     : SPA routes setup here
