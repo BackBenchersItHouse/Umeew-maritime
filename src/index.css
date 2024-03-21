@@ -7,7 +7,11 @@
 
 /* *********************** Home Page Start *********************** */
 /* -------------- NavBar Section --------------  */
-
+@layer utilities{
+  .blog-lists{
+    @apply transition transform -translate-y-32 duration-1000 absolute -left-1/2 group-hover:visible group-hover:translate-y-5 bg-primary w-32 divide-y divide-dashed;
+  }
+}
 
 
 /* -------------- Banner Section --------------  */

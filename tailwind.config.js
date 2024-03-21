@@ -14,7 +14,46 @@ export default {
         'secondary': '#FF8C00',
         'gray': '#444444',
         'silver': '#B9B9B9',
-      }
+      },
+      /* ********** Animation Start ********** */
+      keyframes: {
+        'left-right': {
+          "0%": {
+            transform: "translateX(-50%)",
+            "100%": {
+              transform: "translateX(0)",
+            },
+          },
+        },
+        'right-left': {
+          "0%": {
+            transform: "translateX(50%)",
+            "100%": {
+              transform: "translateX(0)",
+            },
+          },
+        },
+        'bottom-top': {
+          "0%": {
+            transform: "translateY(50%)",
+            "100%": {
+              transform: "translateY(0)",
+            },
+          },
+        },
+      },
+      animation: {
+        'motion-lr-300ms': 'left-right 300ms linear',
+        'motion-lr-400ms': 'left-right 400ms linear',
+        'motion-lr-500ms': 'left-right 500ms linear',
+        'motion-lr-700ms': 'left-right 700ms linear',
+        'motion-lr-1s': 'left-right 1s linear',
+        'motion-rl-300ms': 'right-left 300ms linear',
+        'motion-rl-500ms': 'right-left 500ms linear',
+        'motion-rl-1s': 'right-left 1s linear',
+        'motion-bt-1s': 'bottom-top 1s linear',
+      },
+      /* ********** Animation End ********** */
     },
   },
   plugins: [],
