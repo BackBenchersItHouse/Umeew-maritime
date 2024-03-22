@@ -12,8 +12,8 @@ export default {
       colors: {
         'primary': '#001B21',
         'secondary': '#FF8C00',
-        'gray': '#444444',
-        'silver': '#B9B9B9',
+        'accent': '#444444',
+        'neutral': '#B9B9B9',
       },
       /* ********** Animation Start ********** */
       keyframes: {

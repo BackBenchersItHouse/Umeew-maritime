@@ -8,7 +8,7 @@ const Main = () => {
   return (
     <>
       {/* <NavBar /> */}
-      <header className="bg-primary sticky top-0 z-50 border-b border-silver/50">
+      <header className="bg-primary sticky top-0 z-50 border-b border-neutral/50">
         <NavBar_V2 />
       </header>
       <Outlet />

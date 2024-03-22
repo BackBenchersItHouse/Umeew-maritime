@@ -13,7 +13,7 @@ const Banner = () => {
             United Marine Engineering & Electrical Works: Your One-Stop Shop for
             All Ship Needs
           </h1>
-          <p className="text-xl pt-5 pb-12 text-silver animate-motion-lr-500ms">
+          <p className="text-xl pt-5 pb-12 text-neutral animate-motion-lr-500ms">
             Ensure smooth sailing with United Marine. We provide expert ship
             chandlery, repair (electrical & mechanical), supply, logistics, and
             export services. Get a free quote today!
