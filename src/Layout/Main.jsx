@@ -1,12 +1,16 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import NavBar from "@/components/Shared/NavBar";
-import Footer from "@/components/Shared/Footer";
+// import NavBar from '../components/Shared/NavBar';
+import Footer from "../components/Shared/Footer";
+import NavBar_V2 from "../components/Shared/NavBar_V2";
 
 const Main = () => {
   return (
     <>
-      <NavBar />
+      {/* <NavBar /> */}
+      <header className="bg-primary sticky top-0 z-50 border-b border-silver/50">
+        <NavBar_V2 />
+      </header>
       <Outlet />
       <Footer />
     </>

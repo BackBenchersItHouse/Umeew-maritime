@@ -6,7 +6,7 @@ import Button from "@/components/Buttons/Button";
 
 const Banner = () => {
   return (
-    <section className="bg-primary text-white">
+    <section className="bg-primary text-white -z-50">
       <div className="max-w-[1170px] mx-auto md:flex justify-between items-center gap-5 py-12 space-y-12">
         <div className="max-w-[592px] px-10 md:px-0">
           <h1 className="font-extrabold text-3xl md:text-5xl leading-normal capitalize animate-motion-rl-300ms md:animate-motion-lr-300ms">
@@ -37,7 +37,7 @@ const Banner = () => {
         </div>
         <div className="max-w-[470px] py-24 md:py-0 md:animate-motion-rl-1s">
           <img
-            className="block md:hidden h-96 animate-motion-lr-1s"
+            className="block md:hidden h-96 animate-motion-lr-300ms"
             src={BannerImgSm}
             alt="UMEEW Cargo Ship"
           />
