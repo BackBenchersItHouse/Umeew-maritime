@@ -13,16 +13,16 @@ const Footer = () => {
   return (
     <footer className="bg-primary text-neutral text-xl">
       <section className="">
-        <div className="flex justify-between py-16 max-w-[1170px] mx-auto px-5 md:px-0">
+        <div className="flex flex-col md:flex-row justify-between py-16 max-w-[1170px] mx-auto px-5 md:px-0">
           <section>
-            <h3 className="text-3xl text-secondary font-semibold mb-10">UMEEW</h3>
-            <ul className="my-6">
+            <h3 className="text-3xl text-secondary font-semibold">UMEEW</h3>
+            <ul className="my-10 md:my-6">
               <li className="flex items-center gap-2.5"><img className="pt-2" src={location} alt="Location icon" />Ultimate Data Protection</li>
               <li className="flex items-center gap-2.5"><img className="pt-2" src={email} alt="Email icon" />info@egistic.com</li>
               <li className="flex items-center gap-2.5"><img className="pt-2" src={phone} alt="Phone icon" />+88 0123456789</li>
             </ul>
           </section>
-          <div className="flex gap-40">
+          <div className="flex flex-col md:flex-row gap-10 md:gap-40">
             <section className="max-w-60">
               <h3 className="text-3xl text-secondary font-semibold mb-6">Quick Links</h3>
               <ul>
@@ -48,8 +48,8 @@ const Footer = () => {
         <div className="border border-neutral/20"></div>
 
         <div>
-          <section className="max-w-[1170px] mx-auto px-5 md:px-0 flex justify-between items-center mt-5 pb-10">
-            <p>© 2024 , All rights reserved.</p>
+          <section className="max-w-[1170px] mx-auto px-5 md:px-0 flex flex-col-reverse sm:flex-row gap-5 justify-between items-center mt-5 pb-10">
+            <p>&#169; 2024 , All rights reserved.</p>
             <div className="flex gap-3 items-center">
               <img src={fb} alt="Facebook icon" />
               <img src={ig} alt="Instagram icon" />
