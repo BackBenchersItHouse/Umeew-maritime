@@ -5,7 +5,7 @@ import AboutUs from "../Pages/AboutUs/AboutUs";
 import Service from "../Pages/Service/Service";
 import Blog from "../Pages/Blog/Blog";
 import ContactUs from "../Pages/ContactUs/ContactUs";
-import DisplayError from './../Components/DisplayError';
+import DisplayError from "@/components/DisplayError";
 
 const router = createBrowserRouter([
   {
@@ -18,20 +18,20 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: '/about-us',
-        element: <AboutUs />
+        path: "/about-us",
+        element: <AboutUs />,
       },
       {
-        path: '/service',
-        element: <Service />
+        path: "/service",
+        element: <Service />,
       },
       {
-        path: '/blog',
-        element: <Blog />
+        path: "/blog",
+        element: <Blog />,
       },
       {
-        path: '/contact-us',
-        element: <ContactUs />
+        path: "/contact-us",
+        element: <ContactUs />,
       },
     ],
   },
