@@ -7,12 +7,9 @@
 /* *********************** Home Page Start *********************** */
 /* -------------- NavBar Section --------------  */
 @layer utilities {
-  .blog-lists {
-    @apply transition transform -translate-y-[132px] duration-1000 absolute -left-1/2 group-hover:visible group-hover:translate-y-8 bg-primary w-32 divide-y divide-neutral/50;
-  }
-  .blog-lists-sm {
-    @apply overflow-hidden group-hover:translate-x-0 delay-300 group-hover:visible absolute top-12 -right-52 bg-primary w-[108vw];
-  }
+  /* .blog-lists {
+    @apply ;
+  } */
 
   .logo {
     @apply text-3xl text-secondary font-semibold;
@@ -39,7 +36,7 @@
   }
   
   .menu-btn {
-    @apply pr-5 order-6 block md:hidden;
+    @apply order-6 block md:hidden;
   }
 
   @media (max-width: 767px) {
@@ -74,6 +71,11 @@
 }
 
 /* -------------- Banner Section --------------  */
+@layer utilities{
+  .banner-img {
+    @apply absolute -right-full;
+  }
+}
 
 /* -------------- Our Commitment to Your Success --------------  */
 

@@ -6,10 +6,10 @@ import dropDownIcon from "../../assets/icons/drop-down-icon.svg";
 
 const NavBar_V2 = () => {
   return (
-    <nav>
-      <div className="logo">
+    <nav className="">
+      <Link to='/' className="">
         <img src={umeewLogo} alt="UMEEW Logo" />
-      </div>
+      </Link>
       {/* ***** Unusually use for flex justify-between ***** */}
       <input type="checkbox" className="hidden" id="none" />
       <label htmlFor="none" className="hidden">
@@ -54,11 +54,23 @@ const NavBar_V2 = () => {
         </li>
         <li>
           <Link className="inline-flex gap-2 items-center" to="/">
-            Blog
-            <input type="checkbox" id="click" />
-            <label htmlFor="click" className="menu-btn">
+            Page
+            {/* <input type="checkbox" id="clickDrop" />
+            <label htmlFor="clickDrop" className="clickDrop-btn">
               <img src={dropDownIcon} alt="Drop Down Icon" />
-            </label>
+            </label> */}
+            {/* ***** Navigation Routes for Page ***** */}
+            {/* <ul className="blog-lists -z-10 border border-neutral/50">
+                  <li className="cursor-pointer px-5 py-2.5">
+                    <Link to="blog1">Blog 1</Link>
+                  </li>
+                  <li className="cursor-pointer px-5 py-2.5">
+                    <Link to="blog2">Blog 2</Link>
+                  </li>
+                  <li className="cursor-pointer px-5 py-2.5">
+                    <Link to="blog2">Blog 3</Link>
+                  </li>
+            </ul> */}
           </Link>
         </li>
       </ul>

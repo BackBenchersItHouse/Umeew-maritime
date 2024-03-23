@@ -19,7 +19,7 @@ export default {
       keyframes: {
         'left-right': {
           "0%": {
-            transform: "translateX(-50%)",
+            transform: "translateX(-7%)",
             "100%": {
               transform: "translateX(0)",
             },
@@ -27,15 +27,18 @@ export default {
         },
         'right-left': {
           "0%": {
-            transform: "translateX(50%)",
+            transform: "translateX(7%)",
             "100%": {
               transform: "translateX(0)",
             },
           },
+          // to: {
+          //   transform: "TransformStreamDefaultController(-50%)",
+          // }
         },
         'bottom-top': {
           "0%": {
-            transform: "translateY(50%)",
+            transform: "translateY(7%)",
             "100%": {
               transform: "translateY(0)",
             },
