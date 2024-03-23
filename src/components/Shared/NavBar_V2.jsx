@@ -1,14 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Button from "../Buttons/Button";
-import umeewLogo from "../../assets/umeew-logo.svg";
+// import umeewLogo from "../../assets/umeew-logo.svg";
 import dropDownIcon from "../../assets/icons/drop-down-icon.svg";
 
 const NavBar_V2 = () => {
   return (
     <nav className="">
       <Link to='/' className="">
-        <img src={umeewLogo} alt="UMEEW Logo" />
+        {/* <img src={umeewLogo} alt="UMEEW Logo" /> */}
+        <h3 className="text-3xl text-secondary font-semibold">UMEEW</h3>
       </Link>
       {/* ***** Unusually use for flex justify-between ***** */}
       <input type="checkbox" className="hidden" id="none" />
