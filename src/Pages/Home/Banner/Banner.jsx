@@ -9,7 +9,7 @@ const Banner = () => {
     <section className="bg-primary text-white -z-50 px-5 md:px-0">
       <div className="max-w-[1170px] mx-auto md:flex justify-between items-center gap-5 py-12">
         <div className="max-w-[592px] mx-auto md:mx-0">
-          <h1 className="font-extrabold text-2xl md:text-5xl leading-normal capitalize animate-motion-rl-300ms md:animate-motion-lr-300ms">
+          <h1 className="font-extrabold text-2xl md:text-3xl lg:text-5xl leading-normal capitalize animate-motion-rl-300ms md:animate-motion-lr-300ms">
             United Marine Engineering & Electrical Works: Your One-Stop Shop for
             All Ship Needs
           </h1>

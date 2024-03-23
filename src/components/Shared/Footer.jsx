@@ -8,6 +8,7 @@ import fb from "../../assets/icons/fb.svg";
 import ig from "../../assets/icons/ig.svg";
 import x from "../../assets/icons/x.svg";
 import linkedin from "../../assets/icons/in.svg";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -17,28 +18,28 @@ const Footer = () => {
           <section>
             <h3 className="text-3xl text-secondary font-semibold">UMEEW</h3>
             <ul className="my-10 md:my-6">
-              <li className="flex items-center gap-2.5"><img className="pt-2" src={location} alt="Location icon" />Ultimate Data Protection</li>
-              <li className="flex items-center gap-2.5"><img className="pt-2" src={email} alt="Email icon" />info@egistic.com</li>
-              <li className="flex items-center gap-2.5"><img className="pt-2" src={phone} alt="Phone icon" />+88 0123456789</li>
+              <li><Link to='/' target="_blank" className="flex items-center gap-2.5"><img className="pt-2" src={location} alt="Location icon" />Ultimate Data Protection</Link></li>
+              <li><Link to='mailto:info@egistic.com' target="_blank" className="flex items-center gap-2.5"><img className="pt-2" src={email} alt="Email icon" />info@egistic.com</Link></li>
+              <li><Link to='tel:+880123456789' target="_blank" className="flex items-center gap-2.5"><img className="pt-2" src={phone} alt="Phone icon" />+88 0123456789</Link></li>
             </ul>
           </section>
           <div className="flex flex-col md:flex-row gap-10 md:gap-40">
             <section className="max-w-60">
               <h3 className="text-3xl text-secondary font-semibold mb-6">Quick Links</h3>
               <ul>
-                <li>About Us</li>
-                <li>Services</li>
-                <li>Track Your Shipment</li>
-                <li>Get a Quote</li>
+                <li><Link to='/about-us'>About Us</Link></li>
+                <li><Link to='/service'>Services</Link></li>
+                <li><Link to='/'>Track Your Shipment</Link></li>
+                <li><Link to='/'>Get a Quote</Link></li>
               </ul>
             </section>
             <section>
               <h3 className="text-3xl text-secondary font-semibold mb-6">Support</h3>
               <ul>
-                <li>Contact Us</li>
-                <li>Careers</li>
-                <li>Privacy Policy</li>
-                <li>Terms of Use</li>
+                <li><Link to='/contact-us'>Contact Us</Link></li>
+                <li><Link to='/'>Careers</Link></li>
+                <li><Link to='/'>Privacy Policy</Link></li>
+                <li><Link to='/'>Terms of Us</Link>e</li>
               </ul>
             </section>
           </div>
@@ -51,10 +52,10 @@ const Footer = () => {
           <section className="max-w-[1170px] mx-auto px-5 md:px-0 flex flex-col-reverse sm:flex-row gap-5 justify-between items-center mt-5 pb-10">
             <p>&#169; 2024 , All rights reserved.</p>
             <div className="flex gap-3 items-center">
-              <img src={fb} alt="Facebook icon" />
-              <img src={ig} alt="Instagram icon" />
-              <img src={x} alt="X icon" />
-              <img src={linkedin} alt="LinkedIn icon" />
+            <Link to='/'><img src={fb} alt="Facebook icon" /></Link>
+              <Link to='/'><img src={ig} alt="Instagram icon" /></Link>
+              <Link to='/'><img src={x} alt="X icon" /></Link>
+              <Link to='/'><img src={linkedin} alt="LinkedIn icon" /></Link>
             </div>
           </section>
         </div>
