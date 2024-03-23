@@ -45,7 +45,7 @@ const NavBar_V2 = () => {
           </Link>
         </li>
       </ul>
-      <Link className="contact" to='/'>
+      <Link className="contact" to='/contact-us'>
         <Button >Contact Us</Button>
       </Link>
     </nav>
