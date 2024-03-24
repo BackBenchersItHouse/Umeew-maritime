@@ -1,10 +1,8 @@
 import React from "react";
 
-import Typewriter from 'typewriter-effect';
-
-// import "@/style/global.css";
-import { Helmet, HelmetProvider } from "react-helmet-async";
+import "../components/Style/Umeew.css"
 import ReactWhatsapp from 'react-whatsapp';
+import { Helmet, HelmetProvider } from "react-helmet-async";
 const ContactUsPage = () => {
   return (
     <div className="main-div">
@@ -20,40 +18,19 @@ const ContactUsPage = () => {
       <div className="part-1-2 my-10 ">
   
         <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-10">
-          <div className="part1 basis-1/2   p-8 rounded-xl shadow-md">
-          <h1 className="text-4xl font-semibold my-10 text-center">
-          <Typewriter
-  onInit={(typewriter) => {
-    const message = 'Leave A Message';
-    let deleteInterval;
-    
-    function typeAndDelete() {
-      typewriter.typeString(message)
-        .pauseFor(500)
-        .deleteAll()
-        .callFunction(() => {
-          deleteInterval = setInterval(() => {
-            typewriter.typeString(message)
-              .pauseFor(100)
-              .deleteAll()
-              .start();
-          }, 2000); // Change the interval as per your preference
-        })
-        .start();
-    }
-
-    typeAndDelete(); // Call the function initially
-  }}
-/>
+          <div className="part1 basis-1/2 flex flex-col items-center  p-8 rounded-xl shadow-md">
+          <h1 className="typewriter-anim   lg:text-4xl md:text-4xl text-3xl font-semibold my-10 text-center">
+          Leave A Message
+        
             
         </h1>
             <form
               action=""
               method="POST"
-              className="w-full max-w-lg"
+              className="w-full max-w-lg "
             >
-              <div className="flex flex-wrap -mx-3 mb-6">
-                <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+              <div className="flex flex-wrap  -mx-3 mb-6">
+                <div className="w-full md:w-1/2  px-3 mb-6 md:mb-0">
                  
                   <input
                     className="appearance-none block w-full text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none bg-transparent "
@@ -76,8 +53,8 @@ const ContactUsPage = () => {
                   />
                 </div>
               </div>
-              <div className="flex flex-wrap -mx-3 mb-6">
-                <div className="w-full px-3 md:w-1/2">
+              <div className="flex flex-wrap -mx-3 mb-6 md:mb-0">
+                <div className="w-full px-3 md:w-1/2 mb-6 md:mb-0">
         
                   <input
                     className="appearance-none block w-full text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none bg-transparent "
@@ -88,7 +65,7 @@ const ContactUsPage = () => {
                     required
                   />
                 </div>
-                <div className="w-full px-3 md:w-1/2">
+                <div className="w-full px-3 md:w-1/2 mb-6 md:mb-0">
               
                   <input
                     className="appearance-none block w-full text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none bg-transparent "
@@ -120,30 +97,9 @@ const ContactUsPage = () => {
         
        
             <div className="  part2    text-2xl basis-2/3  p-8 rounded-xl shadow-md">
-            <h1 className="text-4xl font-semibold my-10 text-center">
-            <Typewriter
-  onInit={(typewriter) => {
-    const message = 'Get Closer With Us';
-    let deleteInterval;
-    
-    function typeAndDelete() {
-      typewriter.typeString(message)
-        .pauseFor(500)
-        .deleteAll()
-        .callFunction(() => {
-          deleteInterval = setInterval(() => {
-            typewriter.typeString(message)
-              .pauseFor(200)
-              .deleteAll()
-              .start();
-          }, 2000); // Change the interval as per your preference
-        })
-        .start();
-    }
-
-    typeAndDelete(); // Call the function initially
-  }}
-/>
+            <h1 className="typewriter-anim   lg:text-4xl md:text-4xl text-3xl font-semibold my-10 text-center">
+              Get Closer With Us
+        
               
               </h1>
         <p className=" text-sm    pr-4 text-gray ">
@@ -274,32 +230,12 @@ const ContactUsPage = () => {
 {/* map */}
       <div className="part3 my-16 ">
         <div className="">
-        <h1 className="text-4xl font-semibold my-10 text-center">
-        <Typewriter
-  onInit={(typewriter) => {
-    const message = 'Find Us On Google Map';
-    let deleteInterval;
-    
-    function typeAndDelete() {
-      typewriter.typeString(message)
-        .pauseFor(500)
-        .deleteAll()
-        .callFunction(() => {
-          deleteInterval = setInterval(() => {
-            typewriter.typeString(message)
-              .pauseFor(200)
-              .deleteAll()
-              .start();
-          }, 2000); // Change the interval as per your preference
-        })
-        .start();
-    }
+        <h1 className=" typewriter-anim   lg:text-4xl md:text-4xl text-3xl font-semibold my-10 text-center">
+        Find Us On Google Map
+</h1>
 
-    typeAndDelete(); // Call the function initially
-  }}
-/>
-          
-          </h1>
+
+
           <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.817511993117!2d91.77688477391928!3d22.32274034208425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30acdf36d2d89ee9%3A0xc928c75ddd6fa59a!2sUnited%20Marine%20Engineering%20and%20Electrical%20Works!5e0!3m2!1sen!2sbd!4v1711208148165!5m2!1sen!2sbd"
             style={{ border: "" }}
