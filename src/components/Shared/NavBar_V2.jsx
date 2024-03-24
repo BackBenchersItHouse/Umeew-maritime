@@ -7,7 +7,7 @@ import dropDownIcon from "../../assets/icons/drop-down-icon.svg";
 const NavBar_V2 = () => {
   return (
     <nav className="">
-      <Link to='/' className="">
+      <Link to="/" className="">
         {/* <img src={umeewLogo} alt="UMEEW Logo" /> */}
         <h3 className="text-3xl text-secondary font-semibold">UMEEW</h3>
       </Link>
@@ -53,26 +53,14 @@ const NavBar_V2 = () => {
             Service
           </Link>
         </li>
-        <li>
-          <Link className="inline-flex gap-2 items-center" to="/">
-            Page
-            {/* <input type="checkbox" id="clickDrop" />
-            <label htmlFor="clickDrop" className="clickDrop-btn">
-              <img src={dropDownIcon} alt="Drop Down Icon" />
-            </label> */}
-            {/* ***** Navigation Routes for Page ***** */}
-            {/* <ul className="blog-lists -z-10 border border-neutral/50">
-                  <li className="cursor-pointer px-5 py-2.5">
-                    <Link to="blog1">Blog 1</Link>
-                  </li>
-                  <li className="cursor-pointer px-5 py-2.5">
-                    <Link to="blog2">Blog 2</Link>
-                  </li>
-                  <li className="cursor-pointer px-5 py-2.5">
-                    <Link to="blog2">Blog 3</Link>
-                  </li>
-            </ul> */}
-          </Link>
+        <li className="relative group">
+          <Link className="" to="/">Page +</Link>
+          
+          <ul className="sub-pages group-hover:block transition">
+            <li className=""><Link to='/afk'>Page 1</Link></li>
+            <li className=""><Link to='/afk'>Page 2</Link></li>
+            <li className=""><Link to='/afk'>Page 3</Link></li>
+          </ul>
         </li>
       </ul>
 

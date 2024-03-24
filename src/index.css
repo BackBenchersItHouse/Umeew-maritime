@@ -6,19 +6,29 @@
 
 /* *********************** Home Page Start *********************** */
 /* -------------- NavBar Section --------------  */
-@layer utilities {
-  /* .blog-lists {
-    @apply ;
-  } */
-
+@layer components{
   .logo {
     @apply text-3xl text-secondary font-semibold;
   }
-  .contact {
-    @apply hidden md:block;
-    /* order-7 */
+
+/* Navigation Lists */
+  .menu-btn {
+    @apply order-6 block md:hidden;
+  }
+  .sub-pages {
+    @apply absolute top-[65px] left-0 w-full hidden -z-10;
+  }
+  .sub-pages li {
+    @apply w-full md:w-56 bg-primary/90 backdrop-blur-3xl border;
   }
 
+/* Contact Us */
+  .contact {
+    @apply hidden md:block;
+  };
+}
+
+@layer utilities {
   .smooth-bg {
     transition: all 0.3s ease;
   }
@@ -35,9 +45,7 @@
     outline: #fff solid 1px;
   }
   
-  .menu-btn {
-    @apply order-6 block md:hidden;
-  }
+
 
   @media (max-width: 767px) {
     nav ul {
@@ -68,13 +76,15 @@
   nav ul li a {
     @apply text-white font-medium tracking-[1px] py-2.5 px-5 smooth-bg text-xl md:hover:bg-secondary md:text-lg md:hover:nav-outline hover:font-semibold block;
   }
+
 }
 
 /* -------------- Banner Section --------------  */
-@layer utilities{
+@layer components{
   .banner-img {
     @apply absolute -right-full;
   }
+
 }
 
 /* -------------- Our Commitment to Your Success --------------  */
