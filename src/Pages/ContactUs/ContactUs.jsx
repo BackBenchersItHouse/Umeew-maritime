@@ -1,10 +1,11 @@
 import React from 'react';
-import ContactUsPage from '../../components/Shared/ContactUsPage';
+import ContactUsPage from '../../components/ContactUsPage';
+
 
 const ContactUs = () => {
   return (
     <div>
- <ContactUsPage></ContactUsPage>
+<ContactUsPage></ContactUsPage>
     </div>
   );
 };
