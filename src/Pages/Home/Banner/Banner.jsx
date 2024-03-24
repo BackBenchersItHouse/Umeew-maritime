@@ -1,8 +1,8 @@
 import React from "react";
-import Button from "../../../components/Buttons/Button";
 import { Link } from "react-router-dom";
 import BannerImgSm from "../../../assets/banner-img-sm.png";
 import BannerImg from "../../../assets/banner-img-no-radius.svg";
+import Button from './../../../Components/Buttons/Button';
 
 const Banner = () => {
   return (

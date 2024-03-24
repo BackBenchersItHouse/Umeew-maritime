@@ -1,5 +1,7 @@
 import React from 'react';
 import Banner from './Banner/Banner';
+import CommitmentSection from '../../Components/CommitmentSection/CommitmentSection';
+
 
 const Home = () => {
   return (
@@ -9,6 +11,7 @@ const Home = () => {
         {/* Children Width 1170px  */}
       </main>
       {/* Contact Our Team section, jodi footer hiseve na dhoro tahole akhane import here!!! */}
+      <CommitmentSection/>
     </>
   );
 };
