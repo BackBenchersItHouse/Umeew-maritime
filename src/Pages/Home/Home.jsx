@@ -12,7 +12,6 @@ const Home = () => {
       <Banner />
       <main className='max-w-[1440px] mx-auto px-5 md:px-0'>
         {/* Children Width 1170px  */}
-        <div className='h-screen'>delete befor git push</div>
         
       </main>
       <FooterMessage {...props} />
