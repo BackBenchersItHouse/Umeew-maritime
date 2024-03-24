@@ -1,6 +1,6 @@
 import React from 'react';
-import Banner from './Banner/Banner';
-import FooterMessage from '../../components/Shared/FooterMessage';
+import Banner from './Banner/Banner'; 
+import FooterMessage from '@/components/Shared/FooterMessage';
 
 const Home = () => {
   const props = {

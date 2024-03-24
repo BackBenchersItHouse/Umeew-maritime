@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Button from "../Buttons/Button";
+import Button from "@/components/Buttons/Button";
 // import umeewLogo from "../../assets/umeew-logo.svg";
-import dropDownIcon from "../../assets/icons/drop-down-icon.svg";
 
 const NavBar_V2 = () => {
   return (
