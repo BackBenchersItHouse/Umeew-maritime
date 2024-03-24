@@ -1,6 +1,6 @@
 import React from "react";
 import Banner from "./Banner/Banner";
-import FooterMessage from "@/components/Shared/FooterMessage";
+import ModularContent from "@/components/Shared/ModularContent";
 
 const Home = () => {
   const props = {
@@ -13,7 +13,7 @@ const Home = () => {
       <main className="max-w-[1440px] mx-auto px-5 md:px-0">
         {/* Children Width 1170px  */}
       </main>
-      <FooterMessage {...props} />
+      <ModularContent {...props} />
     </>
   );
 };
