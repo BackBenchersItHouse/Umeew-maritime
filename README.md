@@ -26,8 +26,8 @@ This app is developed by BackBenchers IT House!!
 ### Colors - text/backgraound
 - 🖌  primary   : '#001B21'
 - 🖌  secondary : '#FF8C00'
-- 🖌  gray      : '#444444' 
-- 🖌  silver    : '#B9B9B9'
+- 🖌  accent      : '#444444' 
+- 🖌  neutral    : '#B9B9B9'
 - 🖌  Add new color => tailwind.config.js>theme>extend>colors && please add new color above ⤴
 
 ### Sizing

@@ -1,20 +1,31 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Button from "../Buttons/Button";
+import Button from "@/components/Buttons/Button";
+// import umeewLogo from "../../assets/umeew-logo.svg";
 
 const NavBar_V2 = () => {
   return (
     <nav className="">
-      <div className="logo">UMEEW</div>
-      <input type="checkbox" id="click" />
-      <label htmlFor="click" className="menu-btn pr-5">
+      <Link to="/" className="">
+        {/* <img src={umeewLogo} alt="UMEEW Logo" /> */}
+        <h3 className="text-3xl text-secondary font-semibold">UMEEW</h3>
+      </Link>
+      {/* ***** Unusually use for flex justify-between ***** */}
+      <input type="checkbox" className="hidden" id="none" />
+      <label htmlFor="none" className="hidden">
+        Unusually for flex justify-between align
+      </label>
+
+      {/* ***** Mobile responsive icon ***** */}
+      <input type="checkbox" id="click" className="order-5" />
+      <label htmlFor="click" className="menu-btn">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="w-8 h-8 cursor-pointer block md:hidden rotate-180 stroke-white stroke-2"
+          className="w-8 h-8 cursor-pointer block  rotate-180 stroke-white stroke-2"
         >
           <path
             strokeLinecap="round"
@@ -23,6 +34,8 @@ const NavBar_V2 = () => {
           />
         </svg>
       </label>
+
+      {/* ***** Navigation Routes ***** */}
       <ul>
         <li>
           <Link className="here" to="/">
@@ -30,21 +43,34 @@ const NavBar_V2 = () => {
           </Link>
         </li>
         <li>
-          <Link className="" to="about-us">
-            About
+          <Link className="" to="/about-us">
+            About Us
           </Link>
         </li>
         <li>
-          <Link className="" to="/">
-            Services
+          <Link className="" to="/service">
+            Service
           </Link>
         </li>
-        <li>
+        <li className="relative group">
           <Link className="" to="/">
-            Blog
+            Page +
           </Link>
+
+          <ul className="sub-pages group-hover:block transition">
+            <li className="">
+              <Link to="/afk">Page 1</Link>
+            </li>
+            <li className="">
+              <Link to="/afk">Page 2</Link>
+            </li>
+            <li className="">
+              <Link to="/afk">Page 3</Link>
+            </li>
+          </ul>
         </li>
       </ul>
+
       <Link className="contact" to="/contact-us">
         <Button>Contact Us</Button>
       </Link>

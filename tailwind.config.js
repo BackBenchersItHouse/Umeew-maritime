@@ -12,14 +12,14 @@ export default {
       colors: {
         'primary': '#001B21',
         'secondary': '#FF8C00',
-        'gray': '#444444',
-        'silver': '#B9B9B9',
+        'accent': '#444444',
+        'neutral': '#B9B9B9',
       },
       /* ********** Animation Start ********** */
       keyframes: {
         'left-right': {
           "0%": {
-            transform: "translateX(-50%)",
+            transform: "translateX(-7%)",
             "100%": {
               transform: "translateX(0)",
             },
@@ -27,15 +27,18 @@ export default {
         },
         'right-left': {
           "0%": {
-            transform: "translateX(50%)",
+            transform: "translateX(7%)",
             "100%": {
               transform: "translateX(0)",
             },
           },
+          // to: {
+          //   transform: "TransformStreamDefaultController(-50%)",
+          // }
         },
         'bottom-top': {
           "0%": {
-            transform: "translateY(50%)",
+            transform: "translateY(7%)",
             "100%": {
               transform: "translateY(0)",
             },
