@@ -30,7 +30,7 @@ const NavBar_V2 = () => {
           </Link>
         </li>
         <li>
-          <Link className="" to="/">
+          <Link className="" to="about-us">
             About
           </Link>
         </li>
@@ -45,8 +45,8 @@ const NavBar_V2 = () => {
           </Link>
         </li>
       </ul>
-      <Link className="contact" to='/contact-us'>
-        <Button >Contact Us</Button>
+      <Link className="contact" to="/contact-us">
+        <Button>Contact Us</Button>
       </Link>
     </nav>
   );
