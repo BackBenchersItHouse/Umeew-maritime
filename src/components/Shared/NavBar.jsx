@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const NavBar = () => {
   return (
     <nav className="bg-primary sticky top-0">
-      <section className="bg-primary py-5 px-5 md:px-0 text-white border-b-2 border-silver/50">
+      <section className="bg-primary py-5 px-5 md:px-0 text-white border-b-2 border-neutral/50">
         <div className="max-w-[1170px] md:mx-auto flex justify-between items-center">
           {/* ***** Umeew Logo ***** */}
           <Link to="/">
@@ -43,7 +43,7 @@ const NavBar = () => {
                   />
                 </svg>
               </span>
-              <ul className="blog-lists -z-10 border border-silver/50">
+              <ul className="blog-lists -z-10 border border-neutral/50">
                 <li className="cursor-pointer px-5 py-2.5">
                   <Link to="blog1">Blog 1</Link>
                 </li>
@@ -72,7 +72,7 @@ const NavBar = () => {
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="w-8 h-8 stroke-silver rotate-180"
+              className="w-8 h-8 stroke-neutral rotate-180"
             >
               <path
                 strokeLinecap="round"
@@ -83,21 +83,21 @@ const NavBar = () => {
             {/* ***** Navigation Routes sm ***** */}
             <ul className="blog-lists-sm pt-1 -z-10 font-light text-xl md:hidden">
               <Link to="/">
-                <li className="select-none border-b border-silver/50 hover:font-medium hover:text-secondary md:hidden block py-5">
+                <li className="select-none border-b border-neutral/50 hover:font-medium hover:text-secondary md:hidden block py-5">
                   Home
                 </li>
               </Link>
               <Link to="/about-us">
-                <li className="select-none border-b border-silver/50 hover:font-normal hover:text-secondary md:hidden block py-5">
+                <li className="select-none border-b border-neutral/50 hover:font-normal hover:text-secondary md:hidden block py-5">
                   About Us
                 </li>
               </Link>
               <Link to="/service">
-                <li className="select-none border-b border-silver/50 hover:font-normal hover:text-secondary md:hidden block py-5">
+                <li className="select-none border-b border-neutral/50 hover:font-normal hover:text-secondary md:hidden block py-5">
                   Service
                 </li>
               </Link>
-              <li className="relative border-b border-silver/50 md:hidden block py-5">
+              <li className="relative border-b border-neutral/50 md:hidden block py-5">
                 <span className="select-none hover:font-normal hover:text-secondary">
                   Blog
                   {/* <svg
@@ -115,7 +115,7 @@ const NavBar = () => {
                     />
                   </svg> */}
                 </span>
-                {/* <ul className="blog-lists -z-10 border border-silver/50">
+                <ul className="blog-lists -z-10 border border-neutral/50">
                   <li className="cursor-pointer px-5 py-2.5">
                     <Link to="blog1">Blog 1</Link>
                   </li>
@@ -125,7 +125,7 @@ const NavBar = () => {
                   <li className="cursor-pointer px-5 py-2.5">
                     <Link to="blog2">Blog 3</Link>
                   </li>
-                </ul> */}
+                </ul>
               </li>
             </ul>
           </div>
