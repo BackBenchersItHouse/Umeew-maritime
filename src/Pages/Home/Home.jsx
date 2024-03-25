@@ -1,22 +1,22 @@
-import React from 'react';
-import Banner from './Banner';
-import ModularContent from '@/components/ModularContent';
-import OurCommitment from './OurCommitment';
-import OurServices from './OurServices';
+import React from "react";
+import Banner from "./Banner";
+import ModularContent from "@/components/ModularContent";
+import OurCommitment from "./OurCommitment";
+import OurServices from "./OurServices";
 
 const Home = () => {
   const props = {
-    btn: 'Contact Our Team',
-    // description: 'Ready to experience the United Marine Engineering & Electrical Works difference? Contact us today and let our experts chart a course for your success!',
+    btn: "Contact Our Team",
   };
   return (
     <>
       <Banner />
-      <main className='max-w-[1170px] mx-auto px-5 md:px-2'>
+      <main className="max-w-[1170px] mx-auto px-5 md:px-2">
         {/* Children Width 1170px  */}
         <OurCommitment />
         <OurServices />
       </main>
+      {/* ***** Dynamic section ***** */}
       <ModularContent {...props} />
     </>
   );
