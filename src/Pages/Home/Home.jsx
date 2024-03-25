@@ -6,7 +6,7 @@ import OurServices from './OurServices';
 
 const Home = () => {
   const props = {
-    btn: 'Contact Our Team',
+    btn: "Contact Our Team",
     // description: 'Ready to experience the United Marine Engineering & Electrical Works difference? Contact us today and let our experts chart a course for your success!',
   };
   return (

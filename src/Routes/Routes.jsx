@@ -11,27 +11,27 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Main />,
-    errorElement: <DisplayError />,
+    errorElement: <DisplayError/>,
     children: [
       {
         path: "/",
         element: <Home />,
       },
       {
-        path: '/about-us',
-        element: <AboutUs />
+        path: "/about-us",
+        element: <AboutUs />,
       },
       {
-        path: '/service',
-        element: <Service />
+        path: "/service",
+        element: <Service />,
       },
       {
-        path: '/blog',
-        element: <Blog />
+        path: "/blog",
+        element: <Blog />,
       },
       {
-        path: '/contact-us',
-        element: <ContactUs />
+        path: "/contact-us",
+        element: <ContactUs />,
       },
     ],
   },
