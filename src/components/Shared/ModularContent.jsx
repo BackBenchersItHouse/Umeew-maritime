@@ -3,7 +3,7 @@ import footerMsgBg from "../../assets/contact-bg-img.svg";
 import Button from "../Buttons/Button";
 import { Link } from "react-router-dom";
 
-const FooterMessage = ({ description, btn }) => {
+const ModularContent = ({ description, btn }) => {
   return (
     // if no props, then only show bg img. if no need img when no props then remove h-[440px] in section className attribute.
     <section
@@ -24,4 +24,4 @@ const FooterMessage = ({ description, btn }) => {
   );
 };
 
-export default FooterMessage;
+export default ModularContent;

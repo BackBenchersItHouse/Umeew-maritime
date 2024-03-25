@@ -1,6 +1,6 @@
 import React from 'react';
 import Banner from './Banner/Banner'; 
-import FooterMessage from '@/components/Shared/FooterMessage';
+import ModularContent from '@/components/Shared/ModularContent';
 
 const Home = () => {
   const props = {
@@ -14,7 +14,7 @@ const Home = () => {
         {/* Children Width 1170px  */}
         
       </main>
-      <FooterMessage {...props} />
+      <ModularContent {...props} />
     </>
   );
 };
