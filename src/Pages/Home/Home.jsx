@@ -1,6 +1,6 @@
 import React from 'react';
 import Banner from './Banner/Banner'; 
-import ModularContent from '@/components/Shared/ModularContent';
+import ModularContent from '@/components/ModularContent';
 
 const Home = () => {
   const props = {

@@ -105,8 +105,9 @@ const NavBar_V2 = () => {
             </Link>
           </li>
           <SubNavLinks />
-          <Link className="fixed bottom-[20%]" to="/contact-us">
-            <Button>Contact Us</Button>
+
+          <Link to="/contact-us">
+            <Button divClass="fixed top-[500px]">Contact Us</Button>
           </Link>
         </ul>
       </div>
