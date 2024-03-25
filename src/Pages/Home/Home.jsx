@@ -1,6 +1,8 @@
 import React from 'react';
-import Banner from './Banner/Banner'; 
+import Banner from './Banner';
 import ModularContent from '@/components/ModularContent';
+import OurCommitment from './OurCommitment';
+import OurServices from './OurServices';
 
 const Home = () => {
   const props = {
@@ -10,9 +12,10 @@ const Home = () => {
   return (
     <>
       <Banner />
-      <main className='max-w-[1440px] mx-auto px-5 md:px-0'>
+      <main className='max-w-[1170px] mx-auto px-5 md:px-2'>
         {/* Children Width 1170px  */}
-        
+        <OurCommitment />
+        <OurServices />
       </main>
       <ModularContent {...props} />
     </>
