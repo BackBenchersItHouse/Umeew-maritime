@@ -6,7 +6,7 @@ import BannerImg from "@/assets/banner-img-no-radius.svg";
 
 const Banner = () => {
   return (
-    <section className="bg-primary text-white -z-50 px-5 md:px-0">
+    <section className="bg-primary text-white -z-50 px-5 md:px-2">
       <div className="max-w-[1170px] mx-auto md:flex justify-between items-center gap-5 py-12">
         <div className="max-w-[592px] mx-auto md:mx-0">
           <h1 className="font-extrabold text-2xl md:text-3xl lg:text-5xl leading-normal capitalize animate-motion-rl-300ms md:animate-motion-lr-300ms">

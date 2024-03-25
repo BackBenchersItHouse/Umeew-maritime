@@ -15,6 +15,10 @@ export default {
         'accent': '#444444',
         'neutral': '#B9B9B9',
       },
+      screens: {
+        'xl': '1170px',
+        // => @media (min-width: 1170px) { ... }
+      },
       /* ********** Animation Start ********** */
       keyframes: {
         'left-right': {
@@ -54,7 +58,7 @@ export default {
         'motion-rl-300ms': 'right-left 300ms linear',
         'motion-rl-500ms': 'right-left 500ms linear',
         'motion-rl-1s': 'right-left 1s linear',
-        'motion-bt-1s': 'bottom-top 1s linear',
+        'motion-bt-1s': 'bottom-top 300ms linear',
       },
       /* ********** Animation End ********** */
     },
