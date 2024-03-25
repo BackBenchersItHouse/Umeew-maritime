@@ -25,7 +25,7 @@ const ContactUsPage = () => {
         <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-10">
 {/* part one div form section basically */}
           <div className="part1 basis-1/2 flex flex-col items-center  p-8 rounded-xl shadow-md">
-          <h1 className="typewriter-anim   lg:text-4xl md:text-4xl text-3xl font-semibold my-10 text-center">
+          <h1 className="typewriter-anim   lg:text-4xl md:text-3xl text-2xl font-semibold my-10 text-center">
           Leave A Message
         
             
@@ -103,7 +103,7 @@ const ContactUsPage = () => {
         
    {/* part two div information section basically */}    
             <div className="  part2    text-2xl basis-2/3  p-8 rounded-xl shadow-md">
-            <h1 className="typewriter-anim   lg:text-4xl md:text-4xl text-3xl font-semibold my-10 text-center">
+            <h1 className="typewriter-anim   lg:text-4xl md:text-3xl text-2xl font-semibold my-10 text-center">
               Get Closer With Us
         
               
@@ -237,7 +237,7 @@ const ContactUsPage = () => {
 {/* part three div map section basically */}
       <div className="part3 my-16 ">
         <div className="">
-        <h1 className=" typewriter-anim   lg:text-4xl md:text-4xl text-3xl font-semibold my-10 text-center">
+        <h1 className=" typewriter-anim   lg:text-4xl md:text-3xl text-2xl font-semibold my-10 text-center">
         Find Us On Google Map
 </h1>
 
