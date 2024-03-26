@@ -122,14 +122,14 @@ const AboutUs = () => {
             United Marine Engineering & Electrical Works: A Symphony of
             Expertise
           </p>
-          <div className="flex flex-wrap justify-center gap-8">
+          {/* <div className="flex flex-wrap justify-center gap-8">
             {works.map((work) => (
               // <CommitmentCard data={work} />
 
 
               <Card data={work} />
             ))}
-          </div>
+          </div> */}
         </section>
         {/* Bottom */}
       </div>
