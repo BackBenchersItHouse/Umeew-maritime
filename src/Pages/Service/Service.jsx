@@ -118,7 +118,10 @@ const Service = () => {
         </p>
         <div className="flex flex-wrap justify-around gap-8">
           {services.map((service) => (
-            <Card data={service} />
+            <div key={service.id}>
+              <Card data={service} />
+            </div>
+            // console.log(service.iconSrc)
           ))}
         </div>
       </section>

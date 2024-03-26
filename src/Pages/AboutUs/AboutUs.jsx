@@ -123,8 +123,10 @@ const AboutUs = () => {
             Expertise
           </p>
           <div className="flex flex-wrap justify-center gap-8">
-            {works.map((work) => (
-              <Card data={work} />
+            {works.map((work, idx) => (
+              <div key={idx}>
+                <Card data={work} />
+              </div>
             ))}
           </div>
         </section>
