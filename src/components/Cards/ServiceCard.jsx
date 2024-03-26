@@ -10,6 +10,12 @@ const ServiceCard = ({ services }) => {
       {services?.map((service, idx) => {
         return (
           <div
+            // for: grid layout dynamic responsive
+            // className={`py-5 px-4 border border-accent/20 shadow-lg hover:-translate-y-1 duration-300 hover:border-b-4 hover:border-b-secondary ${
+            //   idx === 3 ? "lg:col-start-1 lg:col-end-2" : ""
+            // } ${
+            //   idx === 4 ? "lg:col-end-4 lg:col-span-1" : ""
+            // }`}
             className="py-5 px-4 border border-accent/20 shadow-lg hover:-translate-y-1 duration-300 hover:border-b-4 hover:border-b-secondary"
             key={idx}
           >
