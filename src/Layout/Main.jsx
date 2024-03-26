@@ -1,8 +1,8 @@
+import Footer from "@/Components/Shared/Footer";
+import NavBar_V2 from "@/Components/Shared/NavBar_V2";
 import React from "react";
 import { Outlet } from "react-router-dom";
-// import NavBar from "@/components/Shared/NavBar";
-import NavBar_V2 from "@/components/Shared/NavBar_V2";
-import Footer from "@/components/Shared/Footer";
+// import NavBar from "@/components/Shared/NavBar"import Footer from "@/Components/Shared/Footer";
 
 const Main = () => {
   return (
@@ -12,7 +12,7 @@ const Main = () => {
         <NavBar_V2 />
       </header>
       <Outlet />
-      <Footer />
+      <Footer/>
     </>
   );
 };

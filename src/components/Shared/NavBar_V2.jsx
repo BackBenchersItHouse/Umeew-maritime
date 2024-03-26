@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Button from "@/components/Buttons/Button";
+import Button from "../Buttons/Button";
 // import umeewLogo from "../../assets/umeew-logo.svg";
 
 const NavBar_V2 = () => {
