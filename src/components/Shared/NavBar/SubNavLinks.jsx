@@ -25,7 +25,7 @@ const SubNavLinks = () => {
   ];
   return (
     <>
-      {links.map((link, idx) => (
+      {links?.map((link, idx) => (
         <div key={idx}>
           <div className="text-left md:cursor-pointer group">
             <h3
@@ -49,13 +49,10 @@ const SubNavLinks = () => {
                     <div className="bg-primary/80 backdrop-blur-3xl w-4 h-4 hidden md:block absolute left-3 mt-1.5 rotate-45"></div>
                   </div>
                   <div className="bg-primary md:bg-primary/95 backdrop-blur-3xl w-full md:w-64 py-2.5 px-5 md:p-3.5">
-                    {link.subLinks.map((subLink, idx) => {
+                    {link?.subLinks?.map((subLink, idx) => {
                       return (
-                        <Link to={subLink.path}>
-                          <li
-                            className="text-lg text-neutral py-2.5 px-5 md:px-0 hover:text-secondary border-b border-neutral/20 hover:border-secondary capitalize"
-                            key={idx}
-                          >
+                        <Link to={subLink.path} key={idx}>
+                          <li className="text-lg text-neutral py-2.5 px-5 md:px-0 hover:text-secondary border-b border-neutral/20 hover:border-secondary capitalize">
                             {subLink.subPathName}
                           </li>
                         </Link>

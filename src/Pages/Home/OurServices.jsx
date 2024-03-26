@@ -1,4 +1,4 @@
-import ServiceCard from "@/components/Cards/ServiceCard";
+// import ServiceCard from "@/components/Cards/ServiceCard";
 import React from "react";
 
 // Import Images
@@ -7,10 +7,13 @@ import shipRepair from "@/assets/services/ship-repair.svg";
 import shipSupply from "@/assets/services/ship-supply.svg";
 import logisticsServices from "@/assets/services/logistics-services.svg";
 import exportProducts from "@/assets/services/export-products-services.svg";
+import { Link } from "react-router-dom";
+import ServiceCard from "@/components/Cards/ServiceCard";
 
 const OurServices = () => {
   const services = [
     {
+      id: 1,
       src: chandlery,
       title: "Ship Chandlery",
       subTitle:
@@ -18,6 +21,7 @@ const OurServices = () => {
       path: "/service/ship-chandlery",
     },
     {
+      id: 2,
       src: shipRepair,
       title: "Ship Repair",
       subTitle:
@@ -25,6 +29,7 @@ const OurServices = () => {
       path: "/service/ship-repair",
     },
     {
+      id: 3,
       src: shipSupply,
       title: "Ship Supply",
       subTitle:
@@ -32,6 +37,7 @@ const OurServices = () => {
       path: "/service/ship-supply",
     },
     {
+      id: 4,
       src: logisticsServices,
       title: "Logistics Services",
       subTitle:
@@ -39,6 +45,7 @@ const OurServices = () => {
       path: "/service/logistics-services",
     },
     {
+      id: 5,
       src: exportProducts,
       title: "Export Products Services",
       subTitle:
@@ -52,7 +59,17 @@ const OurServices = () => {
       <h1 className="text-center text-2xl md:text-4xl lg:text-5xl font-bold mb-[60px]">
         Our Comprehensive <br /> Maritime Services
       </h1>
-      <ServiceCard services={services} />
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-between justify-items-center gap-8">
+        {services?.map((service) => {
+          return (
+            <Link to={service.path} key={service.id}>
+              <ServiceCard {...service} />
+            </Link>
+          );
+        })}
+        {/* <ServiceCard {...services} /> */}
+      </div>
     </section>
   );
 };
