@@ -15,35 +15,35 @@ const OurServices = () => {
       title: "Ship Chandlery",
       subTitle:
         "We provide a vast selection of provisions, deck & engine stores to meet all your vessel's requirements.",
-      path: "/",
+      path: "/service/ship-chandlery",
     },
     {
       src: shipRepair,
       title: "Ship Repair",
       subTitle:
         "Our expert technicians tackle both electrical and mechanical repairs, ensuring your ship's systems function flawlessly.",
-      path: "/",
+      path: "/service/ship-repair",
     },
     {
       src: shipSupply,
       title: "Ship Supply",
       subTitle:
         "United Marine is your one-stop shop for all ship supplies and equipment, from essential safety gear to specialized parts.",
-      path: "/",
+      path: "/service/ship-supply",
     },
     {
       src: logisticsServices,
       title: "Logistics Services",
       subTitle:
         "Benefit from our streamlined logistics solutions for prompt and efficient deliveries, wherever you need them.",
-      path: "/",
+      path: "/service/logistics-services",
     },
     {
       src: exportProducts,
       title: "Export Products Services",
       subTitle:
         "Navigating exports can be complex. Our team simplifies the process, ensuring your products reach their destination smoothly.",
-      path: "/",
+      path: "/service/export-products-services",
     },
   ];
 
