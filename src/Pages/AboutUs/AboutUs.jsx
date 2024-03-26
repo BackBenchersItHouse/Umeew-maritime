@@ -2,6 +2,7 @@ import React from "react";
 import LeaderCard from "./LeaderCard";
 import shipIcon from "@/assets/icons/ship.png";
 import ModularContent from "@/components/Shared/ModularContent";
+import CommitmentCard from "@/components/Cards/CommitmentCard";
 
 const leaders = [
   {
@@ -34,35 +35,40 @@ const leaders = [
 const works = [
   {
     title: "Leadership",
-    text: "Our seasoned management team provides strategic direction and ensures exceptional client service.",
-    iconSrc: shipIcon,
+    subTitle:
+      "Our seasoned management team provides strategic direction and ensures exceptional client service.",
+    icon: shipIcon,
   },
   {
     title: "Ship Chandlery",
-    text: "A dedicated team oversees the procurement and timely delivery of essential ship supplies, ensuring you have everything you need, when you need it.",
-    iconSrc: shipIcon,
+    subTitle:
+      "A dedicated team oversees the procurement and timely delivery of essential ship supplies, ensuring you have everything you need, when you need it.",
+    icon: shipIcon,
   },
   {
     title: "Ship Repair",
-    text: "Our skilled technicians are experts in all aspects of mechanical and electrical repairs, meticulously ensuring your vessel meets all safety regulations.",
-    iconSrc: shipIcon,
+    subTitle:
+      "Our skilled technicians are experts in all aspects of mechanical and electrical repairs, meticulously ensuring your vessel meets all safety regulations.",
+    icon: shipIcon,
   },
   {
     title: "Ship Supply",
-    text: "This team offers a one-stop solution for all your ship supply requirements, including equipment and efficient logistics services, streamlining your operations.",
-    iconSrc: shipIcon,
+    subTitle:
+      "This team offers a one-stop solution for all your ship supply requirements, including equipment and efficient logistics services, streamlining your operations.",
+    icon: shipIcon,
   },
   {
     title: "Export Products",
-    text: "Leveraging our global network, our export specialists help you explore and fulfill your export needs seamlessly.",
-    iconSrc: shipIcon,
+    subTitle:
+      "Leveraging our global network, our export specialists help you explore and fulfill your export needs seamlessly.",
+    icon: shipIcon,
   },
 ];
 
 const AboutUs = () => {
   return (
     <>
-      <div className="max-w-7xl mx-auto p-4">
+      <div className="max-w-[1170px] mx-auto">
         {/* Top */}
         <section className="md:block flex flex-col-reverse items-center text-lg my-10">
           <img
@@ -121,10 +127,17 @@ const AboutUs = () => {
             United Marine Engineering & Electrical Works: A Symphony of
             Expertise
           </p>
-          <div className="flex flex-wrap justify-center gap-8">
+          {/* <div className="flex flex-wrap justify-center gap-8">
             {works.map((work, idx) => (
               <div key={idx}>
                 <Card data={work} />
+              </div>
+            ))}
+          </div> */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-between justify-items-center gap-8">
+            {works?.map((work, idx) => (
+              <div key={idx}>
+                <CommitmentCard {...work} idx={idx}/>
               </div>
             ))}
           </div>
