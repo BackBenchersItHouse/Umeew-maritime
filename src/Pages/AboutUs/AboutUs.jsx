@@ -2,6 +2,7 @@ import React from "react";
 import LeaderCard from "./LeaderCard";
 import shipIcon from "@/assets/icons/ship.png";
 import ModularContent from "@/Components/Shared/ModularContent";
+import CommitmentCard from "@/Components/Cards/CommitmentCard";
 
 const leaders = [
   {
@@ -123,6 +124,9 @@ const AboutUs = () => {
           </p>
           <div className="flex flex-wrap justify-center gap-8">
             {works.map((work) => (
+              // <CommitmentCard data={work} />
+
+
               <Card data={work} />
             ))}
           </div>
