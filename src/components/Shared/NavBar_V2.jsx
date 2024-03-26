@@ -53,12 +53,20 @@ const NavBar_V2 = () => {
           </Link>
         </li>
         <li className="relative group">
-          <Link className="" to="/">Page +</Link>
-          
+          <Link className="" to="/">
+            Page +
+          </Link>
+
           <ul className="sub-pages group-hover:block transition">
-            <li className=""><Link to='/afk'>Page 1</Link></li>
-            <li className=""><Link to='/afk'>Page 2</Link></li>
-            <li className=""><Link to='/afk'>Page 3</Link></li>
+            <li className="">
+              <Link to="/afk">Page 1</Link>
+            </li>
+            <li className="">
+              <Link to="/afk">Page 2</Link>
+            </li>
+            <li className="">
+              <Link to="/afk">Page 3</Link>
+            </li>
           </ul>
         </li>
       </ul>
