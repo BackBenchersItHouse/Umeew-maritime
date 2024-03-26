@@ -1,7 +1,7 @@
 import React from "react";
 import dotIcon from "@/assets/icons/dotPoint.png";
 import shipIcon from "@/assets/icons/ship.png";
-import Card from "@/Components/Shared/Card";
+import Card from "@/components/Shared/Card";
 
 const storeTypesData = [
   {

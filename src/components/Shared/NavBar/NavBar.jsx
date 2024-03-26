@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Button from "@/Components/Buttons/Button";
+import Button from "@/components/Buttons/Button";
 import SubNavLinks from "./SubNavLinks";
 // import umeewLogo from "@/assets/umeew-logo.svg";
 

@@ -1,6 +1,6 @@
 import React from "react";
 import Banner from "./Banner";
-import ModularContent from "@/Components/ModularContent";
+import ModularContent from "@/components/ModularContent";
 import OurCommitment from "./OurCommitment";
 import OurServices from "./OurServices";
 

@@ -1,4 +1,4 @@
-import ServiceCard from "@/Components/Cards/ServiceCard";
+import ServiceCard from "@/components/Cards/ServiceCard";
 import React from "react";
 
 // Import Images 

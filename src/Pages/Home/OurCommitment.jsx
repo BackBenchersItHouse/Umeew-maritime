@@ -1,5 +1,5 @@
 import React from "react";
-import CommitmentCard from "@/Components/Cards/CommitmentCard";
+import CommitmentCard from "@/components/Cards/CommitmentCard";
 
 import commitmentIcon from "@/assets/icons/ship.svg";
 
