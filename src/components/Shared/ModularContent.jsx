@@ -1,6 +1,6 @@
 import React from "react";
-import footerMsgBg from "@/assets/contact-bg-img.svg";
-import Button from "@/components/Buttons/Button";
+import footerMsgBg from "../../assets/contact-bg-img.svg";
+import Button from "../Buttons/Button";
 import { Link } from "react-router-dom";
 
 const ModularContent = ({ description, btn }) => {
