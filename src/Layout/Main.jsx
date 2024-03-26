@@ -6,7 +6,7 @@ import Footer from "@/components/Shared/Footer";
 const Main = () => {
   return (
     <>
-      <header className="bg-primary sticky top-0 z-50 backdrop-blur-3xl border-b border-neutral/20 px-5 md:px-2">
+      <header className="bg-primary sticky top-0 z-50 backdrop-blur-3xl border-b border-neutral/20 px-5 xl:px-2">
         <NavBar />
       </header>
       <Outlet />

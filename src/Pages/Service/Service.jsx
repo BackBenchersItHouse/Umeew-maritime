@@ -67,7 +67,7 @@ const services = [
 const Service = () => {
   return (
     <>
-      <section className="max-w-7xl mx-auto md:block flex flex-col-reverse items-center text-lg my-10 p-4">
+      <section className="max-w-[1170px] mx-auto md:block flex flex-col-reverse items-center text-lg my-10 p-4">
         <img
           className="md:ml-4 md:float-right w-[530px] h-[470px] mt-8 md:mt-0"
           src="https://i.ibb.co/1vnZBQP/image-86.png"
@@ -112,14 +112,15 @@ const Service = () => {
         </div>
       </section>
       {/* Chandlery Services */}
-      <section className="max-w-7xl mx-auto mb-28">
+      <section className="max-w-[1170px] mx-auto mb-28">
         <p className="text-5xl text-center my-14 font-bold md:w-[70%] leading-tight mx-auto">
           United Marine Engineering & Electrical Works's Ship Chandlery Services
         </p>
         <div className="flex flex-wrap justify-around gap-8">
           {services.map((service, idx) => (
             <div key={idx}>
-              <CommitmentCard service={service} />
+              {/* <CommitmentCard service={service} /> */}
+              <CommitmentCard {...service} />
             </div>
             // console.log(service.iconSrc)
           ))}
