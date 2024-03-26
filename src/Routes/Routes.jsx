@@ -5,7 +5,7 @@ import Service from "@/Pages/Service/Service";
 import Blog from "@/Pages/Blog/Blog";
 import ContactUs from "@/Pages/ContactUs/ContactUs";
 import { createBrowserRouter } from "react-router-dom";
-import DisplayError from './../Components/DisplayError';
+import DisplayError from '@/components/DisplayError';
 
 const router = createBrowserRouter([
   {

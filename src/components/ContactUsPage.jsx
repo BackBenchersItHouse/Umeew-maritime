@@ -1,6 +1,6 @@
 import React from "react";
 
-import "../Components/Style/Umeew.css"
+import "@/components/Style/Umeew.css"
 import ReactWhatsapp from 'react-whatsapp';
 import { Helmet, HelmetProvider } from "react-helmet-async";
 const ContactUsPage = () => {

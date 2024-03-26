@@ -1,4 +1,4 @@
-import ContactUsPage from '@/Components/ContactUsPage';
+import ContactUsPage from '@/components/ContactUsPage';
 import React from 'react';
 
 
