@@ -1,12 +1,12 @@
 import ServiceCard from "@/components/Cards/ServiceCard";
 import React from "react";
 
-// Import Images 
-import chandlery from '@/assets/services/chandlery.svg';
-import shipRepair from '@/assets/services/ship-repair.svg';
-import shipSupply from '@/assets/services/ship-supply.svg';
-import logisticsServices from '@/assets/services/logistics-services.svg';
-import exportProducts from '@/assets/services/export-products-services.svg';
+// Import Images
+import chandlery from "@/assets/services/chandlery.svg";
+import shipRepair from "@/assets/services/ship-repair.svg";
+import shipSupply from "@/assets/services/ship-supply.svg";
+import logisticsServices from "@/assets/services/logistics-services.svg";
+import exportProducts from "@/assets/services/export-products-services.svg";
 
 const OurServices = () => {
   const services = [
@@ -47,7 +47,14 @@ const OurServices = () => {
     },
   ];
 
-  return <ServiceCard services={services} />;
+  return (
+    <section className="my-[120px]">
+      <h1 className="text-center text-2xl md:text-4xl lg:text-5xl font-bold mb-[60px]">
+        Our Comprehensive <br /> Maritime Services
+      </h1>
+      <ServiceCard services={services} />
+    </section>
+  );
 };
 
 export default OurServices;
