@@ -1,6 +1,5 @@
 import React from "react";
 import LeaderCard from "./LeaderCard";
-import Card from "@/components/Shared/Card";
 import shipIcon from "@/assets/icons/ship.png";
 import ModularContent from "@/components/Shared/ModularContent";
 
