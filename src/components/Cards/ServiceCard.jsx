@@ -2,7 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const ServiceCard = ({ services }) => {
-  console.log("services: ", services);
+  // console.log("services: ", services);
+  // services props accepted ⬇⬇⬇
+  // const services = [{src: '', title: '', subTitle: '', path: '/...'}];
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-between justify-items-center gap-8">
       {services?.map((service, idx) => {
