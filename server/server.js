@@ -1,10 +1,10 @@
-import express from 'express';
+import express from "express";
 // import fs from 'fs';
-import React from 'react';
-import ReactDOMServer from 'react-dom/server';
-import { StaticRouter, matchPath } from 'react-router-dom'; 
+import React from "react";
+import ReactDOMServer from "react-dom/server";
+import { StaticRouter, matchPath } from "react-router-dom";
 // import path from 'path';
-import App from '../src/App';
+import App from "@/App";
 
 const app = express();
 // const router = express.Router();
@@ -12,10 +12,10 @@ const app = express();
 const PORT = 8000;
 
 // Serve static assets
-app.use(express.static('../src/assets'));
+app.use(express.static("../src/assets"));
 
 // Route handler for server-side rendering
-app.get('*', (req, res) => {
+app.get("/*", (req, res) => {
   const context = {};
   const html = ReactDOMServer.renderToString(
     <StaticRouter location={req.url} context={context}>
@@ -55,31 +55,6 @@ app.get('*', (req, res) => {
   `);
 });
 
-// const serverRenderer = (req, res) => {
-//   fs.readFile(path.resolve('./dist/index.html'), 'utf-8', (err, data) => {
-//     if (err) {
-//       console.error(err)
-//       return res.status(500).send('An error occurred');
-//     }
-//     return res.send(
-//       data.replace(
-//         '<div id="root"></div>',
-//         `<div id="root">${ReactDOMServer.renderToString(<App />)}</div>`
-//       )
-//     )
-//   });
-// };
-
-// router.use('^/$', serverRenderer);
-
-// router.use(
-//   express.static(path.resolve(__dirname, '..', 'dist'), { maxAge: '30d' })
-// );
-
-// // tell the app to use the above rules
-// app.use(router);
-
-// app.use(express.static('./build'))
 app.listen(PORT, () => {
   console.log(`SSR running on port ${PORT}`);
-})
+});
