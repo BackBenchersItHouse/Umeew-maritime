@@ -6,12 +6,14 @@ const SubNavLinks = () => {
 
   const links = [
     {
-      pathName: "page",
+      pathName: "Service",
       isSubMenu: true,
       subLinks: [
-        { subPathName: "page blog", path: "/a111" },
-        { subPathName: "page 2", path: "/b222" },
-        { subPathName: "page 3", path: "/c333" },
+        { subPathName: "Ship Chandlery", path: "/service/ship-chandlery" },
+        { subPathName: "Ship Repair", path: "/service/ship-repair" },
+        { subPathName: "Ship Supply", path: "/service/ship-supply" },
+        { subPathName: "Logistics Services", path: "/service/logistics-services" },
+        { subPathName: "Export Products Services", path: "/service/export-products-services" },
       ],
     },
   ];
@@ -28,11 +30,11 @@ const SubNavLinks = () => {
                     <div className="bg-primary/80 backdrop-blur-3xl w-4 h-4 hidden md:block absolute left-3 mt-1.5 rotate-45">
                     </div>
                   </div>
-                  <div className="bg-primary md:bg-primary/95 backdrop-blur-3xl w-full md:w-52 py-2.5 px-5 md:p-3.5">
+                  <div className="bg-primary md:bg-primary/95 backdrop-blur-3xl w-full md:w-64 py-2.5 px-5 md:p-3.5">
                     {
                       link.subLinks.map((subLink, idx) => {
                         return(
-                          <li className="text-lg text-neutral py-2.5 px-5 md:px-0 hover:text-secondary border-b border-neutral/20 capitalize" key={idx}>
+                          <li className="text-lg text-neutral py-2.5 px-5 md:px-0 hover:text-secondary border-b border-neutral/20 hover:border-secondary capitalize" key={idx}>
                             <Link to={subLink.path}>{subLink.subPathName}</Link>
                           </li>
                         )

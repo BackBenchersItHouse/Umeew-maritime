@@ -68,14 +68,6 @@ const NavBar_V2 = () => {
               About Us
             </Link>
           </li>
-          <li>
-            <Link
-              className="py-7 px-3 inline-block hover:text-secondary"
-              to="/service"
-            >
-              Service
-            </Link>
-          </li>
           <SubNavLinks />
         </ul>
 
