@@ -101,8 +101,7 @@ const services = [
     iconSrc:shipIcon ,
   },
 ]
-
-const shipSupplyService = () => {
+const ShipSupply = () => {
   return (
     <>
     <section className="max-w-7xl mx-auto md:block flex flex-col-reverse items-center text-lg my-10 p-4">
@@ -177,4 +176,4 @@ const shipSupplyService = () => {
   )
 }
 
-export default shipSupplyService ;
+export default ShipSupply
