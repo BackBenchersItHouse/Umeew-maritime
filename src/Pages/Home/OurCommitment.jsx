@@ -36,8 +36,8 @@ const OurCommitment = () => {
   ];
 
   return (
-    <section className="text-center my-[120px]">
-      <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-[60px]">
+    <section className="my-[120px]">
+      <h1 className="text-center text-2xl md:text-4xl lg:text-5xl font-bold mb-[60px]">
         Our Commitment <br /> to Your Success
       </h1>
 
