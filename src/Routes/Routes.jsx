@@ -1,10 +1,6 @@
 import Main from "@/Layout/Main";
 import DisplayError from "@/components/DisplayError";
 import Home from "@/Pages/Home/Home";
-import AboutUs from "@/Pages/AboutUs/AboutUs";
-import Service from "@/Pages/Service/Service";
-import Blog from "@/Pages/Blog/Blog";
-import ContactUs from "@/Pages/ContactUs/ContactUs";
 import { createBrowserRouter } from "react-router-dom";
 import LogisticsServices from "@/Pages/Service/LogisticsServices";
 
@@ -20,31 +16,31 @@ const router = createBrowserRouter([
       },
       {
         path: '/about-us',
-        element: <AboutUs />
+        // element: ,
       },
       {
         path: '/service/ship-chandlery',
-        element: <Service />
+        // element: ,
       },
       {
         path: '/service/ship-repair',
-        element: <Service />
+        // element: ,
       },
       {
         path: '/service/ship-supply',
-        element: <Service />
+        // element: ,
       },
       {
         path: '/service/logistics-services',
-        element: <LogisticsServices />
+        element: <LogisticsServices />,
       },
       {
         path: '/service/export-products-services',
-        element: <Service />
+        // element: ,
       },
       {
         path: '/contact-us',
-        element: <ContactUs />
+        // element: ,
       },
     ],
   },

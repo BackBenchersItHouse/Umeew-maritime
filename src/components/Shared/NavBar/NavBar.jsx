@@ -99,7 +99,7 @@ const NavBar_V2 = () => {
           <SubNavLinks />
 
           <Link to="/contact-us">
-            <Button divClass="fixed top-[500px]">Contact Us</Button>
+            <Button divClass="fixed top-[90vh]">Contact Us</Button>
           </Link>
         </ul>
       </div>
