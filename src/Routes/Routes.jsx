@@ -7,6 +7,7 @@ import { createBrowserRouter } from "react-router-dom";
 import DisplayError from '@/components/DisplayError';
 import ShipChandlery from "@/Pages/Services/ShipChandlery";
 import ShipRepair from "@/Pages/Services/ShipRepair";
+import LogisticService from "@/Pages/Services/LogisticService";
 
 const router = createBrowserRouter([
   {
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
       {
         path: "/shipRepair",
         element: <ShipRepair/>,
+      },
+      {
+        path: "/logisticService",
+        element: <LogisticService/>,
       },
     ],
   },
