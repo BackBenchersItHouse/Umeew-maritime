@@ -42,7 +42,7 @@ const OurServices = () => {
       title: "Logistics Services",
       subTitle:
         "Benefit from our streamlined logistics solutions for prompt and efficient deliveries, wherever you need them.",
-      path: "/service/logistics-services",
+      path: "/service/logistics",
     },
     {
       id: 5,
@@ -50,7 +50,7 @@ const OurServices = () => {
       title: "Export Products Services",
       subTitle:
         "Navigating exports can be complex. Our team simplifies the process, ensuring your products reach their destination smoothly.",
-      path: "/service/export-products-services",
+      path: "/service/export-products",
     },
   ];
 
