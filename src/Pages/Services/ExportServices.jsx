@@ -107,8 +107,8 @@ const ExportServices = () => {
       />
       <div>
         <h1 className="text-3xl md:text-5xl font-bold mb-10 leading-snug">
-          United Marine Engineering & Electrical Works's Ship Chandlery: Your
-          One-Stop Shop for a Smooth Voyage
+        United Marine Engineering & Electrical Works: Your Trusted Partner for Streamlined Ship Parts & Equipment Export
+
         </h1>
         <h2 className="text-2xl :text-4xl font-semibold mb-4">
         Navigate International Trade with Confidence

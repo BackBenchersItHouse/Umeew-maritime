@@ -112,8 +112,7 @@ const ShipSupply = () => {
       />
       <div>
         <h1 className="text-3xl md:text-5xl font-bold mb-10 leading-snug">
-          United Marine Engineering & Electrical Works's Ship Chandlery: Your
-          One-Stop Shop for a Smooth Voyage
+        United Marine Engineering & Electrical Works: Your Complete Ship Supply Solution (Electrical, Mechanical & Beyond)
         </h1>
         <h2 className="text-2xl :text-4xl font-semibold mb-4">
         Ensuring Your Vessel Has Everything It Needs to Thrive
