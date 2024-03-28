@@ -13,12 +13,12 @@ const SubNavLinks = () => {
         { subPathName: "Ship Repair", path: "/service/ship-repair" },
         { subPathName: "Ship Supply", path: "/service/ship-supply" },
         {
-          subPathName: "Logistics Services",
-          path: "/service/logistics-services",
+          subPathName: "Logistics",
+          path: "/service/logistics",
         },
         {
-          subPathName: "Export Products Services",
-          path: "/service/export-products-services",
+          subPathName: "Export Products",
+          path: "/service/export-products",
         },
       ],
     },

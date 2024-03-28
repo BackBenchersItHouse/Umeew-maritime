@@ -2,7 +2,7 @@ import Main from "@/Layout/Main";
 import DisplayError from "@/components/DisplayError";
 import Home from "@/Pages/Home/Home";
 import { createBrowserRouter } from "react-router-dom";
-import LogisticsServices from "@/Pages/Service/LogisticsServices";
+import Logistics from "@/Pages/Services/Logistics";
 
 const router = createBrowserRouter([
   {
@@ -31,11 +31,11 @@ const router = createBrowserRouter([
         // element: ,
       },
       {
-        path: '/service/logistics-services',
-        element: <LogisticsServices />,
+        path: '/service/logistics',
+        element: <Logistics />,
       },
       {
-        path: '/service/export-products-services',
+        path: '/service/export-products',
         // element: ,
       },
       {
