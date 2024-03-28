@@ -147,7 +147,7 @@ const shipSupplyService = () => {
     {/* Chandlery Services */}
     <section className="max-w-7xl mx-auto mb-28">
       <p className="text-3xl md:text-5xl text-center my-14 font-bold md:w-[70%] leading-tight mx-auto px-2">
-        United Marine Engineering & Electrical Works's Ship Chandlery Services
+      Beyond the Basics:  Specialized Equipment & Machinery
       </p>
       <div className="flex flex-wrap justify-around gap-8">
         {services.map((service) => (
