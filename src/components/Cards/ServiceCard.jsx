@@ -1,7 +1,7 @@
 import React from "react";
 
 const ServiceCard = ({ id, src, title, subTitle }) => {
-  console.log(title);
+  // console.log(title);
   return (
     <div
       className="py-5 px-4 border border-b-4 border-b-accent/5 border-accent/20 shadow-lg hover:-translate-y-1 duration-300 hover:border-b-4 hover:border-b-secondary"
