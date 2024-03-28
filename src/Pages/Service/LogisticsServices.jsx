@@ -1,6 +1,9 @@
-import ServiceBanner from "@/components/ServiceBanner";
 import React from "react";
-import logisticsImg from '@/assets/service-pages/chandlery.svg';
+import ServiceBanner from "@/components/ServiceBanner";
+import logisticsImg from "@/assets/service-pages/chandlery.svg";
+import CommitmentCard from "@/components/Cards/CommitmentCard";
+import commitmentIcon from "@/assets/icons/ship.svg";
+import ModularContent from "@/components/ModularContent";
 
 const LogisticsServices = () => {
   const logistics = {
@@ -55,10 +58,60 @@ const LogisticsServices = () => {
       ],
     },
   };
+
+  const commitments = [
+    {
+      id: 1,
+      icon: commitmentIcon,
+      title: "Unparalleled Expertise",
+      subTitle:
+        "Our team of highly skilled and certified professionals possesses years of experience in all aspects of ship maintenance and repair",
+    },
+    {
+      id: 2,
+      icon: commitmentIcon,
+      title: "Quality You Can Trust",
+      subTitle:
+        "We use only the finest parts and materials to ensure long-lasting repairs and optimal performance.",
+    },
+    {
+      id: 3,
+      icon: commitmentIcon,
+      title: "Streamlined Efficiency",
+      subTitle:
+        "We prioritize clear communication and efficient service delivery to minimize downtime and keep your operations on schedule.",
+    },
+    {
+      id: 4,
+      icon: commitmentIcon,
+      title: "Competitive Rates",
+      subTitle:
+        "We offer competitive pricing and transparent cost structures to fit your budget.",
+    },
+  ];
+
+  const props = {
+    description: "Ready to experience the United Marine Engineering & Electrical Works logistics difference? Contact us today to discuss your specific needs and request a free quote!",
+  };
   return (
-    <section className="max-w-[1170px] mx-auto my-[60px] px-2 xl:px-0">
-      <ServiceBanner {...logistics} />
-    </section>
+    <>
+      <section className="max-w-[1170px] mx-auto my-[60px] px-2 xl:px-0">
+        <ServiceBanner {...logistics} />
+
+        <h1 className="mt-[120px] mb-[60px] text-center text-2xl md:text-3xl lg:text-[40px] font-bold">
+          United Marine Engineering & Electrical <br /> Works's Ship Chandlery
+          Services
+        </h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-between justify-items-center gap-8">
+          {commitments?.map((commitment) => (
+            <div key={commitment.id}>
+              <CommitmentCard {...commitment} />
+            </div>
+          ))}
+        </div>
+      </section>
+      <ModularContent {...props} />
+    </>
   );
 };
 
