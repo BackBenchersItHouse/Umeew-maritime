@@ -1,8 +1,9 @@
 import React from "react";
 import dotIcon from "@/assets/icons/dotPoint.png";
 import shipIcon from "@/assets/icons/ship.png";
-import Card from "@/components/Shared/Card";
+// import Card from "@/components/Shared/Card";
 import ModularContent from "@/components/ModularContent";
+import CommitmentCard from "@/components/Cards/CommitmentCard";
 
 const storeTypesData = [
   {
@@ -33,34 +34,40 @@ const storeTypesData = [
 
 const services = [
   {
+    id: 1,
     title: "Reliable Sourcing",
-    text: "We source high-quality products from reputable suppliers, guaranteeing competitive prices.",
-    iconSrc: shipIcon,
+    subTitle: "We source high-quality products from reputable suppliers, guaranteeing competitive prices.",
+    icon: shipIcon,
   },
   {
+    id: 2,
     title: "Timely Delivery",
-    text: "Our efficient logistics network ensures your supplies reach your vessel on time, every time.",
-    iconSrc: shipIcon,
+    subTitle: "Our efficient logistics network ensures your supplies reach your vessel on time, every time.",
+    icon: shipIcon,
   },
   {
+    id: 3,
     title: "24/7 Emergency Support (Optional)",
-    text: "We understand unexpected situations can arise. Our 24/7 emergency support ensures we're there for you when you need us most.",
-    iconSrc: shipIcon,
+    subTitle: "We understand unexpected situations can arise. Our 24/7 emergency support ensures we're there for you when you need us most.",
+    icon: shipIcon,
   },
   {
+    id: 4,
     title: "Inventory Management (Optional)",
-    text: "We can assist with onboard inventory management to streamline your operations (optional service).",
-    iconSrc: shipIcon,
+    subTitle: "We can assist with onboard inventory management to streamline your operations (optional service).",
+    icon: shipIcon,
   },
   {
+    id: 5,
     title: "Customs Clearance (Optional)",
-    text: "For bonded stores, we can help navigate customs clearance procedures (consider including this if applicable).",
-    iconSrc: shipIcon,
+    subTitle: "For bonded stores, we can help navigate customs clearance procedures (consider including this if applicable).",
+    icon: shipIcon,
   },
   {
+    id: 6,
     title: "Customized Service",
-    text: "Our dedicated ship chandlery team works closely with you to understand your specific requirements and create a tailored supply plan.",
-    iconSrc: shipIcon,
+    subTitle: "Our dedicated ship chandlery team works closely with you to understand your specific requirements and create a tailored supply plan.",
+    icon: shipIcon,
   },
 ];
 
@@ -118,7 +125,7 @@ const ShipChandlery = () => {
         </p>
         <div className="flex flex-wrap justify-around gap-8">
           {services.map((service) => (
-            <Card data={service} />
+            <CommitmentCard {...service} />
           ))}
         </div>
       </section>

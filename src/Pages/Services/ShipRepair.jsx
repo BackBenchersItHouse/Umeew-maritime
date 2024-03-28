@@ -1,8 +1,9 @@
 import React from "react";
 import dotIcon from "@/assets/icons/dotPoint.png";
 import shipIcon from "@/assets/icons/ship.png";
-import Card from "@/components/Shared/Card";
+// import Card from "@/components/Shared/Card";
 import ModularContent from "@/components/ModularContent";
+import CommitmentCard from "@/components/Cards/CommitmentCard";
 
 const storeTypesData = [
   {
@@ -38,7 +39,7 @@ const storeTypesData = [
 
   },
   {
-    id: 4,
+    id: 6,
     title: "Steering & Rudder System Repair",
     description:
       "We keep your steering and rudder systems in top condition, ensuring precise vessel control and maneuverability."
@@ -48,33 +49,39 @@ const storeTypesData = [
 const services = [
   {
     title: "Experienced & Certified Technicians",
-    text: "Our team holds the necessary qualifications and certifications to handle all electrical and mechanical repairs with expertise.",
-    iconSrc: shipIcon,
+    subTitle: "Our team holds the necessary qualifications and certifications to handle all electrical and mechanical repairs with expertise.",
+    icon: shipIcon,
+    id: 1,
   },
   {
     title: "Advanced Diagnostic Tools",
-    text: "We utilize cutting-edge diagnostic tools to pinpoint the root cause of any issue quickly and accurately.",
-    iconSrc: shipIcon,
+    subTitle: "We utilize cutting-edge diagnostic tools to pinpoint the root cause of any issue quickly and accurately.",
+    icon: shipIcon,
+    id: 2,
   },
   {
     title: "Genuine Parts & Quality Workmanship",
-    text: "We use only genuine manufacturer parts and ensure the highest quality workmanship for lasting repairs.",
-    iconSrc: shipIcon,
+    subTitle: "We use only genuine manufacturer parts and ensure the highest quality workmanship for lasting repairs.",
+    icon: shipIcon,
+    id: 3,
   },
   {
     title: "24/7 Emergency Support (Optional)",
-    text: "We understand that emergencies can arise at any time. Our 24/7 emergency support ensures we're there for you when you need us most (consider including this if applicable).",
-    iconSrc: shipIcon,
+    subTitle: "We understand that emergencies can arise at any time. Our 24/7 emergency support ensures we're there for you when you need us most (consider including this if applicable).",
+    icon: shipIcon,
+    id: 4,
   },
   {
     title: "Global Service Network",
-    text: "With a network of partners across the globe, we can provide repair services at most major ports (consider including this if applicable).",
-    iconSrc: shipIcon,
+    subTitle: "With a network of partners across the globe, we can provide repair services at most major ports (consider including this if applicable).",
+    icon: shipIcon,
+    id: 5,
   },
   {
     title: "Customized Service",
-    text: "Our dedicated ship chandlery team works closely with you to understand your specific requirements and create a tailored supply plan.",
-    iconSrc: shipIcon,
+    subTitle: "Our dedicated ship chandlery team works closely with you to understand your specific requirements and create a tailored supply plan.",
+    icon: shipIcon,
+    id: 1,
   },
 ];
 
@@ -130,7 +137,7 @@ const ShipRepair = () => {
         </p>
         <div className="flex flex-wrap justify-around gap-8">
           {services.map((service) => (
-            <Card data={service} />
+            <CommitmentCard {...service} />
           ))}
         </div>
       </section>

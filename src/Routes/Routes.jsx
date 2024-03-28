@@ -6,9 +6,9 @@ import { createBrowserRouter } from "react-router-dom";
 import DisplayError from "@/components/DisplayError";
 import ShipChandlery from "@/Pages/Services/ShipChandlery";
 import ShipRepair from "@/Pages/Services/ShipRepair";
-import LogisticService from "@/Pages/Services/LogisticService";
-import ExportServices from "@/Pages/Services/ExportServices";
 import ShipSupply from "@/Pages/Services/ShipSupply";
+import Logistics from "@/Pages/Services/Logistics";
+import ExportProducts from '@/Pages/Services/ExportProducts';
 
 const router = createBrowserRouter([
   {
@@ -24,19 +24,6 @@ const router = createBrowserRouter([
         path: "/about-us",
         element: <AboutUs />,
       },
-      // Services Routes ⤵
-      {
-        path: "/service/ship-supply",
-        // element: <Service />,
-      },
-      {
-        path: "/service/logistics-services",
-        // element: <Service />,
-      },
-      {
-        path: "/service/export-products-services",
-        // element: <Service />,
-      },
       {
         path: "/service/ship-chandlery",
         element: <ShipChandlery />,
@@ -46,28 +33,20 @@ const router = createBrowserRouter([
         element: <ShipRepair />,
       },
       {
+        path: "/service/ship-supply",
+        element: <ShipSupply />,
+      },
+      {
+        path: "/service/logistics-services",
+        element: <Logistics />,
+      },
+      {
+        path: "/service/export-products-services",
+        element: <ExportProducts />,
+      },
+      {
         path: "/contact-us",
         element: <ContactUs />,
-      },
-      {
-        path: "/shipChandlery",
-        element: <ShipChandlery/>,
-      },
-      {
-        path: "/shipRepair",
-        element: <ShipRepair/>,
-      },
-      {
-        path: "/logisticService",
-        element: <LogisticService/>,
-      },
-      {
-        path: "/exportService",
-        element: <ExportServices/>,
-      },
-      {
-        path: "/shipSupply",
-        element: <ShipSupply/>,
       },
     ],
   },
