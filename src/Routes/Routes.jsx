@@ -8,6 +8,8 @@ import DisplayError from '@/components/DisplayError';
 import ShipChandlery from "@/Pages/Services/ShipChandlery";
 import ShipRepair from "@/Pages/Services/ShipRepair";
 import LogisticService from "@/Pages/Services/LogisticService";
+import ExportServices from "@/Pages/Services/ExportServices";
+import ShipSupply from "@/Pages/Services/ShipSupply";
 
 const router = createBrowserRouter([
   {
@@ -43,6 +45,14 @@ const router = createBrowserRouter([
       {
         path: "/logisticService",
         element: <LogisticService/>,
+      },
+      {
+        path: "/exportService",
+        element: <ExportServices/>,
+      },
+      {
+        path: "/shipSupply",
+        element: <ShipSupply/>,
       },
     ],
   },
