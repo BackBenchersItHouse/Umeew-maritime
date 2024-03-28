@@ -6,20 +6,16 @@
 
 /* *********************** Home Page Start *********************** */
 /* -------------- NavBar Section --------------  */
+@layer base {
+
+}
+
+
 @layer components{
-  .logo {
-    @apply text-3xl text-secondary font-semibold;
-  }
 
 /* Navigation Lists */
   .menu-btn {
     @apply order-6 block md:hidden;
-  }
-  .sub-pages {
-    @apply absolute top-[65px] left-0 w-full hidden -z-10;
-  }
-  .sub-pages li {
-    @apply w-full md:w-56 bg-primary/90 backdrop-blur-3xl border;
   }
 
 /* Contact Us */
@@ -32,51 +28,6 @@
   .smooth-bg {
     transition: all 0.3s ease;
   }
-
-  #click {
-    display: none;
-  }
-
-  #click:checked ~ ul {
-    left: 0%;
-    transition: all 0.3s ease;
-  }
-  .nav-outline {
-    outline: #fff solid 1px;
-  }
-  
-
-
-  @media (max-width: 767px) {
-    nav ul {
-      position: fixed;
-      top: 81px;
-      left: -100%;
-      background: #001b21;
-      height: 100vh;
-      width: 100%;
-      display: block;
-    }
-    nav ul li {
-      padding: 20px;
-    }
-  }
-}
-
-@layer base {
-  nav {
-    @apply md:max-w-[1170px] md:mx-auto h-20 bg-primary flex items-center justify-between;
-  }
-  nav ul {
-    @apply md:flex gap-2.5;
-  }
-  nav ul li {
-    @apply hover:bg-transparent md:border-none text-center hover:bg-secondary border-b border-neutral/50;
-  }
-  nav ul li a {
-    @apply text-white font-medium tracking-[1px] py-2.5 px-5 smooth-bg text-xl md:hover:bg-secondary md:text-lg md:hover:nav-outline hover:font-semibold block;
-  }
-
 }
 
 /* -------------- Banner Section --------------  */

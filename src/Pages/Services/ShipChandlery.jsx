@@ -2,7 +2,7 @@ import React from "react";
 import dotIcon from "@/assets/icons/dotPoint.png";
 import shipIcon from "@/assets/icons/ship.png";
 import Card from "@/components/Shared/Card";
-import ModularContent from "@/components/Shared/ModularContent";
+import ModularContent from "@/components/ModularContent";
 
 const storeTypesData = [
   {
@@ -64,7 +64,7 @@ const services = [
   },
 ];
 
-const Service = () => {
+const ShipChandlery = () => {
   return (
     <>
       <section className="max-w-7xl mx-auto md:block flex flex-col-reverse items-center text-lg my-10 p-4">
@@ -74,11 +74,11 @@ const Service = () => {
           alt="man"
         />
         <div>
-          <h1 className="text-5xl font-bold mb-10 leading-snug">
+          <h1 className="text-3xl md:text-5xl font-bold mb-10 leading-snug">
             United Marine Engineering & Electrical Works's Ship Chandlery: Your
             One-Stop Shop for a Smooth Voyage
           </h1>
-          <h2 className="text-4xl font-semibold mb-4">
+          <h2 className="text-2xl :text-4xl font-semibold mb-4">
             Keeping Your Vessel Well-Stocked and Operational
           </h2>
           <p className=" mb-8">
@@ -88,7 +88,7 @@ const Service = () => {
             comprehensive range of products and services to cater to all your
             ship's needs.
           </p>
-          <h3 className="text-3xl font-semibold mb-4">
+          <h3 className="text-xl md:text-3xl font-semibold mb-4">
             What is Ship Chandlery?
           </h3>
           <p>
@@ -113,7 +113,7 @@ const Service = () => {
       </section>
       {/* Chandlery Services */}
       <section className="max-w-7xl mx-auto mb-28">
-        <p className="text-5xl text-center my-14 font-bold md:w-[70%] leading-tight mx-auto">
+        <p className="text-3xl md:text-5xl text-center my-14 font-bold md:w-[70%] leading-tight mx-auto px-2">
           United Marine Engineering & Electrical Works's Ship Chandlery Services
         </p>
         <div className="flex flex-wrap justify-around gap-8">
@@ -148,4 +148,4 @@ const Service = () => {
   );
 };
 
-export default Service;
+export default ShipChandlery;
