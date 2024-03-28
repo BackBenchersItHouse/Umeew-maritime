@@ -6,6 +6,7 @@ import Service from "@/Pages/Service/Service";
 import Blog from "@/Pages/Blog/Blog";
 import ContactUs from "@/Pages/ContactUs/ContactUs";
 import { createBrowserRouter } from "react-router-dom";
+import LogisticsServices from "@/Pages/Service/LogisticsServices";
 
 const router = createBrowserRouter([
   {
@@ -35,7 +36,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/service/logistics-services',
-        element: <Service />
+        element: <LogisticsServices />
       },
       {
         path: '/service/export-products-services',
