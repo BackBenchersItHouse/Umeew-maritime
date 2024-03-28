@@ -1,8 +1,8 @@
 import React from "react";
 import dotIcon from "@/assets/icons/dotPoint.png";
 import shipIcon from "@/assets/icons/ship.png";
-import CommitmentCard from "@/components/Cards/CommitmentCard";
-import ModularContent from "@/components/Shared/ModularContent";
+import Card from "@/components/Shared/Card";
+import ModularContent from "@/components/ModularContent";
 
 const storeTypesData = [
   {
@@ -34,51 +34,51 @@ const storeTypesData = [
 const services = [
   {
     title: "Reliable Sourcing",
-    subTitle: "We source high-quality products from reputable suppliers, guaranteeing competitive prices.",
-    icon: shipIcon,
+    text: "We source high-quality products from reputable suppliers, guaranteeing competitive prices.",
+    iconSrc: shipIcon,
   },
   {
     title: "Timely Delivery",
-    subTitle: "Our efficient logistics network ensures your supplies reach your vessel on time, every time.",
-    icon: shipIcon,
+    text: "Our efficient logistics network ensures your supplies reach your vessel on time, every time.",
+    iconSrc: shipIcon,
   },
   {
     title: "24/7 Emergency Support (Optional)",
-    subTitle: "We understand unexpected situations can arise. Our 24/7 emergency support ensures we're there for you when you need us most.",
-    icon: shipIcon,
+    text: "We understand unexpected situations can arise. Our 24/7 emergency support ensures we're there for you when you need us most.",
+    iconSrc: shipIcon,
   },
   {
     title: "Inventory Management (Optional)",
-    subTitle: "We can assist with onboard inventory management to streamline your operations (optional service).",
-    icon: shipIcon,
+    text: "We can assist with onboard inventory management to streamline your operations (optional service).",
+    iconSrc: shipIcon,
   },
   {
     title: "Customs Clearance (Optional)",
-    subTitle: "For bonded stores, we can help navigate customs clearance procedures (consider including this if applicable).",
-    icon: shipIcon,
+    text: "For bonded stores, we can help navigate customs clearance procedures (consider including this if applicable).",
+    iconSrc: shipIcon,
   },
   {
     title: "Customized Service",
-    subTitle: "Our dedicated ship chandlery team works closely with you to understand your specific requirements and create a tailored supply plan.",
-    icon: shipIcon,
+    text: "Our dedicated ship chandlery team works closely with you to understand your specific requirements and create a tailored supply plan.",
+    iconSrc: shipIcon,
   },
 ];
 
-const Service = () => {
+const ShipChandlery = () => {
   return (
     <>
-      <section className="max-w-[1170px] mx-auto md:block flex flex-col-reverse items-center text-lg my-10 p-4">
+      <section className="max-w-7xl mx-auto md:block flex flex-col-reverse items-center text-lg my-10 p-4">
         <img
           className="md:ml-4 md:float-right w-[530px] h-[470px] mt-8 md:mt-0"
           src="https://i.ibb.co/1vnZBQP/image-86.png"
           alt="man"
         />
         <div>
-          <h1 className="text-5xl font-bold mb-10 leading-snug">
+          <h1 className="text-3xl md:text-5xl font-bold mb-10 leading-snug">
             United Marine Engineering & Electrical Works's Ship Chandlery: Your
             One-Stop Shop for a Smooth Voyage
           </h1>
-          <h2 className="text-4xl font-semibold mb-4">
+          <h2 className="text-2xl :text-4xl font-semibold mb-4">
             Keeping Your Vessel Well-Stocked and Operational
           </h2>
           <p className=" mb-8">
@@ -88,7 +88,7 @@ const Service = () => {
             comprehensive range of products and services to cater to all your
             ship's needs.
           </p>
-          <h3 className="text-3xl font-semibold mb-4">
+          <h3 className="text-xl md:text-3xl font-semibold mb-4">
             What is Ship Chandlery?
           </h3>
           <p>
@@ -112,17 +112,13 @@ const Service = () => {
         </div>
       </section>
       {/* Chandlery Services */}
-      <section className="max-w-[1170px] mx-auto mb-28">
-        <p className="text-5xl text-center my-14 font-bold md:w-[70%] leading-tight mx-auto">
+      <section className="max-w-7xl mx-auto mb-28">
+        <p className="text-3xl md:text-5xl text-center my-14 font-bold md:w-[70%] leading-tight mx-auto px-2">
           United Marine Engineering & Electrical Works's Ship Chandlery Services
         </p>
         <div className="flex flex-wrap justify-around gap-8">
-          {services.map((service, idx) => (
-            <div key={idx}>
-              {/* <CommitmentCard service={service} /> */}
-              <CommitmentCard {...service} />
-            </div>
-            // console.log(service.iconSrc)
+          {services.map((service) => (
+            <Card data={service} />
           ))}
         </div>
       </section>
@@ -152,4 +148,4 @@ const Service = () => {
   );
 };
 
-export default Service;
+export default ShipChandlery;
