@@ -37,11 +37,11 @@ const router = createBrowserRouter([
         element: <ShipSupply />,
       },
       {
-        path: "/service/logistics-services",
+        path: "/service/logistics",
         element: <Logistics />,
       },
       {
-        path: "/service/export-products-services",
+        path: "/service/export-products",
         element: <ExportProducts />,
       },
       {
