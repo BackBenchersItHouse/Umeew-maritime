@@ -6,7 +6,7 @@ const SubNavLinks = () => {
 
   const links = [
     {
-      pathName: "Service",
+      pathName: "Services",
       isSubMenu: true,
       subLinks: [
         { subPathName: "Ship Chandlery", path: "/service/ship-chandlery" },
@@ -52,7 +52,7 @@ const SubNavLinks = () => {
                     {link?.subLinks?.map((subLink, idx) => {
                       return (
                         <Link to={subLink.path} key={idx}>
-                          <li className="text-lg text-neutral py-2.5 px-5 md:px-0 hover:text-secondary border-b border-neutral/20 hover:border-secondary capitalize">
+                          <li onClick={()=>setClick(!click)} className="text-lg text-neutral py-2.5 px-5 md:px-0 hover:text-secondary border-b border-neutral/20 hover:border-secondary capitalize">
                             {subLink.subPathName}
                           </li>
                         </Link>

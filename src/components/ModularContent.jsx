@@ -11,7 +11,7 @@ const ModularContent = ({ description, btn }) => {
       style={{ background: `url(${footerMsgBg})` }}
     >
       {btn && (
-        <Link className="flex justify-center relative top-1/2" to="/contact-us">
+        <Link className="flex justify-center items-center align-middle h-full" to="/contact-us">
           <Button>Contact Our Team</Button>
         </Link>
       )}
