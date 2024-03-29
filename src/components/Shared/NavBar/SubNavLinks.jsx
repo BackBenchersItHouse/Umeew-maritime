@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-const SubNavLinks = () => {
+const SubNavLinks = ({open, setOpen}) => {
   const [click, setClick] = useState(false);
 
   const links = [
@@ -52,7 +52,7 @@ const SubNavLinks = () => {
                     {link?.subLinks?.map((subLink, idx) => {
                       return (
                         <Link to={subLink.path} key={idx}>
-                          <li onClick={()=>setClick(!click)} className="text-lg text-neutral py-2.5 px-5 md:px-0 hover:text-secondary border-b border-neutral/20 hover:border-secondary capitalize">
+                          <li onClick={()=>{setClick(!click); setOpen(!open);}} className="text-lg text-neutral py-2.5 px-5 md:px-0 hover:text-secondary border-b border-neutral/20 hover:border-secondary capitalize">
                             {subLink.subPathName}
                           </li>
                         </Link>

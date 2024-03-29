@@ -81,24 +81,19 @@ const NavBar_V2 = () => {
             open ? "left-0" : "-left-full"
           }`}
         >
-          <li className="border-b border-neutral/20">
+          <li onClick={()=>setOpen(!open)} className="border-b border-neutral/20">
             <Link className="py-2.5 px-3 inline-block" to="/">
               Home
             </Link>
           </li>
-          <li className="border-b border-neutral/20">
+          <li onClick={()=>setOpen(!open)} className="border-b border-neutral/20">
             <Link className="py-2.5 px-3 inline-block" to="/about-us">
               About Us
             </Link>
           </li>
-          <li className="border-b border-neutral/20">
-            <Link className="py-2.5 px-3 inline-block" to="/service">
-              Service
-            </Link>
-          </li>
-          <SubNavLinks />
+          <SubNavLinks open={open} setOpen={setOpen} />
 
-          <Link to="/contact-us">
+          <Link onClick={()=>setOpen(!open)} to="/contact-us">
             <Button divClass="fixed top-[80vh]">Contact Us</Button>
           </Link>
         </ul>

@@ -7,7 +7,7 @@ const ModularContent = ({ description, btn }) => {
   return (
     // if no props, then only show bg img. if no need img when no props then remove h-[440px] in section className attribute.
     <section
-      className="h-[440px] !bg-no-repeat !bg-cover !bg-center -z-50"
+      className="h-[200px] md:h-[440px] !bg-no-repeat !bg-cover !bg-center -z-50"
       style={{ background: `url(${footerMsgBg})` }}
     >
       {btn && (
