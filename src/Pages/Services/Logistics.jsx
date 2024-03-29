@@ -1,4 +1,3 @@
-import React from "react";
 // Service Banner Section 
 import ServiceBanner from "@/components/ServiceBanner";
 import logisticsImg from "@/assets/service-pages/chandlery.svg";
@@ -11,7 +10,7 @@ import ServiceHero from "@/components/ServiceHero";
 import ModularContent from "@/components/ModularContent";
 import logisticsFlag from "@/assets/service-pages/chandlery-flag.svg";
 
-const LogisticsServices = () => {
+const Logistics = () => {
   const logistics = {
     id: 1,
     title:
@@ -21,7 +20,7 @@ const LogisticsServices = () => {
       "At United Marine Engineering & Electrical Works, we understand the critical role efficient logistics plays in the success of your maritime operations.  Whether you require ship chandlery supplies, vital equipment, or export products, our comprehensive logistics services ensure your vessel receives everything it needs, exactly when and where you need it.",
     src: logisticsImg,
     listItem: {
-      itemTitle: "Seamless Deliveries for Every Need",
+      itemTitle: "Seamless Deliveries for Every Need:",
       itemDescription:
         "Our logistics expertise encompasses a wide range of maritime-specific services:",
       lists: [
@@ -107,10 +106,10 @@ const LogisticsServices = () => {
   };
   return (
     <>
-      <section className="max-w-[1170px] mx-auto my-14 space-y-14 md:my-[60px] px-2 xl:px-0">
+      <section className="max-w-[1170px] mx-auto my-14 md:my-[60px] px-2 xl:px-0">
         <ServiceBanner {...logistics} />
 
-        <h1 className="mt-[120px] mb-6 md:mb-[60px] text-center text-2xl md:text-3xl lg:text-[40px] font-bold min-w-[343px] max-w-[707px] mx-auto">
+        <h1 className="mt-14 md:mt-[120px] mb-6 md:mb-[60px] text-center text-2xl md:text-3xl lg:text-[40px] font-bold min-w-[343px] max-w-[707px] mx-auto">
           United Marine Engineering & Electrical Works's Ship Chandlery
           Services
         </h1>
@@ -129,4 +128,4 @@ const LogisticsServices = () => {
   );
 };
 
-export default LogisticsServices;
+export default Logistics;
