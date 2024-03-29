@@ -68,14 +68,6 @@ const NavBar_V2 = () => {
               About Us
             </Link>
           </li>
-          <li>
-            <Link
-              className="py-7 px-3 inline-block hover:text-secondary"
-              to="/service"
-            >
-              Service
-            </Link>
-          </li>
           <SubNavLinks />
         </ul>
 
@@ -101,13 +93,13 @@ const NavBar_V2 = () => {
           </li>
           <li className="border-b border-neutral/20">
             <Link className="py-2.5 px-3 inline-block" to="/service">
-              Service
+              Services
             </Link>
           </li>
           <SubNavLinks />
 
           <Link to="/contact-us">
-            <Button divClass="fixed top-[500px]">Contact Us</Button>
+            <Button divClass="fixed top-[80vh]">Contact Us</Button>
           </Link>
         </ul>
       </div>

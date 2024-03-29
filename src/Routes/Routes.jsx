@@ -1,7 +1,6 @@
 import Main from "@/Layout/Main";
 import Home from "@/Pages/Home/Home";
 import AboutUs from "@/Pages/AboutUs/AboutUs";
-import Blog from "@/Pages/Blog/Blog";
 import ContactUs from "@/Pages/ContactUs/ContactUs";
 import { createBrowserRouter } from "react-router-dom";
 import DisplayError from '@/components/DisplayError';
@@ -10,6 +9,7 @@ import ShipRepair from "@/Pages/Services/ShipRepair";
 import LogisticService from "@/Pages/Services/LogisticService";
 import ExportServices from "@/Pages/Services/ExportServices";
 import ShipSupply from "@/Pages/Services/ShipSupply";
+import Logistics from "@/Pages/Services/Logistics";
 
 const router = createBrowserRouter([
   {
@@ -22,37 +22,32 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/about-us",
-        element: <AboutUs />,
-      },
-   
-      {
-        path: "/blog",
-        element: <Blog />,
+        path: '/about-us',
+        element:<AboutUs/> ,
       },
       {
-        path: "/contact-us",
-        element: <ContactUs />,
-      },
-      {
-        path: "/shipChandlery",
+        path: '/service/ship-chandlery',
         element: <ShipChandlery/>,
       },
       {
-        path: "/shipRepair",
+        path: '/service/ship-repair',
         element: <ShipRepair/>,
       },
       {
-        path: "/logisticService",
-        element: <LogisticService/>,
+        path: '/service/ship-supply',
+        element: <ShipSupply/>,
       },
       {
-        path: "/exportService",
+        path: '/service/logistics',
+        element: <Logistics />,
+      },
+      {
+        path: '/service/export-products',
         element: <ExportServices/>,
       },
       {
-        path: "/shipSupply",
-        element: <ShipSupply/>,
+        path: '/contact-us',
+        element: <ContactUs></ContactUs>,
       },
     ],
   },
