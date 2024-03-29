@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const SubNavLinks = ({open, setOpen}) => {
   const [click, setClick] = useState(false);
@@ -51,11 +51,11 @@ const SubNavLinks = ({open, setOpen}) => {
                   <div className="bg-primary md:bg-primary/95 backdrop-blur-3xl w-full md:w-64 py-2.5 px-5 md:p-3.5">
                     {link?.subLinks?.map((subLink, idx) => {
                       return (
-                        <Link to={subLink.path} key={idx}>
-                          <li onClick={()=>{setClick(!click); setOpen(!open);}} className="text-lg text-neutral py-2.5 px-5 md:px-0 hover:text-secondary border-b border-neutral/20 hover:border-secondary capitalize">
+                        <NavLink to={subLink.path} key={idx}>
+                          <li onClick={()=> setClick(!click) && setOpen(!open)} className="text-lg text-neutral py-2.5 px-5 md:px-0 hover:text-secondary border-b border-neutral/20 hover:border-secondary capitalize">
                             {subLink.subPathName}
                           </li>
-                        </Link>
+                        </NavLink>
                       );
                     })}
                   </div>

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Button from "@/components/Buttons/Button";
 import SubNavLinks from "./SubNavLinks";
 // import umeewLogo from "@/assets/umeew-logo.svg";
@@ -10,10 +10,10 @@ const NavBar_V2 = () => {
     <nav className="max-w-[1170px] mx-auto text-white">
       <div className="flex items-center text-xl md:text-base font-medium justify-between">
         <div className="z-50 py-5 w-full md:w-auto flex justify-between">
-          <Link to="/">
+          <NavLink to="/">
             {/* <img src={umeewLogo} alt="UMEEW Logo" /> */}
             <h3 className="text-3xl text-secondary font-semibold">UMEEW</h3>
-          </Link>
+          </NavLink>
 
           <div className="md:hidden" onClick={() => setOpen(!open)}>
             {open ? (
@@ -53,27 +53,27 @@ const NavBar_V2 = () => {
         {/* ***** Navigation Routes ***** */}
         <ul className="md:flex hidden capitalize items-center gap-5">
           <li>
-            <Link
+            <NavLink
               className="py-7 px-3 inline-block hover:text-secondary"
               to="/"
             >
               Home
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link
+            <NavLink
               className="py-7 px-3 inline-block hover:text-secondary"
               to="/about-us"
             >
               About Us
-            </Link>
+            </NavLink>
           </li>
           <SubNavLinks />
         </ul>
 
-        <Link className="contact" to="/contact-us">
+        <NavLink className="contact" to="/contact-us">
           <Button>Contact Us</Button>
-        </Link>
+        </NavLink>
 
         {/* ***** Mobile Navigation Routes ***** */}
         <ul
@@ -82,20 +82,20 @@ const NavBar_V2 = () => {
           }`}
         >
           <li onClick={()=>setOpen(!open)} className="border-b border-neutral/20">
-            <Link className="py-2.5 px-3 inline-block" to="/">
+            <NavLink className="py-2.5 px-3 inline-block" to="/">
               Home
-            </Link>
+            </NavLink>
           </li>
           <li onClick={()=>setOpen(!open)} className="border-b border-neutral/20">
-            <Link className="py-2.5 px-3 inline-block" to="/about-us">
+            <NavLink className="py-2.5 px-3 inline-block" to="/about-us">
               About Us
-            </Link>
+            </NavLink>
           </li>
           <SubNavLinks open={open} setOpen={setOpen} />
 
-          <Link onClick={()=>setOpen(!open)} to="/contact-us">
+          <NavLink onClick={()=>setOpen(!open)} to="/contact-us">
             <Button divClass="fixed top-[80vh]">Contact Us</Button>
-          </Link>
+          </NavLink>
         </ul>
       </div>
     </nav>
