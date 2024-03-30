@@ -1,7 +1,7 @@
 import React from "react";
 
 const ServiceHero = ({ title, description, src, isReverse } ) => {
-  console.log(isReverse);
+  // console.log(isReverse);
   return (
     <section
       className={`my-14 md:my-[120px] flex ${

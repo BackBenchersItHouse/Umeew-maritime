@@ -59,7 +59,7 @@ const SubNavLinks = ({ open, setOpen }) => {
                       return (
                         <NavLink to={subLink.path} key={idx}>
                           <li
-                            onClick={() => setClick(!click) && setOpen(!open)}
+                            onClick= {() => {setClick(!click); setOpen(!open);}}
                             className="text-lg text-neutral py-2.5 px-5 md:px-0 hover:text-secondary border-b border-neutral/20 hover:border-secondary capitalize"
                           >
                             {subLink.subPathName}
