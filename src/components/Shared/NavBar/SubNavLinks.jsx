@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import dropDown from "@/assets/icons/drop-down-icon.svg";
 
-const SubNavLinks = ({open, setOpen}) => {
+const SubNavLinks = ({ open, setOpen }) => {
   const [click, setClick] = useState(false);
 
   const links = [
@@ -29,7 +30,7 @@ const SubNavLinks = ({open, setOpen}) => {
         <div key={idx}>
           <div className="text-left md:cursor-pointer group">
             <h3
-              className={`py-2.5 px-3 md:py-7 capitalize hover:text-secondary ${
+              className={`py-2.5 px-3 md:py-7 flex items-center gap-2 capitalize hover:text-secondary ${
                 click
                   ? "border-b border-secondary"
                   : "border-b border-neutral/20 md:border-neutral/0"
@@ -37,6 +38,11 @@ const SubNavLinks = ({open, setOpen}) => {
               onClick={() => setClick(!click)}
             >
               {link.pathName}
+              <img
+                className={`${click ? "-rotate-180 scale-110" : "rotate-0"} duration-300`}
+                src={dropDown}
+                alt="Drop Down icon"
+              />
             </h3>
             {link.isSubMenu && (
               <div className="relative">
@@ -52,7 +58,10 @@ const SubNavLinks = ({open, setOpen}) => {
                     {link?.subLinks?.map((subLink, idx) => {
                       return (
                         <NavLink to={subLink.path} key={idx}>
-                          <li onClick={()=> setClick(!click) && setOpen(!open)} className="text-lg text-neutral py-2.5 px-5 md:px-0 hover:text-secondary border-b border-neutral/20 hover:border-secondary capitalize">
+                          <li
+                            onClick={() => setClick(!click) && setOpen(!open)}
+                            className="text-lg text-neutral py-2.5 px-5 md:px-0 hover:text-secondary border-b border-neutral/20 hover:border-secondary capitalize"
+                          >
                             {subLink.subPathName}
                           </li>
                         </NavLink>

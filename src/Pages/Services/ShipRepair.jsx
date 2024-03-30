@@ -110,6 +110,15 @@ const ShipRepair = () => {
     src: shipRepairFlag,
   };
 
+  const slogan1 = {
+    title:
+      "Seamless Repairs & Minimized Downtime",
+    description:
+      "Our priority is to get your vessel back in operation as quickly as possible, minimizing downtime and lost revenue.  We work closely with you to understand the nature of the repairs needed and provide transparent communication throughout the repair process.",
+    src: shipRepairFlag,
+    isReverse: true,
+  };
+
   const props = {
     description:
       "Contact United Marine Engineering & Electrical Works today to discuss your specific repair requirements and request a free quote!",
@@ -130,6 +139,7 @@ const ShipRepair = () => {
           ))}
         </div>
 
+        <ServiceHero {...slogan1} />
         <ServiceHero {...slogan} />
       </section>
       <ModularContent {...props} />
