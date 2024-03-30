@@ -8,9 +8,6 @@ import ShipChandlery from "@/Pages/Services/ShipChandlery";
 import ShipRepair from "@/Pages/Services/ShipRepair";
 import ShipSupply from "@/Pages/Services/ShipSupply";
 import Logistics from "@/Pages/Services/Logistics";
-import ShipChandlery from "@/Pages/Services/ShipChandlery";
-import ShipSupply from "@/Pages/Services/ShipSupply";
-import ShipRepair from "@/Pages/Services/ShipRepair";
 import ExportProducts from "@/Pages/Services/ExportProducts";
 
 const router = createBrowserRouter([

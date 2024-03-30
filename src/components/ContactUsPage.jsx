@@ -21,16 +21,10 @@ const ContactUsPage = () => {
         <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-10">
           {/* part one div form section basically */}
           <div className="part1 basis-1/2 flex flex-col items-center  p-8 rounded-xl shadow-md">
-          <h1 className="typewriter-anim   lg:text-4xl md:text-3xl text-2xl font-semibold my-10 text-center">
-          Leave A Message
-        
-            
-        </h1>
-            <form
-              action=""
-              method="POST"
-              className="w-full max-w-lg "
-            >
+            <h1 className="typewriter-anim   lg:text-4xl md:text-3xl text-2xl font-semibold my-10 text-center">
+              Leave A Message
+            </h1>
+            <form action="" method="POST" className="w-full max-w-lg ">
               <div className="flex flex-wrap  -mx-3 mb-6">
                 <div className="w-full md:w-1/2  px-3 mb-6 md:mb-0">
                   <input
@@ -94,9 +88,9 @@ const ContactUsPage = () => {
               </button>
             </form>
           </div>
-        
-   {/* part two div information section basically */}    
-            <div className="  part2    text-2xl basis-2/3  p-8 rounded-xl shadow-md">
+
+          {/* part two div information section basically */}
+          <div className="  part2    text-2xl basis-2/3  p-8 rounded-xl shadow-md">
             <h1 className="typewriter-anim   lg:text-4xl md:text-3xl text-2xl font-semibold my-10 text-center">
               Get Closer With Us
             </h1>
@@ -319,11 +313,9 @@ const ContactUsPage = () => {
       {/* part three div map section basically */}
       <div className="part3 my-16 ">
         <div className="">
-        <h1 className=" typewriter-anim   lg:text-4xl md:text-3xl text-2xl font-semibold my-10 text-center">
-        Find Us On Google Map
-</h1>
-
-
+          <h1 className=" typewriter-anim   lg:text-4xl md:text-3xl text-2xl font-semibold my-10 text-center">
+            Find Us On Google Map
+          </h1>
 
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.817511993117!2d91.77688477391928!3d22.32274034208425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30acdf36d2d89ee9%3A0xc928c75ddd6fa59a!2sUnited%20Marine%20Engineering%20and%20Electrical%20Works!5e0!3m2!1sen!2sbd!4v1711208148165!5m2!1sen!2sbd"
