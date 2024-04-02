@@ -1,6 +1,7 @@
 import React from 'react'
 import dotIcon from "@/assets/icons/dotPoint.png";
 import shipIcon from "@/assets/icons/ship.png";
+import shipVideo from "@/assets/icons/ummew_ship_film.mp4"
 import Card from "@/components/Shared/Card";
 import ModularContent from "@/components/ModularContent";
 //Naimur Rahman
@@ -105,11 +106,16 @@ const ShipSupply = () => {
   return (
     <>
     <section className="max-w-7xl mx-auto md:block flex flex-col-reverse items-center text-lg my-10 p-4">
-      <img
+      {/* <img
         className="md:ml-4 md:float-right w-[530px] h-[470px] mt-8 md:mt-0"
         src="https://i.ibb.co/1vnZBQP/image-86.png"
         alt="man"
-      />
+      /> */}
+<video autoPlay loop className="md:ml-4 md:float-right w-[530px]  h-[470px] mt-8 md:mt-0">
+  <source  src={shipVideo} type='video/mp4'></source>
+</video>
+
+
       <div>
         <h1 className="text-3xl md:text-5xl font-bold mb-10 leading-snug">
         United Marine Engineering & Electrical Works: Your Complete Ship Supply Solution (Electrical, Mechanical & Beyond)
