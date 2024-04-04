@@ -8,7 +8,7 @@ const ServiceCard = ({ id, src, title, subTitle }) => {
       key={id}
     >
       <div>
-        <img src={src} alt={`${title} image`} />
+        <img className="rounded-xl" src={src} alt={`${title} image`} />
       </div>
       <h3 className="text-xl font-semibold my-4">{title}</h3>
       <p className="w-[338px] text-accent my-4">{subTitle}</p>
