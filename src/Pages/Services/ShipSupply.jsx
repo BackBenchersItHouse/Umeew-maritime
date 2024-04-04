@@ -9,7 +9,6 @@ import ServiceHero from "@/components/ServiceHero";
 // Service Modular Content Section
 import ModularContent from "@/components/ModularContent";
 import shipSupplyFlag from "@/assets/service-pages/chandlery-flag.svg";
-import ServiceLists from "@/components/ServiceLists";
 
 const ShipSupply = () => {
   const shipSupply = {
@@ -71,6 +70,34 @@ const ShipSupply = () => {
     },
   };
 
+  const equipmentAndMachinery = {
+    listItem: {
+      itemTitle: "Beyond the Basics:  Specialized Equipment & Machinery",
+      itemDescription:
+        "Our expertise extends beyond standard ship supplies. We can source and supply specialized equipment and machinery for your specific needs, including:",
+      lists: [
+        {
+          listId: 1,
+          listHead: "Cargo Handling Equipment",
+          listPara:
+            "Cranes, forklifts, lashing equipment, and other cargo handling solutions tailored to your specific cargo type.",
+        },
+        {
+          listId: 2,
+          listHead: "Pollution Prevention Equipment",
+          listPara:
+            "We offer a range of equipment to comply with environmental regulations and ensure sustainable maritime operations.",
+        },
+        {
+          listId: 3,
+          listHead: "Waste Management Equipment",
+          listPara:
+            "Radars, GPS systems, radios, charts, and other equipment for safe and efficient navigation.",
+        },
+      ],
+    }
+  };
+
   const commitments = [
     {
       id: 1,
@@ -102,32 +129,6 @@ const ShipSupply = () => {
     },
   ];
 
-  const serviceLists = {
-    title: "Beyond the Basics:  Specialized Equipment & Machinery",
-    description:
-      "Our expertise extends beyond standard ship supplies. We can source and supply specialized equipment and machinery for your specific needs, including:",
-    lists: [
-      {
-        listId: 1,
-        listHead: "Cargo Handling Equipment",
-        listPara:
-          "Cranes, forklifts, lashing equipment, and other cargo handling solutions tailored to your specific cargo type.",
-      },
-      {
-        listId: 2,
-        listHead: "Pollution Prevention Equipment",
-        listPara:
-          "We offer a range of equipment to comply with environmental regulations and ensure sustainable maritime operations.",
-      },
-      {
-        listId: 3,
-        listHead: "Waste Management Equipment",
-        listPara:
-          "Radars, GPS systems, radios, charts, and other equipment for safe and efficient navigation.",
-      },
-    ],
-  };
-
   const slogan = {
     title: "Streamlined Procurement & Peace of Mind",
     description:
@@ -144,7 +145,7 @@ const ShipSupply = () => {
       <section className="max-w-[1170px] mx-auto my-14 md:my-[60px] px-2 xl:px-0">
         <ServiceBanner {...shipSupply} />
 
-        <ServiceLists {...serviceLists} />
+        <ServiceBanner {...equipmentAndMachinery} />
 
         <h1 className="mt-14 md:mt-[120px] mb-6 md:mb-[60px] text-center text-2xl md:text-3xl lg:text-[40px] font-bold min-w-[343px] max-w-[707px] mx-auto">
           The United Marine Engineering & Electrical Works Advantage:

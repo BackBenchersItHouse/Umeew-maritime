@@ -1,7 +1,7 @@
 import React from "react";
 
 const ServicesBanner = ({ ...data }) => {
-  const { id, title, subTitle, description, src, listItem } = { ...data };
+  const { title, subTitle, description, src, listItem } = { ...data };
   const { itemTitle, itemDescription, lists } = listItem;
   // const {listId, listHead, listPara} = lists[0];
   // console.log("recevied data:", listHead);
@@ -9,7 +9,8 @@ const ServicesBanner = ({ ...data }) => {
   return (
     <section>
       <img
-        className="float-none hidden md:block md:float-right mx-auto md:ml-7"
+        className={` mx-auto md:ml-7 ${src ? "md:block md:float-right" : "float-none hidden"}`}
+        // className="float-none hidden md:block md:float-right mx-auto md:ml-7"
         src={src}
         alt={`${title}'s Image`}
       />
@@ -21,7 +22,8 @@ const ServicesBanner = ({ ...data }) => {
       </h2>
       <p className="mb-8 text-accent">{description}</p>
       <img
-        className="md:hidden mx-auto md:ml-7 mt-9 mb-14"
+        className={`md:hidden mx-auto md:ml-7 mt-9 mb-14 ${src ? "block" : "hidden"}`}
+        // className="md:hidden mx-auto md:ml-7 mt-9 mb-14"
         src={src}
         alt={`${title}'s Image`}
       />

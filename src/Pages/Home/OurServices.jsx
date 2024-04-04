@@ -9,8 +9,10 @@ import logisticsServices from "@/assets/services/logistics-services.svg";
 import exportProducts from "@/assets/services/export-products-services.svg";
 import { Link } from "react-router-dom";
 import ServiceCard from "@/components/Cards/ServiceCard";
+import scrollToTop from "@/components/Shared/NavBar/ScrollToTop";
 
 const OurServices = () => {
+
   const services = [
     {
       id: 1,
@@ -63,7 +65,7 @@ const OurServices = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-between justify-items-center gap-8">
         {services?.map((service) => {
           return (
-            <Link to={service.path} key={service.id}>
+            <Link onClick={scrollToTop} to={service.path} key={service.id}>
               <ServiceCard {...service} />
             </Link>
           );

@@ -22,7 +22,7 @@ const Main = () => {
       <header
         onScroll={changeNavBg}
         className={` ${
-          navBg ? "bg-primary/90 backdrop-blur-3xl drop-shadow-2xl" : "bg-primary"
+          navBg ? "bg-primary/95" : "bg-primary"
         } duration-300 sticky top-0 z-50 border-b border-neutral/20 px-5 md:px-2`}
       >
         <NavBar />

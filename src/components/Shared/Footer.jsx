@@ -9,6 +9,7 @@ import ig from "../../assets/icons/ig.svg";
 import x from "../../assets/icons/x.svg";
 import linkedin from "../../assets/icons/in.svg";
 import { Link } from "react-router-dom";
+import scrollToTop from "./NavBar/ScrollToTop";
 
 const Footer = () => {
   return (
@@ -27,19 +28,19 @@ const Footer = () => {
             <section className="max-w-60">
               <h3 className="text-3xl text-secondary font-semibold mb-6">Quick Links</h3>
               <ul>
-                <li><Link to='/about-us'>About Us</Link></li>
-                <li><Link to='/service'>Services</Link></li>
-                <li><Link to='/'>Track Your Shipment</Link></li>
-                <li><Link to='/'>Get a Quote</Link></li>
+                <li onClick={scrollToTop}><Link to='/about-us'>About Us</Link></li>
+                <li onClick={scrollToTop}><Link to='/service/ship-chandlery'>Services</Link></li>
+                <li onClick={scrollToTop}><Link to='/'>Track Your Shipment</Link></li>
+                <li onClick={scrollToTop}><Link to='/'>Get a Quote</Link></li>
               </ul>
             </section>
             <section>
               <h3 className="text-3xl text-secondary font-semibold mb-6">Support</h3>
               <ul>
-                <li><Link to='/contact-us'>Contact Us</Link></li>
-                <li><Link to='/'>Careers</Link></li>
-                <li><Link to='/'>Privacy Policy</Link></li>
-                <li><Link to='/'>Terms of Us</Link>e</li>
+                <li onClick={scrollToTop}><Link to='/contact-us'>Contact Us</Link></li>
+                <li onClick={scrollToTop}><Link to='/careers'>Careers</Link></li>
+                <li onClick={scrollToTop}><Link to='/privacy-policy'>Privacy Policy</Link></li>
+                <li onClick={scrollToTop}><Link to='/terms-of-us'>Terms of Use</Link></li>
               </ul>
             </section>
           </div>
