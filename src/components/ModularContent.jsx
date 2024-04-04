@@ -2,6 +2,7 @@ import React from "react";
 import footerMsgBg from "@/assets/contact-bg-img.svg";
 import Button from "@/components/Buttons/Button";
 import { Link } from "react-router-dom";
+import scrollToTop from "./Shared/NavBar/ScrollToTop";
 
 const ModularContent = ({ description, btn }) => {
   return (
@@ -13,7 +14,7 @@ const ModularContent = ({ description, btn }) => {
       {btn && (
         <div className="flex flex-col justify-center items-center align-middle text-white gap-6 md:gap-10 h-full">
           <p className="text-2xl md:text-5xl font-semibold">Get a Free Quote</p>
-          <Link to="/contact-us">
+          <Link onClick={scrollToTop} to="/contact-us">
             <Button>Contact Our Team</Button>
           </Link>
         </div>
