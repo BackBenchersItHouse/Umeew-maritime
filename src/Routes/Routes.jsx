@@ -2,8 +2,8 @@ import Main from "@/Layout/Main";
 import Home from "@/Pages/Home/Home";
 import AboutUs from "@/Pages/AboutUs/AboutUs";
 import ContactUs from "@/Pages/ContactUs/ContactUs";
-import { createBrowserRouter } from "react-router-dom";
-import DisplayError from '@/components/DisplayError';
+import { createBrowserRouter, createHashRouter } from "react-router-dom";
+import DisplayError from "@/components/DisplayError";
 // import ShipChandlery from "@/Pages/Services/ShipChandlery";
 // import ShipRepair from "@/Pages/Services/ShipRepair";
 import LogisticService from "@/Pages/Services/LogisticService";
@@ -15,42 +15,42 @@ import ShipSupply from "@/Pages/Services/ShipSupply";
 import ShipRepair from "@/Pages/Services/ShipRepair";
 import ExportProducts from "@/Pages/Services/ExportProducts";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <Main />,
-    errorElement: <DisplayError/>,
+    errorElement: <DisplayError />,
     children: [
       {
         path: "/",
         element: <Home />,
       },
       {
-        path: '/about-us',
-        element:<AboutUs/> ,
+        path: "/about-us",
+        element: <AboutUs />,
       },
       {
-        path: '/service/ship-chandlery',
+        path: "/service/ship-chandlery",
         element: <ShipChandlery />,
       },
       {
-        path: '/service/ship-repair',
+        path: "/service/ship-repair",
         element: <ShipRepair />,
       },
       {
-        path: '/service/ship-supply',
+        path: "/service/ship-supply",
         element: <ShipSupply />,
       },
       {
-        path: '/service/logistics',
+        path: "/service/logistics",
         element: <Logistics />,
       },
       {
-        path: '/service/export-products',
+        path: "/service/export-products",
         element: <ExportProducts />,
       },
       {
-        path: '/contact-us',
+        path: "/contact-us",
         element: <ContactUs></ContactUs>,
       },
     ],
