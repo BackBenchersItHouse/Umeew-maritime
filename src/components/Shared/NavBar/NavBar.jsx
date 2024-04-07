@@ -14,8 +14,18 @@ const NavBar_V2 = () => {
     <nav className="max-w-[1170px] mx-auto text-black">
       <div className="flex items-center text-xl md:text-base font-medium justify-between">
         <div className="z-50 py-5 w-full md:w-auto flex justify-between">
-          <NavLink onClick={scrollToTop} to="/">
+          <NavLink
+            className="flex gap-2.5 items-center "
+            onClick={scrollToTop}
+            to="/"
+          >
             <img className="h-10" src={umeewLogo} alt="UMEEW Logo" />
+            <h3
+              onClick={scrollToTop}
+              className="text-2xl md:text-3xl text-secondary font-semibold cursor-pointer"
+            >
+              UMEEW
+            </h3>
           </NavLink>
 
           <div className="md:hidden" onClick={() => setOpen(!open)}>
@@ -27,7 +37,7 @@ const NavBar_V2 = () => {
         <ul className="md:flex hidden capitalize items-center gap-5">
           <li onClick={scrollToTop}>
             <NavLink
-              className="py-7 px-3 inline-block hover:text-secondary border-b-2 hover:border-secondary duration-300"
+              className="py-7 px-3 inline-block hover:text-secondary border-b-2 border-white hover:border-secondary duration-300"
               to="/"
             >
               Home
@@ -35,7 +45,7 @@ const NavBar_V2 = () => {
           </li>
           <li onClick={scrollToTop}>
             <NavLink
-              className="py-7 px-3 inline-block hover:text-secondary border-b-2 hover:border-secondary duration-300"
+              className="py-7 px-3 inline-block hover:text-secondary border-b-2 border-white hover:border-secondary duration-300"
               to="/about-us"
             >
               About Us
@@ -45,7 +55,9 @@ const NavBar_V2 = () => {
         </ul>
 
         <NavLink className="contact" to="/contact-us" onClick={scrollToTop}>
-          <Button divClass="border-black" btnClass="outline-primary">Contact Us</Button>
+          <Button divClass="border-black" btnClass="outline-primary">
+            Contact Us
+          </Button>
         </NavLink>
 
         {/* ***** Mobile Navigation Routes ***** */}
@@ -56,7 +68,7 @@ const NavBar_V2 = () => {
         >
           <li
             onClick={() => setOpen(!open) || scrollToTop()}
-            className="border-b border-neutral/20"
+            className="border-b border-neutral/20 hover:border-secondary"
           >
             <NavLink className="py-2.5 px-3 inline-block" to="/">
               Home
@@ -64,7 +76,7 @@ const NavBar_V2 = () => {
           </li>
           <li
             onClick={() => setOpen(!open) || scrollToTop()}
-            className="border-b border-neutral/20"
+            className="border-b border-neutral/20 hover:border-secondary"
           >
             <NavLink className="py-2.5 px-3 inline-block" to="/about-us">
               About Us
@@ -76,7 +88,12 @@ const NavBar_V2 = () => {
             onClick={() => setOpen(!open) || scrollToTop()}
             to="/contact-us"
           >
-            <Button divClass="fixed top-[75vh] border-black" btnClass="outline-primary">Contact Us</Button>
+            <Button
+              divClass="fixed top-[75vh] border-black"
+              btnClass="outline-primary"
+            >
+              Contact Us
+            </Button>
           </NavLink>
         </ul>
       </div>

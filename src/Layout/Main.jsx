@@ -21,7 +21,7 @@ const Main = () => {
     <>
       <header
         onScroll={changeNavBg}
-        className={` ${
+        className={`${
           navBg ? "bg-white" : "bg-white"
         } duration-300 sticky top-0 z-50 border-b border-neutral/50 shadow-2xl px-5 md:px-2`}
       >
