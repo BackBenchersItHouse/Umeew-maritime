@@ -5,23 +5,17 @@ import SubNavLinks from "./SubNavLinks";
 import MenuOpen from "@/components/Icons/MenuOpen";
 import MenuClose from "@/components/Icons/MenuClose";
 import scrollToTop from "./ScrollToTop";
-// import umeewLogo from "@/assets/umeew-logo.svg";
+import umeewLogo from "@/assets/umeew.png";
 
 const NavBar_V2 = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="max-w-[1170px] mx-auto text-white">
+    <nav className="max-w-[1170px] mx-auto text-black">
       <div className="flex items-center text-xl md:text-base font-medium justify-between">
         <div className="z-50 py-5 w-full md:w-auto flex justify-between">
-          <NavLink to="/">
-            {/* <img src={umeewLogo} alt="UMEEW Logo" /> */}
-            <h3
-              onClick={scrollToTop}
-              className="text-3xl text-secondary font-semibold"
-            >
-              UMEEW
-            </h3>
+          <NavLink onClick={scrollToTop} to="/">
+            <img className="h-10" src={umeewLogo} alt="UMEEW Logo" />
           </NavLink>
 
           <div className="md:hidden" onClick={() => setOpen(!open)}>
@@ -33,7 +27,7 @@ const NavBar_V2 = () => {
         <ul className="md:flex hidden capitalize items-center gap-5">
           <li onClick={scrollToTop}>
             <NavLink
-              className="py-7 px-3 inline-block hover:text-secondary duration-300"
+              className="py-7 px-3 inline-block hover:text-secondary border-b-2 hover:border-secondary duration-300"
               to="/"
             >
               Home
@@ -41,7 +35,7 @@ const NavBar_V2 = () => {
           </li>
           <li onClick={scrollToTop}>
             <NavLink
-              className="py-7 px-3 inline-block hover:text-secondary duration-300"
+              className="py-7 px-3 inline-block hover:text-secondary border-b-2 hover:border-secondary duration-300"
               to="/about-us"
             >
               About Us
@@ -51,12 +45,12 @@ const NavBar_V2 = () => {
         </ul>
 
         <NavLink className="contact" to="/contact-us" onClick={scrollToTop}>
-          <Button>Contact Us</Button>
+          <Button divClass="border-black" btnClass="outline-primary">Contact Us</Button>
         </NavLink>
 
         {/* ***** Mobile Navigation Routes ***** */}
         <ul
-          className={`bg-primary/80 backdrop-blur-3xl md:hidden absolute w-full h-screen top-[77px] py-4 px-5 duration-500 ${
+          className={`bg-white/50 backdrop-blur-3xl md:hidden absolute w-full h-screen top-[77px] py-4 px-5 duration-500 ${
             open ? "left-0" : "-left-full"
           }`}
         >
@@ -82,7 +76,7 @@ const NavBar_V2 = () => {
             onClick={() => setOpen(!open) || scrollToTop()}
             to="/contact-us"
           >
-            <Button divClass="fixed top-[80vh]">Contact Us</Button>
+            <Button divClass="fixed top-[75vh] border-black" btnClass="outline-primary">Contact Us</Button>
           </NavLink>
         </ul>
       </div>

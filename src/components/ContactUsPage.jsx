@@ -1,7 +1,4 @@
-import React from "react";
-
 import "@/components/Style/Umeew.css";
-import ReactWhatsapp from "react-whatsapp";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 const ContactUsPage = () => {
   window.scrollTo({
@@ -121,8 +118,8 @@ const ContactUsPage = () => {
                       fill="#FF8C00"
                     />
                     <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
+                      fillRule="evenodd"
+                      clipRule="evenodd"
                       d="M13.1446 17.3978C13.431 13.9237 16.3341 11.25 19.82 11.25H20.18C23.6659 11.25 26.5691 13.9237 26.8554 17.3978C27.0096 19.2683 26.4318 21.1257 25.2438 22.5786L21.2496 27.4634C20.6037 28.2532 19.3963 28.2532 18.7505 27.4634L14.7563 22.5786C13.5682 21.1257 12.9904 19.2683 13.1446 17.3978ZM20 14.375C17.8139 14.375 16.0417 16.1472 16.0417 18.3333C16.0417 20.5195 17.8139 22.2917 20 22.2917C22.1861 22.2917 23.9583 20.5195 23.9583 18.3333C23.9583 16.1472 22.1861 14.375 20 14.375Z"
                       fill="#FF8C00"
                     />
@@ -180,8 +177,8 @@ const ContactUsPage = () => {
                       stroke="black"
                     />
                     <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
+                      fillRule="evenodd"
+                      clipRule="evenodd"
                       d="M11.25 13.75C11.25 12.3693 12.3693 11.25 13.75 11.25H14.893C15.61 11.25 16.235 11.738 16.4089 12.4335L17.3304 16.1195C17.4828 16.7294 17.2549 17.3713 16.752 17.7485L15.674 18.557C15.5621 18.641 15.5377 18.7639 15.5692 18.8497C16.5154 21.4329 18.5671 23.4846 21.1503 24.4308C21.2361 24.4623 21.359 24.4379 21.443 24.326L22.2515 23.248C22.6287 22.7451 23.2706 22.5172 23.8805 22.6696L27.5665 23.5911C28.262 23.765 28.75 24.39 28.75 25.107V26.25C28.75 27.6307 27.6307 28.75 26.25 28.75H24.375C17.1263 28.75 11.25 22.8737 11.25 15.625V13.75Z"
                       fill="#FF8C00"
                     />
@@ -190,14 +187,11 @@ const ContactUsPage = () => {
                   {/* call icon */}
                 </span>
 
-                <ReactWhatsapp
-                  className="cursor-pointer text-slate-800 text-xl "
-                  number="+8801682036423"
-                  message="Hello from your Website!!!"
-                  target="_blank"
-                >
-                  +8801682036423
-                </ReactWhatsapp>
+                <a href="https://wa.me/8801682036423" target="_blank">
+                  <span className="lg:text-2xl text-[15px] lg:font-normal font-bold text-slate-800 text-xl">
+                    +8801682036423
+                  </span>
+                </a>
               </div>
             </div>
 
