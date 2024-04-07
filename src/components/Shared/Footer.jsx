@@ -121,16 +121,16 @@ const Footer = () => {
           <section className="max-w-[1170px] mx-auto px-5 md:px-0 flex flex-col-reverse sm:flex-row gap-5 justify-between items-center my-5">
             <p>&#169; 2024 , All rights reserved.</p>
             <div className="md:flex gap-3 items-center hidden">
-              <Link to="/">
+              <Link className="hover:translate-y-1 duration-500" to="/">
                 <img src={fb} alt="Facebook icon" />
               </Link>
-              <Link to="/">
+              <Link className="hover:translate-y-1 duration-500" to="/">
                 <img src={ig} alt="Instagram icon" />
               </Link>
-              <Link to="/">
+              <Link className="hover:translate-y-1 duration-500" to="/">
                 <img src={x} alt="X icon" />
               </Link>
-              <Link to="/">
+              <Link className="hover:translate-y-1 duration-500" to="/">
                 <img src={linkedin} alt="LinkedIn icon" />
               </Link>
             </div>
