@@ -1,4 +1,3 @@
-import React from "react";
 import footerMsgBg from "@/assets/contact-bg-img.svg";
 import Button from "@/components/Buttons/Button";
 import { Link } from "react-router-dom";
@@ -20,7 +19,7 @@ const ModularContent = ({ description, btn }) => {
         </div>
       )}
       {description && (
-        <div className="text-white text-center text-2xl md:text-4xl lg:text-5xl font-bold leading-tight min-w-[343px] max-w-[970px] mx-auto flex justify-center items-center align-middle h-full">
+        <div className="text-white text-center text-xl md:text-4xl lg:text-5xl font-bold leading-tight min-w-[343px] max-w-[970px] mx-auto px-5 md:px-0 flex justify-center items-center align-middle h-full">
           {description}
         </div>
       )}

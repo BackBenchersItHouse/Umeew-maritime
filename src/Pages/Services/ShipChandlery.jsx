@@ -10,6 +10,8 @@ import ServiceHero from "@/components/ServiceHero";
 import ModularContent from "@/components/ModularContent";
 import shipChandleryFlag from "@/assets/service-pages/chandlery-flag.svg";
 
+import Title from "@/components/Title";
+
 const ShipChandlery = () => {
   const shipChandlery = {
     id: 1,
@@ -110,6 +112,8 @@ const ShipChandlery = () => {
   };
   return (
     <>
+      <Title title={"Ship Chandlery"} />
+
       <section className="max-w-[1170px] mx-auto my-14 md:my-[60px] px-2 xl:px-0">
         <ServiceBanner {...shipChandlery} />
 

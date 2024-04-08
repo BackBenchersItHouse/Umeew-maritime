@@ -13,7 +13,7 @@ import scrollToTop from "./NavBar/ScrollToTop";
 
 const Footer = () => {
   return (
-    <footer className="bg-primary text-neutral text-xl">
+    <footer className="bg-primary text-neutral md:text-xl">
       <section>
         <div className="flex flex-col md:flex-row justify-between py-16 max-w-[1170px] mx-auto px-5 md:px-0">
           {/* <div className="flex flex-col md:flex-row justify-between py-16 max-w-[1170px] mx-auto px-5 md:px-0"> */}

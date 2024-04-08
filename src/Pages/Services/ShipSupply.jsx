@@ -10,6 +10,8 @@ import ServiceHero from "@/components/ServiceHero";
 import ModularContent from "@/components/ModularContent";
 import shipSupplyFlag from "@/assets/service-pages/chandlery-flag.svg";
 
+import Title from "@/components/Title";
+
 const ShipSupply = () => {
   const shipSupply = {
     id: 1,
@@ -95,7 +97,7 @@ const ShipSupply = () => {
             "Radars, GPS systems, radios, charts, and other equipment for safe and efficient navigation.",
         },
       ],
-    }
+    },
   };
 
   const commitments = [
@@ -142,6 +144,8 @@ const ShipSupply = () => {
   };
   return (
     <>
+      <Title title={"Ship Supply"} />
+
       <section className="max-w-[1170px] mx-auto my-14 md:my-[60px] px-2 xl:px-0">
         <ServiceBanner {...shipSupply} />
 

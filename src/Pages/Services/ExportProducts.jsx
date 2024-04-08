@@ -10,6 +10,8 @@ import ServiceHero from "@/components/ServiceHero";
 import ModularContent from "@/components/ModularContent";
 import exportProductsFlag from "@/assets/service-pages/chandlery-flag.svg";
 
+import Title from "@/components/Title";
+
 const ExportProducts = () => {
   const exportProducts = {
     id: 1,
@@ -108,6 +110,8 @@ const ExportProducts = () => {
   };
   return (
     <>
+      <Title title={"Export Products Services"} />
+
       <section className="max-w-[1170px] mx-auto my-14 md:my-[60px] px-2 xl:px-0">
         <ServiceBanner {...exportProducts} />
 

@@ -157,7 +157,7 @@ const ContactUsPage = () => {
                   {/* mail icon */}
                 </span>
                 <a href="mailto:.....">
-                  <span className="lg:text-2xl text-[15px] lg:font-normal font-bold text-slate-800 text-xl">
+                  <span className="text-slate-800 text-xl">
                     info@egistic.com
                   </span>
                 </a>
@@ -188,9 +188,7 @@ const ContactUsPage = () => {
                 </span>
 
                 <a href="https://wa.me/8801682036423" target="_blank">
-                  <span className="lg:text-2xl text-[15px] lg:font-normal font-bold text-slate-800 text-xl">
-                    +8801682036423
-                  </span>
+                  <span className="text-slate-800 text-xl">+8801682036423</span>
                 </a>
               </div>
             </div>

@@ -1,8 +1,11 @@
 import React from "react";
 import LeaderCard from "./LeaderCard";
 import shipIcon from "@/assets/icons/ship.png";
-import ModularContent from "@/components/Shared/ModularContent";
+// import ModularContent from "@/components/Shared/ModularContent";
+import ModularContent from "@/components/ModularContent";
 import CommitmentCard from "@/components/Cards/CommitmentCard";
+import Title from "@/components/Title";
+
 
 const leaders = [
   {
@@ -68,6 +71,8 @@ const works = [
 const AboutUs = () => {
   return (
     <>
+      <Title title={"About Us"} />
+
       <div className="max-w-[1170px] mx-auto">
         {/* Top */}
         <section className="md:block flex flex-col-reverse items-center text-lg my-10">
@@ -137,7 +142,7 @@ const AboutUs = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-between justify-items-center gap-8">
             {works?.map((work, idx) => (
               <div key={idx}>
-                <CommitmentCard {...work} idx={idx}/>
+                <CommitmentCard {...work} idx={idx} />
               </div>
             ))}
           </div>
@@ -156,4 +161,3 @@ const AboutUs = () => {
 };
 
 export default AboutUs;
-
