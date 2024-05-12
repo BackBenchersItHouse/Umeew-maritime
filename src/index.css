@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* *********************** Home Page Start *********************** */
+/* -------------- NavBar Section --------------  */
+@layer base {
+
+}
+
+
+@layer components{
+
+/* Navigation Lists */
+  .menu-btn {
+    @apply order-6 block md:hidden;
+  }
+
+/* Contact Us */
+  .contact {
+    @apply hidden md:block;
+  };
+}
+
+@layer utilities {
+  .smooth-bg {
+    transition: all 0.3s ease;
+  }
+  .hexagon {
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  }
+  
+}
+
+/* -------------- Banner Section --------------  */
+@layer components{
+  .banner-img {
+    @apply absolute -right-full;
+  }
+
+}
+
+/* -------------- Our Commitment to Your Success --------------  */
+
+/* -------------- Our Comprehensive Maritime Services --------------  */
+
+/* -------------- Get a Free Quote --------------  */
+
+/* -------------- Footer --------------  */
+
+/* *********************** Home Page End *********************** */
