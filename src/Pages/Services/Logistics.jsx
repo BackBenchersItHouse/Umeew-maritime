@@ -1,17 +1,18 @@
-import React from "react";
-// Service Banner Section 
+// Service Banner Section
 import ServiceBanner from "@/components/ServiceBanner";
 import logisticsImg from "@/assets/service-pages/chandlery.svg";
-// Service Commitment Section 
+// Service Commitment Section
 import CommitmentCard from "@/components/Cards/CommitmentCard";
 import commitmentIcon from "@/assets/icons/ship.svg";
-// Service Hero Section 
+// Service Hero Section
 import ServiceHero from "@/components/ServiceHero";
-// Service Modular Content Section 
+// Service Modular Content Section
 import ModularContent from "@/components/ModularContent";
 import logisticsFlag from "@/assets/service-pages/chandlery-flag.svg";
 
-const LogisticsServices = () => {
+import Title from "@/components/Title";
+
+const Logistics = () => {
   const logistics = {
     id: 1,
     title:
@@ -21,7 +22,7 @@ const LogisticsServices = () => {
       "At United Marine Engineering & Electrical Works, we understand the critical role efficient logistics plays in the success of your maritime operations.  Whether you require ship chandlery supplies, vital equipment, or export products, our comprehensive logistics services ensure your vessel receives everything it needs, exactly when and where you need it.",
     src: logisticsImg,
     listItem: {
-      itemTitle: "Seamless Deliveries for Every Need",
+      itemTitle: "Seamless Deliveries for Every Need:",
       itemDescription:
         "Our logistics expertise encompasses a wide range of maritime-specific services:",
       lists: [
@@ -98,21 +99,24 @@ const LogisticsServices = () => {
 
   const slogan = {
     title: "Focus on Your Core Business, We Handle the Logistic",
-    description: "United Marine Engineering & Electrical Works allows you to focus on your core business while we take care of the complexities of maritime logistics.  Our team of experienced professionals ensures your supplies reach your vessels efficiently, minimizing delays and disruptions to your operations.",
+    description:
+      "United Marine Engineering & Electrical Works allows you to focus on your core business while we take care of the complexities of maritime logistics.  Our team of experienced professionals ensures your supplies reach your vessels efficiently, minimizing delays and disruptions to your operations.",
     src: logisticsFlag,
-  }
+  };
 
   const props = {
-    description: "Ready to experience the United Marine Engineering & Electrical Works logistics difference? Contact us today to discuss your specific needs and request a free quote!",
+    description:
+      "Ready to experience the United Marine Engineering & Electrical Works logistics difference? Contact us today to discuss your specific needs and request a free quote!",
   };
   return (
     <>
-      <section className="max-w-[1170px] mx-auto my-14 space-y-14 md:my-[60px] px-2 xl:px-0">
+      <Title title={"Logistics Services"} />
+
+      <section className="max-w-[1170px] mx-auto my-14 md:my-[60px] px-2 xl:px-0">
         <ServiceBanner {...logistics} />
 
-        <h1 className="mt-[120px] mb-6 md:mb-[60px] text-center text-2xl md:text-3xl lg:text-[40px] font-bold min-w-[343px] max-w-[707px] mx-auto">
-          United Marine Engineering & Electrical Works's Ship Chandlery
-          Services
+        <h1 className="mt-14 md:mt-[120px] mb-6 md:mb-[60px] text-center text-2xl md:text-3xl lg:text-[40px] font-bold min-w-[343px] max-w-[707px] mx-auto">
+          United Marine Engineering & Electrical Works's Ship Chandlery Services
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-between justify-items-center gap-[30px]">
           {commitments?.map((commitment) => (
@@ -129,4 +133,4 @@ const LogisticsServices = () => {
   );
 };
 
-export default LogisticsServices;
+export default Logistics;
