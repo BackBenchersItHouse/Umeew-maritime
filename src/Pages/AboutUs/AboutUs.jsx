@@ -7,29 +7,54 @@ import Card from "@/components/Shared/Card";
 
 const leaders = [
   {
-    name: "Alice Smith",
-    position: "Shipping Coordinator",
+    name: "Mozahidur Rahman Shuvo",
+    position: "CEO",
     img: "https://i.ibb.co/LPX26fq/image-77-1.png",
   },
   {
-    name: "Bob Johnson",
-    position: "Customer Support Specialist",
+    name: "Sazzad Khan Bappy",
+    position: "Managing Partner",
     img: "https://i.ibb.co/Y81Hb4h/image-77-2.png",
   },
   {
-    name: "Eva Garcia",
-    position: "Warehouse Manager",
+    name: "Golam Kibria Md. Riad",
+    position: "Managing Partner",
     img: "https://i.ibb.co/nkDHx7z/image-77.png",
   },
   {
-    name: "Michael Brown",
-    position: "Delivery Driver",
+    name: "Anarul Islam",
+    position: "Technical Advisor",
     img: "https://i.ibb.co/ysJPK28/image-77-4.png",
   },
   {
-    name: "Sophia Lee",
-    position: "Logistics Coordinator",
+    name: "Md. Jahed",
+    position: "Manager",
+    img: "https://i.ibb.co/LPX26fq/image-77-1.png",
+  },
+  {
+    name: "Shibly Sadique",
+    position: "IT Specialist",
+    img: "https://i.ibb.co/LPX26fq/image-77-1.png",
+  },
+  {
+    name: "Md. Shajalal",
+    position: "Operation Manager",
     img: "https://i.ibb.co/JBygMDq/image-77-3.png",
+  },
+  {
+    name: "Md. Rafique",
+    position: "Technical Supervisor",
+    img: "https://i.ibb.co/LPX26fq/image-77-1.png",
+  },
+  {
+    name: "Imam Hossain",
+    position: "Electrician",
+    img: "https://i.ibb.co/JBygMDq/image-77-3.png",
+  },
+  {
+    name: "Md. Salam Mridha",
+    position: "Warehouse Incharge",
+    img: "https://i.ibb.co/LPX26fq/image-77-1.png",
   },
 ];
 
@@ -101,7 +126,7 @@ const AboutUs = () => {
             </p>
             <p className="font-bold">
               Sincerely, <br />
-              [Chairman Name], <br />
+              Abul Kalam, <br />
               Chairman of the Board
             </p>
           </div>
