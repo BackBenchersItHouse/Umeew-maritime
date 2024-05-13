@@ -10,6 +10,8 @@ import ServiceHero from "@/components/ServiceHero";
 import ModularContent from "@/components/ModularContent";
 import shipRepairFlag from "@/assets/service-pages/chandlery-flag.svg";
 
+import Title from "@/components/Title";
+
 const ShipRepair = () => {
   const shipRepair = {
     id: 1,
@@ -111,8 +113,7 @@ const ShipRepair = () => {
   };
 
   const slogan1 = {
-    title:
-      "Seamless Repairs & Minimized Downtime",
+    title: "Seamless Repairs & Minimized Downtime",
     description:
       "Our priority is to get your vessel back in operation as quickly as possible, minimizing downtime and lost revenue.  We work closely with you to understand the nature of the repairs needed and provide transparent communication throughout the repair process.",
     src: shipRepairFlag,
@@ -125,6 +126,8 @@ const ShipRepair = () => {
   };
   return (
     <>
+      <Title title={"Ship Repair"} />
+
       <section className="max-w-[1170px] mx-auto my-14 md:my-[60px] px-2 xl:px-0">
         <ServiceBanner {...shipRepair} />
 

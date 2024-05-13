@@ -2,17 +2,12 @@ import Main from "@/Layout/Main";
 import Home from "@/Pages/Home/Home";
 import AboutUs from "@/Pages/AboutUs/AboutUs";
 import ContactUs from "@/Pages/ContactUs/ContactUs";
-import { createBrowserRouter, createHashRouter } from "react-router-dom";
+import { createHashRouter } from "react-router-dom";
 import DisplayError from "@/components/DisplayError";
-// import ShipChandlery from "@/Pages/Services/ShipChandlery";
-// import ShipRepair from "@/Pages/Services/ShipRepair";
-import LogisticService from "@/Pages/Services/LogisticService";
-import ExportServices from "@/Pages/Services/ExportServices";
-// import ShipSupply from "@/Pages/Services/ShipSupply";
-import Logistics from "@/Pages/Services/Logistics";
 import ShipChandlery from "@/Pages/Services/ShipChandlery";
-import ShipSupply from "@/Pages/Services/ShipSupply";
 import ShipRepair from "@/Pages/Services/ShipRepair";
+import ShipSupply from "@/Pages/Services/ShipSupply";
+import Logistics from "@/Pages/Services/Logistics";
 import ExportProducts from "@/Pages/Services/ExportProducts";
 
 const router = createHashRouter([
@@ -51,7 +46,7 @@ const router = createHashRouter([
       },
       {
         path: "/contact-us",
-        element: <ContactUs></ContactUs>,
+        element: <ContactUs />,
       },
     ],
   },

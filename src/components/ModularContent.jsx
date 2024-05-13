@@ -1,7 +1,7 @@
-import React from "react";
 import footerMsgBg from "@/assets/contact-bg-img.svg";
 import Button from "@/components/Buttons/Button";
 import { Link } from "react-router-dom";
+import scrollToTop from "./Shared/NavBar/ScrollToTop";
 
 const ModularContent = ({ description, btn }) => {
   return (
@@ -13,13 +13,13 @@ const ModularContent = ({ description, btn }) => {
       {btn && (
         <div className="flex flex-col justify-center items-center align-middle text-white gap-6 md:gap-10 h-full">
           <p className="text-2xl md:text-5xl font-semibold">Get a Free Quote</p>
-          <Link to="/contact-us">
+          <Link onClick={scrollToTop} to="/contact-us">
             <Button>Contact Our Team</Button>
           </Link>
         </div>
       )}
       {description && (
-        <div className="text-white text-center text-2xl md:text-4xl lg:text-5xl font-bold leading-tight min-w-[343px] max-w-[970px] mx-auto flex justify-center items-center align-middle h-full">
+        <div className="text-white text-center text-xl md:text-4xl lg:text-5xl font-bold leading-tight min-w-[343px] max-w-[970px] mx-auto px-5 md:px-0 flex justify-center items-center align-middle h-full">
           {description}
         </div>
       )}

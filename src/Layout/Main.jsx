@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Outlet } from "react-router-dom";
-// import NavBar from "@/components/Shared/NavBar"import Footer from "@/components/Shared/Footer";
 import NavBar from "@/components/Shared/NavBar/NavBar";
 import Footer from "@/components/Shared/Footer";
 
@@ -22,9 +21,9 @@ const Main = () => {
     <>
       <header
         onScroll={changeNavBg}
-        className={` ${
-          navBg ? "bg-primary/90 backdrop-blur-3xl drop-shadow-2xl" : "bg-primary"
-        } duration-300 sticky top-0 z-50 border-b border-neutral/20 px-5 md:px-2`}
+        className={`${
+          navBg ? "bg-white" : "bg-white"
+        } duration-300 sticky top-0 z-50 border-b border-neutral/50 shadow-2xl px-5 md:px-2`}
       >
         <NavBar />
       </header>

@@ -2,67 +2,50 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import Button from "@/components/Buttons/Button";
 import SubNavLinks from "./SubNavLinks";
-// import umeewLogo from "@/assets/umeew-logo.svg";
+import MenuOpen from "@/components/Icons/MenuOpen";
+import MenuClose from "@/components/Icons/MenuClose";
+import scrollToTop from "./ScrollToTop";
+import umeewLogo from "@/assets/umeew.png";
 
 const NavBar_V2 = () => {
   const [open, setOpen] = useState(false);
+
   return (
-    <nav className="max-w-[1170px] mx-auto text-white">
+    <nav className="max-w-[1170px] mx-auto text-black">
       <div className="flex items-center text-xl md:text-base font-medium justify-between">
         <div className="z-50 py-5 w-full md:w-auto flex justify-between">
-          <NavLink to="/">
-            {/* <img src={umeewLogo} alt="UMEEW Logo" /> */}
-            <h3 className="text-3xl text-secondary font-semibold">UMEEW</h3>
+          <NavLink
+            className="flex gap-2.5 items-center "
+            onClick={scrollToTop}
+            to="/"
+          >
+            <img className="h-10" src={umeewLogo} alt="UMEEW Logo" />
+            <h3
+              onClick={scrollToTop}
+              className="text-2xl md:text-3xl text-secondary font-semibold cursor-pointer"
+            >
+              UMEEW
+            </h3>
           </NavLink>
 
           <div className="md:hidden" onClick={() => setOpen(!open)}>
-            {open ? (
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-8 h-8"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M6 18 18 6M6 6l12 12"
-                />
-              </svg>
-            ) : (
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-8 h-8"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"
-                />
-              </svg>
-            )}
+            {open ? <MenuClose /> : <MenuOpen />}
           </div>
         </div>
 
         {/* ***** Navigation Routes ***** */}
         <ul className="md:flex hidden capitalize items-center gap-5">
-          <li>
+          <li onClick={scrollToTop}>
             <NavLink
-              className="py-7 px-3 inline-block hover:text-secondary"
+              className="py-7 px-3 inline-block hover:text-secondary border-b-2 border-white hover:border-secondary duration-300"
               to="/"
             >
               Home
             </NavLink>
           </li>
-          <li>
+          <li onClick={scrollToTop}>
             <NavLink
-              className="py-7 px-3 inline-block hover:text-secondary"
+              className="py-7 px-3 inline-block hover:text-secondary border-b-2 border-white hover:border-secondary duration-300"
               to="/about-us"
             >
               About Us
@@ -71,30 +54,46 @@ const NavBar_V2 = () => {
           <SubNavLinks />
         </ul>
 
-        <NavLink className="contact" to="/contact-us">
-          <Button>Contact Us</Button>
+        <NavLink className="contact" to="/contact-us" onClick={scrollToTop}>
+          <Button divClass="border-accent" btnClass="outline-accent">
+            Contact Us
+          </Button>
         </NavLink>
 
         {/* ***** Mobile Navigation Routes ***** */}
         <ul
-          className={`bg-primary md:hidden absolute w-full h-screen top-[77px] py-4 px-5 duration-500 ${
+          className={`bg-white/50 backdrop-blur-3xl md:hidden absolute w-full h-screen top-[77px] py-4 px-5 duration-500 ${
             open ? "left-0" : "-left-full"
           }`}
         >
-          <li onClick={()=>setOpen(!open)} className="border-b border-neutral/20">
+          <li
+            onClick={() => setOpen(!open) || scrollToTop()}
+            className="border-b border-neutral/20 hover:border-secondary"
+          >
             <NavLink className="py-2.5 px-3 inline-block" to="/">
               Home
             </NavLink>
           </li>
-          <li onClick={()=>setOpen(!open)} className="border-b border-neutral/20">
+          <li
+            onClick={() => setOpen(!open) || scrollToTop()}
+            className="border-b border-neutral/20 hover:border-secondary"
+          >
             <NavLink className="py-2.5 px-3 inline-block" to="/about-us">
               About Us
             </NavLink>
           </li>
           <SubNavLinks open={open} setOpen={setOpen} />
 
-          <NavLink onClick={()=>setOpen(!open)} to="/contact-us">
-            <Button divClass="fixed top-[80vh]">Contact Us</Button>
+          <NavLink
+            onClick={() => setOpen(!open) || scrollToTop()}
+            to="/contact-us"
+          >
+            <Button
+              divClass="fixed top-[75vh] border-accent"
+              btnClass="outline-accent"
+            >
+              Contact Us
+            </Button>
           </NavLink>
         </ul>
       </div>

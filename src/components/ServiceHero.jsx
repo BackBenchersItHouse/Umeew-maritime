@@ -1,11 +1,11 @@
 import React from "react";
 
 const ServiceHero = ({ title, description, src, isReverse } ) => {
-  console.log(isReverse);
+  // console.log(isReverse);
   return (
     <section
       className={`my-14 md:my-[120px] flex ${
-        isReverse ? "flex-col-reverse lg:flex-row-reverse" : ""
+        isReverse ? "flex-col lg:flex-row-reverse" : ""
       } flex-col lg:flex-row justify-center items-center gap-9 md:gap-[100px]`}
     >
       <img className="w-2/3 lg:h-full" src={src} alt={`${title}'s flag`} />
