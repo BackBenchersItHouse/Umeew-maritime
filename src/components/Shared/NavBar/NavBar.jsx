@@ -89,8 +89,8 @@ const NavBar_V2 = () => {
             to="/contact-us"
           >
             <Button
-              divClass="fixed top-[75vh] border-accent"
-              btnClass="outline-accent"
+              divClass="fixed top-[75vh] !border-accent"
+              btnClass="!outline-accent"
             >
               Contact Us
             </Button>

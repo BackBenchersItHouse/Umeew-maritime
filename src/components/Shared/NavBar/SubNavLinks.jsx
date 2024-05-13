@@ -1,9 +1,23 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
 import scrollToTop from "./ScrollToTop";
 
-const SubNavLinks = ({ open, setOpen=()=>{} }) => {
+const SubNavLinks = ({ open, setOpen = () => {} }) => {
   const [click, setClick] = useState(false);
+
+  let clickRef = useRef();
+
+  useEffect(() => {
+    let handler = (e) => {
+      if (!clickRef.current.contains(e.target)) {
+        setClick(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handler);
+
+    // return () => document.removeEventListener("mousedown", handler);
+  }, []);
 
   const links = [
     {
@@ -28,7 +42,7 @@ const SubNavLinks = ({ open, setOpen=()=>{} }) => {
     <>
       {links?.map((link, idx) => (
         <div key={idx}>
-          <div className="text-left md:cursor-pointer group">
+          <div className="text-left md:cursor-pointer group" ref={clickRef}>
             <h3
               className={`py-2.5 px-3 md:py-7 flex items-center gap-2 capitalize hover:text-secondary hover:border-secondary group duration-300 ${
                 click
@@ -38,7 +52,13 @@ const SubNavLinks = ({ open, setOpen=()=>{} }) => {
               onClick={() => setClick(!click)}
             >
               {link.pathName}
-              <i className={`w-2 h-2 border-r-2 border-b-2 border-black group-hover:border-secondary ${click ? "-rotate-[135deg] scale-110 duration-300" : "rotate-45 duration-300"}`}>
+              <i
+                className={`w-2 h-2 border-r-2 border-b-2 border-black group-hover:border-secondary ${
+                  click
+                    ? "-rotate-[135deg] scale-110 duration-300"
+                    : "rotate-45 duration-300"
+                }`}
+              >
                 {/* Drop Down Icon */}
               </i>
             </h3>
@@ -59,7 +79,11 @@ const SubNavLinks = ({ open, setOpen=()=>{} }) => {
                       return (
                         <NavLink to={subLink.path} key={idx}>
                           <li
-                            onClick={() => setClick(!click) || setOpen(!open) || scrollToTop()}
+                            onClick={() =>
+                              setClick(!click) ||
+                              setOpen(!open) ||
+                              scrollToTop()
+                            }
                             className="text-lg text-accent py-2.5 px-5 md:px-0 hover:text-secondary border-b border-neutral/20 hover:border-secondary capitalize"
                           >
                             {subLink.subPathName}
