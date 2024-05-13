@@ -82,11 +82,11 @@ const AboutUs = () => {
             alt="man"
           />
           <div>
-            <p className="text-5xl font-bold mb-10 leading-snug">
+            <p className="text-3xl px-4 md:px-0 md:text-5xl font-bold mb-10 leading-snug">
               United Marine Engineering & Electrical: Your Trusted Partner for a
               Successful Voyage (Established 2005)
             </p>
-            <p className=" ">
+            <p className=" text-base md:text-lg px-4 md:px-0">
               Welcome aboard United Marine Engineering & Electrical Works! Since
               2005, we've navigated the ever-changing seas of the maritime
               industry, providing a comprehensive suite of services designed to
@@ -108,7 +108,7 @@ const AboutUs = () => {
               Works. We are eager to partner with you and contribute to your
               maritime endeavors.
             </p>
-            <p className="font-bold">
+            <p className="font-bold px-4 md:px-0">
               Sincerely, <br />
               [Chairman Name], <br />
               Chairman of the Board
@@ -117,7 +117,7 @@ const AboutUs = () => {
         </section>
         {/* Meet our team leader */}
         <section className="max-w-7xl mx-auto mb-32">
-          <p className="text-5xl text-center my-14 font-bold">
+          <p className="text-3xl md:text-5xl text-center my-14 font-bold">
             Meet Our Team Leaders
           </p>
           <div className="flex flex-wrap justify-center gap-16">
@@ -128,7 +128,7 @@ const AboutUs = () => {
         </section>
         {/* Works */}
         <section className="mb-28">
-          <p className="text-5xl text-center my-14 font-bold md:w-[70%] leading-tight mx-auto">
+          <p className="text-3xl md:text-5xl md:px-0 px-4 text-center my-14 font-bold md:w-[70%] leading-tight mx-auto">
             United Marine Engineering & Electrical Works: A Symphony of
             Expertise
           </p>

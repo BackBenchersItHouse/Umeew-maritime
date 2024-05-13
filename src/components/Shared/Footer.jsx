@@ -69,36 +69,34 @@ const Footer = () => {
               </li>
             </ul>
           </section>
+          <section className=" text-center mx-auto mb-5 md:mb-0 md:mx-0">
+            <h3 className="text-3xl text-secondary font-semibold mb-6">
+              Quick Links
+            </h3>
+            <ul>
+              <li onClick={scrollToTop}>
+                <Link to="/about-us">About Us</Link>
+              </li>
+              <li onClick={scrollToTop}>
+                <Link to="/contact-us">Get a Quote</Link>
+              </li>
+            </ul>
+          </section>
+          <section className="text-center mx-auto md:mx-0">
+            <h3 className="text-3xl text-secondary font-semibold mb-6">
+              Support
+            </h3>
+            <ul>
+              <li onClick={scrollToTop}>
+                <Link to="/contact-us">Contact Us</Link>
+              </li>
+              <li onClick={scrollToTop}>
+                <Link to="/">Terms of Use</Link>
+              </li>
+            </ul>
+          </section>
 
-          <div className="flex flex-wrap md:flex-nowrap justify-between gap-10 md:gap-40">
-            <section className="max-w-60">
-              <h3 className="text-3xl text-secondary font-semibold mb-6">
-                Quick Links
-              </h3>
-              <ul>
-                <li onClick={scrollToTop}>
-                  <Link to="/about-us">About Us</Link>
-                </li>
-                <li onClick={scrollToTop}>
-                  <Link to="/contact-us">Get a Quote</Link>
-                </li>
-              </ul>
-            </section>
 
-            <section className="">
-              <h3 className="text-3xl text-secondary font-semibold mb-6">
-                Support
-              </h3>
-              <ul>
-                <li onClick={scrollToTop}>
-                  <Link to="/contact-us">Contact Us</Link>
-                </li>
-                <li onClick={scrollToTop}>
-                  <Link to="/">Terms of Use</Link>
-                </li>
-              </ul>
-            </section>
-          </div>
         </div>
 
         {/* Medium Device Hidden */}
