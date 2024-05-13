@@ -65,12 +65,6 @@ const Footer = () => {
                   <Link to="/about-us">About Us</Link>
                 </li>
                 <li onClick={scrollToTop}>
-                  <Link to="/service/ship-chandlery">Services</Link>
-                </li>
-                <li onClick={scrollToTop}>
-                  <Link to="/">Track Your Shipment</Link>
-                </li>
-                <li onClick={scrollToTop}>
                   <Link to="/">Get a Quote</Link>
                 </li>
               </ul>
@@ -83,12 +77,6 @@ const Footer = () => {
               <ul>
                 <li onClick={scrollToTop}>
                   <Link to="/contact-us">Contact Us</Link>
-                </li>
-                <li onClick={scrollToTop}>
-                  <Link to="/careers">Careers</Link>
-                </li>
-                <li onClick={scrollToTop}>
-                  <Link to="/privacy-policy">Privacy Policy</Link>
                 </li>
                 <li onClick={scrollToTop}>
                   <Link to="/terms-of-us">Terms of Use</Link>
@@ -121,16 +109,16 @@ const Footer = () => {
           <section className="max-w-[1170px] mx-auto px-5 md:px-0 flex flex-col-reverse sm:flex-row gap-5 justify-between items-center my-5">
             <p>&#169; 2024 , All rights reserved.</p>
             <div className="md:flex gap-3 items-center hidden">
-              <Link className="hover:translate-y-1 duration-500" to="/">
+              <Link className="hover:translate-y-1 duration-500" to="https://www.facebook.com/unitedmarinecare">
                 <img src={fb} alt="Facebook icon" />
               </Link>
-              <Link className="hover:translate-y-1 duration-500" to="/">
+              <Link className="hover:translate-y-1 duration-500" to="https://www.instagram.com/umeew2024/">
                 <img src={ig} alt="Instagram icon" />
               </Link>
-              <Link className="hover:translate-y-1 duration-500" to="/">
+              <Link className="hover:translate-y-1 duration-500" to="https://twitter.com/marine_wor9861">
                 <img src={x} alt="X icon" />
               </Link>
-              <Link className="hover:translate-y-1 duration-500" to="/">
+              <Link className="hover:translate-y-1 duration-500" to="https://www.linkedin.com/company/100919519/admin/feed/posts/">
                 <img src={linkedin} alt="LinkedIn icon" />
               </Link>
             </div>
