@@ -7,7 +7,9 @@
 /* *********************** Home Page Start *********************** */
 /* -------------- NavBar Section --------------  */
 @layer base {
-
+  img {
+    @apply pointer-events-none
+  }
 }
 
 
