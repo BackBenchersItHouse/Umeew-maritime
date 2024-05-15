@@ -55,7 +55,7 @@ const NavBar_V2 = () => {
         </ul>
 
         <NavLink className="contact" to="/contact-us" onClick={scrollToTop}>
-          <Button divClass="border-accent" btnClass="outline-accent">
+          <Button divClass="!border-accent" btnClass="outline-accent">
             Contact Us
           </Button>
         </NavLink>
@@ -89,8 +89,8 @@ const NavBar_V2 = () => {
             to="/contact-us"
           >
             <Button
-              divClass="fixed top-[75vh] border-accent"
-              btnClass="outline-accent"
+              divClass="fixed top-[75vh] !border-accent"
+              btnClass="!outline-accent"
             >
               Contact Us
             </Button>

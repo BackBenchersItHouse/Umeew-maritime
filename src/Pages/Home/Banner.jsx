@@ -5,7 +5,7 @@ import shipVideo from "@/assets/icons/ummew_ship_film.mp4"
 import scrollToTop from "@/components/Shared/NavBar/ScrollToTop";
 
 const Banner = () => {
-  
+
   return (
     <section className="bg-primary text-white -z-50 px-5 md:px-2">
       <div className="max-w-[1170px] mx-auto md:flex justify-between items-center gap-5 py-12">
@@ -19,12 +19,16 @@ const Banner = () => {
             chandlery, repair (electrical & mechanical), supply, logistics, and
             export services. Get a free quote today!
           </p>
-          <div className="flex items-center gap-0 md:gap-5 justify-around md:justify-start">
-            <Link onClick={scrollToTop} to='/about-us' className="animate-motion-lr-500ms md:animate-motion-lr-700ms"><Button>Learn More</Button></Link>
+          <div className="w-1/3 mx-auto">
+            <Link onClick={scrollToTop} to='/about-us' className="animate-motion-lr-500ms  md:animate-motion-lr-700ms"><Button>Learn More</Button></Link>
+
           </div>
         </div>
         <div className="max-w-[490px] basis-1/2 mx-auto md:mx-0 py-24 md:py-0 ">
-          <video src={shipVideo} className="rounded-2xl"></video>
+          <video src={shipVideo} 
+          autoPlay
+         loop
+className="rounded-xl px-2"></video>
         </div>
       </div>
     </section>
