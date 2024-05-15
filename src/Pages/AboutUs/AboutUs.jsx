@@ -121,9 +121,7 @@ const AboutUs = () => {
             Meet Our Team Leaders
           </p>
           <div className="flex flex-wrap justify-center gap-16">
-            {leaders.map((person) => (
-              <LeaderCard key={person.name} person={person} />
-            ))}
+
           </div>
         </section>
         {/* Works */}
