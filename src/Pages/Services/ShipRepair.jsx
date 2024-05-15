@@ -9,6 +9,7 @@ import ServiceHero from "@/components/ServiceHero";
 // Service Modular Content Section
 import ModularContent from "@/components/ModularContent";
 import shipRepairFlag from "@/assets/service-pages/chandlery-flag.svg";
+import shipRepairFlag2 from "@/assets/service-pages/slogan-flag.jpg";
 
 import Title from "@/components/Title";
 
@@ -116,7 +117,7 @@ const ShipRepair = () => {
     title: "Seamless Repairs & Minimized Downtime",
     description:
       "Our priority is to get your vessel back in operation as quickly as possible, minimizing downtime and lost revenue.  We work closely with you to understand the nature of the repairs needed and provide transparent communication throughout the repair process.",
-    src: shipRepairFlag,
+    src: shipRepairFlag2,
     isReverse: true,
   };
 
