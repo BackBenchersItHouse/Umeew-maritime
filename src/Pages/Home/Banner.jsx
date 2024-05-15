@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Button from "@/components/Buttons/Button";
-import BannerImg from "@/assets/banner-img-no-radius.svg";
+import shipVideo from "@/assets/icons/ummew_ship_film.mp4"
 import scrollToTop from "@/components/Shared/NavBar/ScrollToTop";
 
 const Banner = () => {
@@ -23,8 +23,8 @@ const Banner = () => {
             <Link onClick={scrollToTop} to='/about-us' className="animate-motion-lr-500ms md:animate-motion-lr-700ms"><Button>Learn More</Button></Link>
           </div>
         </div>
-        <div className="max-w-[470px] basis-1/2 mx-auto md:mx-0 py-24 md:py-0 animate-motion-lr-300ms md:animate-motion-rl-1s">
-          <img src={BannerImg} alt="UMEEW Cargo Ship"/>
+        <div className="max-w-[490px] basis-1/2 mx-auto md:mx-0 py-24 md:py-0 ">
+          <video src={shipVideo} className="rounded-2xl"></video>
         </div>
       </div>
     </section>
