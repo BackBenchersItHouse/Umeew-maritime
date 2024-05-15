@@ -3,7 +3,7 @@ import ServiceBanner from "@/components/ServiceBanner";
 import shipRepairImg from "@/assets/service-pages/chandlery.svg";
 // Service Commitment Section
 import CommitmentCard from "@/components/Cards/CommitmentCard";
-import commitmentIcon from "@/assets/icons/ship.svg";
+import anchorIcon from "@/assets/icons/anchor.png";
 // Service Hero Section
 import ServiceHero from "@/components/ServiceHero";
 // Service Modular Content Section
@@ -69,35 +69,35 @@ const ShipRepair = () => {
   const commitments = [
     {
       id: 1,
-      icon: commitmentIcon,
+      icon: anchorIcon,
       title: "Experienced & Certified Technicians",
       subTitle:
         "Our team holds the necessary qualifications and certifications to handle all electrical and mechanical repairs with expertise.",
     },
     {
       id: 2,
-      icon: commitmentIcon,
+      icon: anchorIcon,
       title: "Advanced Diagnostic Tools",
       subTitle:
         "We utilize cutting-edge diagnostic tools to pinpoint the root cause of any issue quickly and accurately.",
     },
     {
       id: 3,
-      icon: commitmentIcon,
+      icon: anchorIcon,
       title: "Genuine Parts & Quality Workmanship",
       subTitle:
         "We use only genuine manufacturer parts and ensure the highest quality workmanship for lasting repairs.",
     },
     {
       id: 4,
-      icon: commitmentIcon,
+      icon: anchorIcon,
       title: "24/7 Emergency Support (Optional)",
       subTitle:
         "We understand that emergencies can arise at any time. Our 24/7 emergency support ensures we're there for you when you need us most (consider including this if applicable).",
     },
     {
       id: 5,
-      icon: commitmentIcon,
+      icon: anchorIcon,
       title: "Global Service Network",
       subTitle:
         "With a network of partners across the globe, we can provide repair services at most major ports (consider including this if applicable).",

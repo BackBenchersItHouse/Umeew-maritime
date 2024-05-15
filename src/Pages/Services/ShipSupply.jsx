@@ -3,7 +3,7 @@ import ServiceBanner from "@/components/ServiceBanner";
 import shipSupplyImg from "@/assets/service-pages/chandlery.svg";
 // Service Commitment Section
 import CommitmentCard from "@/components/Cards/CommitmentCard";
-import commitmentIcon from "@/assets/icons/ship.svg";
+import anchorIcon from "@/assets/icons/anchor.png";
 // Service Hero Section
 import ServiceHero from "@/components/ServiceHero";
 // Service Modular Content Section
@@ -103,28 +103,28 @@ const ShipSupply = () => {
   const commitments = [
     {
       id: 1,
-      icon: commitmentIcon,
+      icon: anchorIcon,
       title: "Extensive Inventory & Global Sourcing",
       subTitle:
         "We maintain a vast inventory and have strong relationships with global suppliers, ensuring you get the right equipment quickly and efficiently.",
     },
     {
       id: 2,
-      icon: commitmentIcon,
+      icon: anchorIcon,
       title: "Competitive Prices",
       subTitle:
         "We leverage our buying power to offer competitive prices on all ship supplies.",
     },
     {
       id: 3,
-      icon: commitmentIcon,
+      icon: anchorIcon,
       title: "Expert Advice & Recommendations",
       subTitle:
         "Our team of experienced professionals can provide expert advice and recommendations to ensure you select the most suitable equipment for your vessel.",
     },
     {
       id: 4,
-      icon: commitmentIcon,
+      icon: anchorIcon,
       title: "Just-in-Time Delivery",
       subTitle:
         "We understand the importance of timely deliveries. We work closely with logistics partners to ensure your supplies reach you when and where you need them.",
