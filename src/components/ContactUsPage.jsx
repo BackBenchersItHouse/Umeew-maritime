@@ -32,7 +32,7 @@ const ContactUsPage = () => {
             <h1 className="typewriter-anim   lg:text-4xl md:text-3xl text-2xl font-semibold my-10 text-center">
               Leave A Message
             </h1>
-            <form action="" method="POST" className="w-full max-w-lg ">
+            <form action="https://getform.io/f/pamqxeqa" method="POST" className="w-full max-w-lg ">
                 {/* modal */}
   <div
   className={`fixed inset-0 flex items-center justify-center z-50 ${
