@@ -3,7 +3,7 @@ import ServiceBanner from "@/components/ServiceBanner";
 import logisticsImg from "@/assets/service-pages/chandlery.svg";
 // Service Commitment Section
 import CommitmentCard from "@/components/Cards/CommitmentCard";
-import commitmentIcon from "@/assets/icons/ship.svg";
+import anchorIcon from "@/assets/icons/anchor.png";
 // Service Hero Section
 import ServiceHero from "@/components/ServiceHero";
 // Service Modular Content Section
@@ -69,28 +69,28 @@ const Logistics = () => {
   const commitments = [
     {
       id: 1,
-      icon: commitmentIcon,
+      icon: anchorIcon,
       title: "Unparalleled Expertise",
       subTitle:
         "Our team of highly skilled and certified professionals possesses years of experience in all aspects of ship maintenance and repair",
     },
     {
       id: 2,
-      icon: commitmentIcon,
+      icon: anchorIcon,
       title: "Quality You Can Trust",
       subTitle:
         "We use only the finest parts and materials to ensure long-lasting repairs and optimal performance.",
     },
     {
       id: 3,
-      icon: commitmentIcon,
+      icon: anchorIcon,
       title: "Streamlined Efficiency",
       subTitle:
         "We prioritize clear communication and efficient service delivery to minimize downtime and keep your operations on schedule.",
     },
     {
       id: 4,
-      icon: commitmentIcon,
+      icon: anchorIcon,
       title: "Competitive Rates",
       subTitle:
         "We offer competitive pricing and transparent cost structures to fit your budget.",

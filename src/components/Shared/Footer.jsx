@@ -58,14 +58,16 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-2.5">
                 <Link
-                  to="tel:+880123456789"
+                  to="https://wa.me/8801682036423"
                   target="_blank"
                   className="flex items-center gap-2.5"
                 >
                   <img className="pt-2" src={phone} alt="Phone icon" />
                   +880 1682-036423,
                 </Link>
-                <span> +88031717297</span>
+                <Link to="tel:+88031717297" target="_blank">
+                  +88031717297
+                </Link>
               </li>
             </ul>
           </section>

@@ -1,6 +1,6 @@
 import React from "react";
 import LeaderCard from "./LeaderCard";
-import shipIcon from "@/assets/icons/ship.png";
+import anchorIcon from "@/assets/icons/anchor.png";
 // import ModularContent from "@/components/Shared/ModularContent";
 import ModularContent from "@/components/ModularContent";
 import CommitmentCard from "@/components/Cards/CommitmentCard";
@@ -65,31 +65,31 @@ const works = [
     title: "Leadership",
     subTitle:
       "Our seasoned management team provides strategic direction and ensures exceptional client service.",
-    icon: shipIcon,
+    icon: anchorIcon,
   },
   {
     title: "Ship Chandlery",
     subTitle:
       "A dedicated team oversees the procurement and timely delivery of essential ship supplies, ensuring you have everything you need, when you need it.",
-    icon: shipIcon,
+    icon: anchorIcon,
   },
   {
     title: "Ship Repair",
     subTitle:
       "Our skilled technicians are experts in all aspects of mechanical and electrical repairs, meticulously ensuring your vessel meets all safety regulations.",
-    icon: shipIcon,
+    icon: anchorIcon,
   },
   {
     title: "Ship Supply",
     subTitle:
       "This team offers a one-stop solution for all your ship supply requirements, including equipment and efficient logistics services, streamlining your operations.",
-    icon: shipIcon,
+    icon: anchorIcon,
   },
   {
     title: "Export Products",
     subTitle:
       "Leveraging our global network, our export specialists help you explore and fulfill your export needs seamlessly.",
-    icon: shipIcon,
+    icon: anchorIcon,
   },
 ];
 
@@ -146,9 +146,7 @@ const AboutUs = () => {
             Meet Our Team Leaders
           </p>
           <div className="flex flex-wrap justify-center gap-16">
-            {leaders.map((person) => (
-              <LeaderCard key={person.name} person={person} />
-            ))}
+
           </div>
         </section>
         {/* Works */}

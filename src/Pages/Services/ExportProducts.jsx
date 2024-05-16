@@ -3,7 +3,7 @@ import ServiceBanner from "@/components/ServiceBanner";
 import exportProductsImg from "@/assets/service-pages/chandlery.svg";
 // Service Commitment Section
 import CommitmentCard from "@/components/Cards/CommitmentCard";
-import commitmentIcon from "@/assets/icons/ship.svg";
+import anchorIcon from "@/assets/icons/anchor.png";
 // Service Hero Section
 import ServiceHero from "@/components/ServiceHero";
 // Service Modular Content Section
@@ -69,28 +69,28 @@ const ExportProducts = () => {
   const commitments = [
     {
       id: 1,
-      icon: commitmentIcon,
+      icon: anchorIcon,
       title: "Global Network & Reliable Suppliers",
       subTitle:
         "We have established relationships with reputable manufacturers and suppliers worldwide, guaranteeing high-quality products and competitive pricing.",
     },
     {
       id: 2,
-      icon: commitmentIcon,
+      icon: anchorIcon,
       title: "Seamless Export Process",
       subTitle:
         "Our team handles all the complexities of international trade, allowing you to focus on your core business.",
     },
     {
       id: 3,
-      icon: commitmentIcon,
+      icon: anchorIcon,
       title: "Transparent Communication",
       subTitle:
         "We keep you informed throughout the export process, from order confirmation to delivery.",
     },
     {
       id: 4,
-      icon: commitmentIcon,
+      icon: anchorIcon,
       title: "Cost-Effective Solutions",
       subTitle:
         "We leverage our expertise to ensure you receive the best value for your export needs.",

@@ -8,7 +8,7 @@ const ServiceHero = ({ title, description, src, isReverse } ) => {
         isReverse ? "flex-col lg:flex-row-reverse" : ""
       } flex-col lg:flex-row justify-center items-center gap-9 md:gap-[100px]`}
     >
-      <img className="w-2/3 lg:h-full" src={src} alt={`${title}'s flag`} />
+      <img className="w-2/3 lg:h-full rounded-xl" src={src} alt={`${title}'s flag`} />
       <div className="min-w-[270px] max-w-[570px]">
         <h1 className="text-2xl md:text-[40px] font-semibold md:font-bold leading-normal mb-4">
           {title}

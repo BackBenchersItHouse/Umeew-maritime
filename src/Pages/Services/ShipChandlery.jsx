@@ -3,7 +3,7 @@ import ServiceBanner from "@/components/ServiceBanner";
 import shipChandleryImg from "@/assets/service-pages/chandlery.svg";
 // Service Commitment Section
 import CommitmentCard from "@/components/Cards/CommitmentCard";
-import commitmentIcon from "@/assets/icons/ship.svg";
+import anchorIcon from "@/assets/icons/anchor.png";
 // Service Hero Section
 import ServiceHero from "@/components/ServiceHero";
 // Service Modular Content Section
@@ -57,42 +57,42 @@ const ShipChandlery = () => {
   const commitments = [
     {
       id: 1,
-      icon: commitmentIcon,
+      icon: anchorIcon,
       title: "Reliable Sourcing",
       subTitle:
         "We source high-quality products from reputable suppliers, guaranteeing competitive prices.",
     },
     {
       id: 2,
-      icon: commitmentIcon,
+      icon: anchorIcon,
       title: "Timely Delivery",
       subTitle:
         "Our efficient logistics network ensures your supplies reach your vessel on time, every time.",
     },
     {
       id: 3,
-      icon: commitmentIcon,
+      icon: anchorIcon,
       title: "24/7 Emergency Support (Optional)",
       subTitle:
         "We understand unexpected situations can arise. Our 24/7 emergency support ensures we're there for you when you need us most (consider including this if applicable).",
     },
     {
       id: 4,
-      icon: commitmentIcon,
+      icon: anchorIcon,
       title: "Inventory Management",
       subTitle:
         "We can assist with onboard inventory management to streamline your operations (optional service).",
     },
     {
       id: 5,
-      icon: commitmentIcon,
+      icon: anchorIcon,
       title: "Customs Clearance (Optional)",
       subTitle:
         "For bonded stores, we can help navigate customs clearance procedures (consider including this if applicable).",
     },
     {
       id: 6,
-      icon: commitmentIcon,
+      icon: anchorIcon,
       title: "Customized Service",
       subTitle:
         "Our dedicated ship chandlery team works closely with you to understand your specific requirements and create a tailored supply plan.",

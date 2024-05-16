@@ -6,7 +6,7 @@ import chandlery from "@/assets/services/chandlery.svg";
 import shipRepair from "@/assets/services/ship-repair.svg";
 import shipSupply from "@/assets/services/ship-supply.svg";
 import logisticsServices from "@/assets/services/logistics-services.svg";
-import exportProducts from "@/assets/services/export-products-services.svg";
+import exportProducts from "@/assets/services/export-products-services.png";
 import { Link } from "react-router-dom";
 import ServiceCard from "@/components/Cards/ServiceCard";
 import scrollToTop from "@/components/Shared/NavBar/ScrollToTop";
