@@ -13,7 +13,7 @@ import scrollToTop from "./NavBar/ScrollToTop";
 
 const Footer = () => {
   return (
-    <footer className="bg-primary text-neutral md:text-xl">
+    <footer className="bg-primary/70 text-white md:text-xl ">
       <section>
         <div className="flex flex-col md:flex-row justify-between py-16 max-w-[1170px] mx-auto px-5 md:px-0">
           {/* <div className="flex flex-col md:flex-row justify-between py-16 max-w-[1170px] mx-auto px-5 md:px-0"> */}
@@ -124,10 +124,10 @@ const Footer = () => {
         </section>
 
         {/* ***** Border Natural ***** */}
-        <div className="border border-neutral/20"></div>
+        <div className="border border-neutral/70"></div>
 
         <div>
-          <section className="max-w-[1170px] mx-auto px-5 md:px-0 flex flex-col-reverse sm:flex-row gap-5 justify-between items-center my-5">
+          <section className="max-w-[1170px]  mx-auto px-5 md:px-0 flex flex-col-reverse sm:flex-row gap-5 justify-between items-center my-5">
             <p>&#169; 2024 , All rights reserved.</p>
             <div className="md:flex gap-3 items-center hidden">
               <Link
@@ -162,11 +162,11 @@ const Footer = () => {
           </section>
         </div>
 
-        <div className="bg-[#f763ab20] text-sm text-center py-5 border-t border-accent/20">
+        <div className="bg-primary/70 text-sm text-center py-5 border-t border-accent/20">
           <span>
             Developed by
             <Link
-              className="text-[#6B40E3]"
+              className="text-[#6B40E3] pl-2 text-base"
               to="https://backbenchersithouse.com"
               target="_blank"
             >

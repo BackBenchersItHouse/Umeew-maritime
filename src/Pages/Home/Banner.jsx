@@ -19,7 +19,7 @@ const Banner = () => {
             chandlery, repair (electrical & mechanical), supply, logistics, and
             export services. Get a free quote today!
           </p>
-          <div className="w-1/3 mx-auto">
+          <div className="w-1/3 mx-auto text-nowrap">
             <Link onClick={scrollToTop} to='/about-us' className="animate-motion-lr-500ms  md:animate-motion-lr-700ms"><Button>Learn More</Button></Link>
 
           </div>
