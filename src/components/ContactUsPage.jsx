@@ -31,7 +31,7 @@ const ContactUsPage = () => {
             <h1 className="typewriter-anim   lg:text-4xl md:text-3xl text-2xl font-semibold my-10 text-center">
               Leave A Message
             </h1>
-            <form action="" method="POST" className="w-full max-w-lg ">
+            <form action="https://getform.io/f/pamqxeqa" method="POST" className="w-full max-w-lg ">
               {/* modal */}
               <div
                 className={`fixed inset-0 flex items-center justify-center z-50 ${openModal ? 'scale-100 opacity-100 duration-300' : 'scale-0 opacity-0 duration-150'
@@ -138,7 +138,7 @@ const ContactUsPage = () => {
           </div>
 
           {/* part two div information section basically */}
-          <div className="  part2    text-2xl basis-2/3  p-8 rounded-xl shadow-md">
+          < div className="  part2    text-2xl basis-2/3  p-8 rounded-xl shadow-md" >
             <h1 className="typewriter-anim   lg:text-4xl md:text-3xl text-2xl font-semibold my-10 text-center">
               Get Closer With Us
             </h1>
@@ -388,9 +388,9 @@ const ContactUsPage = () => {
                 </span>
               </span>
             </div>
-          </div>
-        </div>
-      </div>
+          </div >
+        </div >
+      </div >
 
       {/* map */}
       {/* part three div map section basically */}
@@ -407,7 +407,7 @@ const ContactUsPage = () => {
           ></iframe>
         </div>
       </div>
-    </div>
+    </div >
   );
 };
 
