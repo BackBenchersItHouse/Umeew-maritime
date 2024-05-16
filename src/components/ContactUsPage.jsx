@@ -1,10 +1,12 @@
 import "@/components/Style/Umeew.css";
+import { useState } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 const ContactUsPage = () => {
   window.scrollTo({
     top: 0,
     behavior: "smooth",
   });
+  const [openModal, setOpenModal] = useState(false);
 
   return (
     <div className="main-div">
@@ -16,12 +18,45 @@ const ContactUsPage = () => {
 
       <div className="part-1-2 my-10 ">
         <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-10">
+          <div
+            className={`fixed inset-0 flex items-center justify-center z-50 ${openModal ? 'scale-1 opacity-1 duration-300' : 'scale-0 opacity-0 duration-150'
+              }`}
+            onClick={() => setOpenModal(false)}
+          >
+
+          </div>
+
           {/* part one div form section basically */}
           <div className="part1 basis-1/2 flex flex-col items-center  p-8 rounded-xl shadow-md">
             <h1 className="typewriter-anim   lg:text-4xl md:text-3xl text-2xl font-semibold my-10 text-center">
               Leave A Message
             </h1>
             <form action="" method="POST" className="w-full max-w-lg ">
+              {/* modal */}
+              <div
+                className={`fixed inset-0 flex items-center justify-center z-50 ${openModal ? 'scale-100 opacity-100 duration-300' : 'scale-0 opacity-0 duration-150'
+                  }`}
+                onClick={() => setOpenModal(false)}
+              >
+                <div
+                  onClick={(e_) => e_.stopPropagation()}
+                  className="max-w-md rounded-lg bg-slate-50 p-6 drop-shadow-lg dark:bg-gray-800 dark:text-white"
+                >
+                  <h1 className="mb-2 text-2xl font-semibold">Thank You!</h1>
+                  <p className="mb-5 text-sm opacity-80">We appreciate your support and hope you enjoy staying With BackbencherItHouse .</p>
+                  <div className="flex justify-center">
+
+                    <button
+                      onClick={() => setOpenModal(false)}
+                      className="rounded-md border border-rose-600 px-6 py-[6px] text-rose-600 duration-150 hover:bg-rose-600 hover:text-white"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              {/* modal */}
               <div className="flex flex-wrap  -mx-3 mb-6">
                 <div className="w-full md:w-1/2  px-3 mb-6 md:mb-0">
                   <input
@@ -77,12 +112,28 @@ const ContactUsPage = () => {
                   />
                 </div>
               </div>
+
               <button
                 type="submit"
                 className={`w-full px-6 md:px-8 lg:px-8 py-2 md:py-3 lg:py-3 bg-secondary rounded font-semibold text-white outline outline-1 capitalize transition ease duration-300 hover:translate-x-1 hover:-translate-y-1 `}
+
+                onClick={() => setOpenModal(true)}
               >
                 Contact Us
               </button>
+
+              <div onClick={(e_) => e_.stopPropagation()} className={`text- absolute max-w-md rounded-lg bg-white p-6 drop-shadow-lg dark:bg-gray-800 dark:text-white ${openModal ? 'scale-1 opacity-1 duration-300' : 'scale-0 opacity-0 duration-150'}`}>
+                <h1 className="mb-2 text-2xl font-semibold">Welcome to NavigateUI!</h1>
+                <p className="mb-5 text-sm opacity-80">Elevate your React projects with beautifully crafted components designed for TailwindCSS.</p>
+                <div className="flex justify-between">
+                  <button onClick={() => setOpenModal(false)} className="me-2 rounded-md bg-indigo-600 hover:bg-indigo-700 px-6 py-[6px] text-white">
+                    Ok
+                  </button>
+                  <button onClick={() => setOpenModal(false)} className="rounded-md border border-rose-600 px-6 py-[6px] text-rose-600 duration-150 hover:bg-rose-600 hover:text-white">
+                    Cancel
+                  </button>
+                </div>
+              </div>
             </form>
           </div>
 
@@ -134,38 +185,7 @@ const ContactUsPage = () => {
                   Boropole, Chattogram, Bangladesh.
                 </span>
               </div>
-              <div className="flex items-center gap-4 ">
-                <span>
-                  {/* mail icon */}
-                  <svg
-                    width="40"
-                    height="40"
-                    viewBox="0 0 40 40"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M18.25 1.58771C19.3329 0.962498 20.6671 0.962498 21.75 1.58771L35.0705 9.27831C36.1534 9.90353 36.8205 11.059 36.8205 12.3094V27.6906C36.8205 28.941 36.1534 30.0965 35.0705 30.7217L21.75 38.4123C20.6671 39.0375 19.3329 39.0375 18.25 38.4123L4.92949 30.7217C3.84659 30.0965 3.17949 28.941 3.17949 27.6906V12.3094C3.17949 11.059 3.84659 9.90353 4.92949 9.27831L18.25 1.58771Z"
-                      stroke="black"
-                    />
-                    <path
-                      d="M11.25 17.2242V24.375C11.25 25.7557 12.3693 26.875 13.75 26.875H26.25C27.6307 26.875 28.75 25.7557 28.75 24.375V17.2242L21.3102 21.8026C20.5067 22.297 19.4933 22.297 18.6898 21.8026L11.25 17.2242Z"
-                      fill="#FF8C00"
-                    />
-                    <path
-                      d="M28.75 15.7565V15.625C28.75 14.2443 27.6307 13.125 26.25 13.125H13.75C12.3693 13.125 11.25 14.2443 11.25 15.625V15.7565L19.3449 20.738C19.7466 20.9852 20.2534 20.9852 20.6551 20.738L28.75 15.7565Z"
-                      fill="#FF8C00"
-                    />
-                  </svg>
 
-                  {/* mail icon */}
-                </span>
-                <a href="mailto:.....">
-                  <span className="text-slate-800 text-xl">
-                    info@egistic.com
-                  </span>
-                </a>
-              </div>
               <div className="flex items-center gap-4 ">
                 <span>
                   {/* mail icon */}
@@ -225,8 +245,8 @@ const ContactUsPage = () => {
 
                 <a href="https://wa.me/8801682036423" target="_blank">
                   <span className="text-slate-800 text-xl">+8801682036423,</span>
-                  <span className="text-slate-800 text-xl"> +88031717297</span>
                 </a>
+                <a href="tel:+88031717297"><span className="text-slate-800 text-xl"> +88031717297</span></a>
               </div>
             </div>
 
@@ -237,7 +257,7 @@ const ContactUsPage = () => {
 
               <span className="flex gap-10 justify-center items-center">
                 <span className="hover:translate-y-1 ease duration-500">
-                  <a href="https://www.facebook.com/" target="_blank">
+                  <a href="https://www.facebook.com/unitedmarinecare" target="_blank">
                     {/* fb icon */}
                     <svg
                       width="50"
@@ -259,7 +279,7 @@ const ContactUsPage = () => {
                   </a>
                 </span>
                 <span className="hover:translate-y-1 ease duration-500">
-                  <a href="https://www.instagram.com/" target="_blank">
+                  <a href="https://www.instagram.com/umeew2024/" target="_blank">
                     {/* insta icon */}
                     <svg
                       width="50"
@@ -281,7 +301,7 @@ const ContactUsPage = () => {
                   </a>
                 </span>
                 <span className="hover:translate-y-1 ease duration-500">
-                  <a href="https://www.linkedin.com/" target="_blank">
+                  <a href="https://www.linkedin.com/company/100919519/admin/feed/posts/" target="_blank">
                     {/* linked in  */}
                     <svg
                       width="50"
@@ -311,7 +331,7 @@ const ContactUsPage = () => {
                   </a>
                 </span>
                 <span className="hover:translate-y-1 ease duration-500">
-                  <a href="https://twitter.com/" target="_blank">
+                  <a href="https://twitter.com/marine_wor9861" target="_blank">
                     {/* twit icon */}
                     <svg
                       width="50"
