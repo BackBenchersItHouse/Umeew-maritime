@@ -214,9 +214,9 @@ const ContactUsPage = () => {
 
                   {/* mail icon */}
                 </span>
-                <a href="mailto:.....">
+                <a href="mailto:info@umeew.com">
                   <span className="text-slate-800 text-xl">
-                    technical@umeew.com
+                  info@umeew.com
                   </span>
                 </a>
               </div>
